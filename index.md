@@ -3,7 +3,7 @@ layout: archive
 permalink: /
 title: "Latest Posts"
 ---
-
+<h1> hello </h1>
 <div class="tiles">
 {% for post in site.posts %}
 	{% include post-grid.html %}
