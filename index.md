@@ -8,4 +8,6 @@ title: "Latest Posts"
 {% for post in site.posts %}
 	{% include post-grid.html %}
 {% endfor %}
+
+{{ site.data.seeds.firstname }}
 </div><!-- /.tiles -->

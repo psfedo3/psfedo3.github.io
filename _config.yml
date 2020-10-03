@@ -1,3 +1,7 @@
+jekyll_get_json:
+  - data: seeds
+    json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
+
 # Site wide configuration
 
 title: "My Site"
@@ -31,6 +35,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-compose
   - jekyll-redirect-from
+  - jekyll-get-json
 
 # Site owner
 owner:
