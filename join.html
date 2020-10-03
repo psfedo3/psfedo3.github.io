@@ -99,7 +99,7 @@
                                Phone Number
                             </label>
                             <div class="input-wrapper">
-                                <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="number" value="" required>
+                                <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="number" value="" min="11" max="14"required>
                             </div>
                         </label>
                     </div>
@@ -127,7 +127,7 @@
                                 Enter your level (An Exco, a old Member or New Member)
                             </label>
                             <div class="input-wrapper">
-                                <input label="Enter your level (An Exco, a old Member or a New Member )" class="form__field__input" autocapitalize="off" type="text" id="level" inputmode="text" name="Level_Of involvement_in_psf" value="" required>
+                                <input label="Enter your level (An Exco, a old Member or a New Member )" class="form__field__input" autocapitalize="off" type="text" id="level" inputmode="text" name="Level_Of involvement_in_psf" value="" pattern="[Ee]xco|[Mm]ember | [Nn]ew member" required>
                             </div>
                         </label>
                     </div>
@@ -184,7 +184,8 @@
                         <img src="" alt="upload a loving photo of you" class="form-img js-image-upload">
                     </div>
                         <div class="input-wrapper">
-                            <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" inputmode="text" name="upload" required>
+   <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="upload" required>
+   <input type="hidden" name="upload-file" class="js-upload" />
                         </div>
                     </label>
                 </div>
