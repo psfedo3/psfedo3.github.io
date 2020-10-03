@@ -9,8 +9,5 @@ title: "Latest Posts"
 	{% include post-grid.html %}
 {% endfor %}
 
-{% for member in site.data.seeds %}
-  Hello {{member[1].firstname}}
-{% endfor %}
-
+{{ site.data.seeds }}
 </div><!-- /.tiles -->
