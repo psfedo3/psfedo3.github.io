@@ -3,6 +3,10 @@ rvm:
 - 2.3.1
 install:
 - bundle install
+before_deploy:
+  - if [ "$TRAVIS_BRANCH" == "master" ];then
+    git checkout master;
+    fi;
 deploy:
   provider: pages
   cleanup: true
