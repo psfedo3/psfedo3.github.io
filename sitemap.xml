@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/contact/</loc>
+</url>
+<url>
+<loc>/family/</loc>
+</url>
+<url>
 <loc>/</loc>
+</url>
+<url>
+<loc>/thank/</loc>
+</url>
+<url>
+<loc>/join.html</loc>
+<lastmod>2020-10-03T11:02:13+00:00</lastmod>
 </url>
 </urlset>
