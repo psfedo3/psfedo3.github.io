@@ -5,7 +5,7 @@ install:
 - bundle install
 before_deploy:
   - if [ "$TRAVIS_BRANCH" == "source" ];then
-    git checkout master;
+    git checkout source;
     fi;
 deploy:
   provider: pages
