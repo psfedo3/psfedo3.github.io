@@ -1,0 +1,11 @@
+---
+layout: default
+title: meet the family
+permalink: /family/
+---
+
+{% for member in site.data.members %}
+Hello {{ member[0].firstname }}
+{% endfor %}
+
+<h1> no new member</h1>

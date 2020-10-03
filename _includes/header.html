@@ -1,0 +1,115 @@
+
+    <!-- Header Start -->
+    <div class="page-width">
+    <section class="msg msg--alert text--center">
+        <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;
+        </span> 
+    <p><span aria-hidden="true">
+        Family meeting at open heaven parish <a href="event.html">Stay updated <svg width="20" height="20" viewBox="0 0 24 24">
+        <use xlink:href="#arrow-right"></use>
+    </svg></a>
+    </span>
+    </p>
+</section>
+    <header class="site-header">
+        <div class="padded site-header__wrapper">
+          <div class="site-header__start">
+            <a href="/" class="brand">
+                #PSF-EDO3
+            </a>
+          </div>
+          <div class="site-header__middle"> 
+            <nav class="nav">
+              <button class="nav__toggle" aria-expanded="false" type="button">
+                <svg class="icon" width="26px" height="26px" tabindex="-1" role="img" aria-labelledby="title">
+                    <title id="title">Toggle Menu</title>
+                    <use xlink:href="#icon-burger"></use>
+                </svg>
+              </button>
+              <ul class="nav__wrapper">
+                  <div class="nav__wrapper__inner">
+   {% for item in site.data.navigation %}
+    <li class="nav__item">
+      <a href="{{ item.link }}" {% if page.url == item.link %}style="text-decoration: underline;" {% endif %}>
+        {{ item.name }}
+        </a>
+    </li>
+    {% endfor %}
+            </div>
+              </ul>
+            </nav>
+          </div>
+          <div class="site-header__end">
+            <a class="header-button" href="join.html">
+                <svg class="icon" width="38px" height="38px" tabindex="-1" role="img" aria-labelledby="title">
+                    <title id="title">Join Psf</title>
+                    <use xlink:href="#icon-user"></use>
+                </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="js-mobile-nav mobile-nav mobile-nav--right" tabindex="-1">
+            <div class="mobile-nav__inner">
+              <div class="mobile-nav__top">
+                <div class="mobile-nav__logo">
+                  <a href="/" class="mobile-nav__logo__psf">         
+                    #PSF-EDO3
+                </a>     
+             </div>
+          
+                <button name="button" type="button" class="mobile-nav__close-btn js-mobile-nav__close">
+                  <svg class="icon" aria-labelledby="icon-cancel-title" role="img">
+                      <title id="icon-cancel-title">
+                          Close Main Navigation
+                        </title> 
+                        <use xlink:href="#icon-close"></use>
+                     </svg>
+          </button>    
+        </div>
+          
+              <nav aria-label="Main Navigation">
+                  <ul class="mobile-nav__items mobile-nav__items--primary" id="DrawerNavPrimaryAccordion">
+                    <li>
+                        <a href="/" class="mobile-nav__item mobile-nav__item--primary">
+                            Home
+                        </a>
+                         </li>
+                    <li><a href="/about" class="mobile-nav__item mobile-nav__item--primary">
+                        About Us
+                    </a></li>
+                    <li><a href="/contact" class="mobile-nav__item mobile-nav__item--primary">
+                        Contact Us
+                    </a></li>
+                    <li><a href="/events" class="mobile-nav__item mobile-nav__item--primary">
+                        Events
+                    </a></li>
+                    <li><a href="/gallery" class="mobile-nav__item mobile-nav__item--primary">
+                        Visit Gallery
+                    </a></li>
+                   
+                  </ul>
+          
+                  <ul class="mobile-nav__items mobile-nav__items--user js-is-initialized" id="DrawerNavSecondaryAccordion">
+                    <li><a href="/blog/history" class="mobile-nav__item">
+                        Our History&nbsp;<svg width="16px" height="16px" class="icon marketing-nav__external-indicator" aria-hidden="true" focusable="false"> 
+                            <use xlink:href="#modules-nav-external-indicator"></use> 
+                        </svg>
+                    </a></li>
+                    <li><a href="/family" class="mobile-nav__item">
+                        Meet the family
+                    </a></li>
+                    <li>
+                        <a href="/join" class="mobile-nav__item mobile-nav__item--join mobile-nav__button btn btn--small btn--green">
+                            Join The Familly    
+                        </a>
+                    </li>
+                  </ul>
+          
+                 
+              </nav>
+            </div>
+          </div>
+      </header>
+      <!-- Header End -->
+      

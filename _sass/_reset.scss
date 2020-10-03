@@ -1,0 +1,313 @@
+@page :left {
+    margin-left: 2cm;
+   }
+   
+   @page :right {
+    margin-left: 2cm;
+   }
+   
+   @media print {
+    * {
+     color: #000;
+    }
+   
+    header,
+    footer {
+     display: none;
+    }
+   
+    h2 {
+     margin-bottom: 0.5cm;
+    }
+   
+    h1 {
+     page-break-before: always;
+    }
+   }
+   
+   /*------------------------------------*  #BOX-SIZING
+   \*------------------------------------*/
+   /**
+    * More sensible default box-sizing:
+    * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+    */
+   html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+   }
+   
+   *,
+   *:before,
+   *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+   }
+   
+   /*------------------------------------*  #SHARED
+   \*------------------------------------*/
+   /**
+    * Shared declarations for certain elements.
+    */
+   /**
+    * Always declare margins in the same direction:
+    * csswizardry.com/2012/06/single-direction-margin-declarations
+    */
+   input,
+   textarea,
+   button {
+    font-family: inherit;
+     font-size: 16px;
+   }
+   
+   textarea {
+    resize: none;
+   }
+   button,label {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline-width: .1px;
+   }
+   fieldset::before {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+   
+   /*------------------------------------*  #PAGE
+   \*------------------------------------*/
+   /**
+    * Page-level styling (e.g. HTML and BODY elements).
+    */
+   
+   html {
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+    line-height: 1;
+    font-family: Roboto, sans-serif;
+    
+   }
+  html,body {
+    overflow-x : hidden;
+  }
+   
+   body {
+    font-size:  1em;
+    line-height: 1.5;
+    color: $color-text;
+    background-color: $color-bg;
+   }
+   /*------------------------------------*  #HEADINGS
+   \*------------------------------------*/
+   /**
+    * Simple default styles for headings 1 through 6.
+    */
+    .gotham {
+    font-family: Gotham Rounded;
+
+    }
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6, .h1,.h2,.h3,.h4,.h5,.h6 {
+    
+    letter-spacing: -0.0207142857em;
+    
+
+   }
+   
+   h1, .h1 {
+    font-size:1.75em;
+    line-height:1.2142857143;
+    font-weight: 400;
+    margin-bottom: 0.2380952381em;
+   }
+   @media (min-width: 660px) {
+     h1,.h1 {
+      font-size: 2.25rem;
+     }
+   }
+   h2, .h2 {
+    font-size: 1.5em;
+    line-height: 1.14286;
+    margin-bottom: 0.8333em;
+   }
+   
+   h3, .h3 {
+    font-size: 1.3888888889em;
+    margin-bottom: 1.2em;
+   }
+   
+   h4, .h4 {
+    font-size: 1em;
+    line-height: 1.6;
+     margin-bottom: 0.75em;
+   }
+   
+   h5, .h5{
+    font-size: 1.125rem;
+    line-height: 1.77778;
+   }
+   
+   h6, .h6{
+    font-size: 1rem;
+    line-height: 1;
+   }
+   
+   /*------------------------------------*  #PARAGRAPHS
+   \*------------------------------------*/
+   /**
+    * Basic styling for paragraphs.
+    */
+    main p, main ul, main ol {
+      margin-bottom: 1em;
+      line-height: 1.6em;
+      font-size: 1em;
+  }
+  p {
+    line-height: 1.6em;
+  }
+   
+   article, .article {
+    font-size: 1rem;
+    max-width: 80ch;
+    margin-bottom: 30px;
+    color: #212b35;
+    line-height: 1.7;
+}
+textarea {
+  height: 10em;
+  resize: both;
+  max-width: 100%;
+  padding: .75em 1em .85em 1em;
+}
+
+   /*------------------------------------*  #LINKS
+   \*------------------------------------*/
+   /**
+    * Default styles for simple hyperlinks.
+    */
+   a {
+    color: #ff1154;
+
+    &:hover,&:focus {
+      color: $color-green;
+      transition: 0.3s;
+    text-decoration: none;
+
+
+    }
+   }
+    
+   
+   svg {
+     vertical-align: middle;
+     fill: currentColor;
+   }
+ 
+hr {
+    background: 0 0;
+}
+hr {
+  border: 0;
+    height: .08em;
+    margin: 2.75em 0;
+}
+hr {
+  border-top: 0.095em solid #eee;
+}
+   /*------------------------------------*  #LISTS
+   \*------------------------------------*/
+   /**
+    * Remove trailing margins from nested lists.
+    */
+   li>ul,
+   li>ol {
+    margin-bottom: 0;
+   }
+   ol,ul {
+    list-style: none;
+   }
+    body blockquote, body dl, body dt,body li {
+    line-height: calc(1em + .2vw);
+    word-break: break-word;
+}
+   /**
+    * Visually offset definition titles from their definitions.
+    */
+   dt {
+    font-weight: 700;
+   }
+   
+   /*------------------------------------*    #IMAGES
+   \*------------------------------------*/
+   /**
+    * 1. Fluid images for responsive purposes.
+    * 2. Offset `alt` text from surrounding copy.
+    * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+    *    elements when they are dropped into a page as-is. Safer alternative to
+    *    using `display: block;`.
+    */
+   img {
+    max-width: 100%;
+    /* [1] */
+    font-style: italic;
+    /* [2] */
+    vertical-align: middle;
+    /* [3] */
+   }
+   picture img {
+    width: 100%;
+
+   }
+   
+   /**
+    * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+    *    not make the image fluid.
+    */
+   img[width],
+   img[height] {
+    /* [1] */
+    max-width: none;
+   }
+   
+   /*------------------------------------*  #QUOTES
+   \*------------------------------------*/
+   /**
+    * Basic styling for quoted text.
+    */
+   q {
+    quotes: "’’""";
+    position: relative;
+   }
+   
+   q:before {
+    content: open-quote;
+    position: absolute;
+    top: -30px;
+    left: 90%;
+    font-size: 5em;
+    color: $color-text-offset;
+    
+   }
+   
+   q:after {
+    content: "";
+   }
+   
+   blockquote {
+    quotes: "“""”";
+   }
+   
+   [hidden],
+   template {
+    display: none
+   }
+   
+   
