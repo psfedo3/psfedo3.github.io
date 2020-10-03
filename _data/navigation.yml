@@ -1,6 +1,16 @@
-# Site navigation links
-
-- title:
-  url:
-  excerpt:
-  image:
+- name: Home
+  link: /
+  
+- name: About
+  link: /about
+  
+- name: Gallery
+  link: /gallery
+  
+- name: Events
+  link: /events 
+  
+- name: Contact
+  link: /contact
+  
+  
