@@ -4,7 +4,7 @@ rvm:
 install:
 - bundle install
 before_deploy:
-  - if [ "$TRAVIS_BRANCH" == "master" ];then
+  - if [ "$TRAVIS_BRANCH" == "source" ];then
     git checkout master;
     fi;
 deploy:
