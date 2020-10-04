@@ -27,26 +27,25 @@
                 <small>
    By signing up you agree to our <a class="link" href="blog/terms">
      Terms
-     </a> and right to access all data you will be providing...
+     </a>and you are at least <strong>13 years of age</strong> and right to access all data you will be providing...
                 </small>
             </div>
 
     <form action="https://getsimpleform.com/messages?form_api_token=ce66fa5c102692dd1bffc621c0cc288f"
     method="POST"
     enctype="multipart/form-data" class="auth__modal__form">
-      <input type="hidden" name="redirect_to" value="/thanks" />
+      <input type="hidden" name="redirect_to" value="{{ site.baseurl }}/thanks.html" />
       
                 <fieldset>
-                    <legend class="membership-checkout__hint membership-checkout__hint--personal">
-                        Hey! we just need a few things from you...<br><small>We call people by their real names around here. It is a <em>family</em> after all.</small>
-                    </legend>
+     <legend class="membership-checkout__hint membership-checkout__hint--personal">
+       Hey! we just need a few things from you...<br><small>Your names and the parish you attend under RCCG edo province 3</small>   </legend>
                     <div class="form__row">
                         <label class="form__field blurred field--half form__field--floating field--half">
                             <label for="firstName" class="form__field__label">
                                 Your first name
                             </label>
                             <div class="input-wrapper">
-                                <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="firstname" value="" required>
+      <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="firstname" value="" minlength="4" required>
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating">
@@ -54,17 +53,24 @@
                                 Your family name
                             </label>
                             <div class="input-wrapper">
-                                <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="lastname" value="" min="3" required>
+       <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="lastname" value="" min="4" required>
                             </div>
                         </label>
-                    </div>
-                    <div class="form__row">
+                    </div>  
+      <div class="form__row">
                         <label class="form__field blurred  form__field--floating">
                             <label for="parish" class="form__field__label">
                                 Your Parish (Under Edo Province 3) 
                             </label>
                             <div class="input-wrapper">
-                                <input label="Your Parish (Under RCCG Edo Province 3) " id="parish" type="text" class="form__field__input" inputmode="text" name="Parish" value="" min="3" required>
+                                <input label="Your Parish (Under RCCG Edo Province 3) " id="parish" type="text" class="form__field__input" inputmode="text" name="Parish" value="" min="3" list="defaultParish" required>
+     <datalist id="defaultParish">
+       <option value="Open Heaven Parish">
+       <option value="Glory Land Parish">
+       <option value="Kings Parish">
+       <option value="Sanctuary Of Praise">
+       <option value="Miracle parish">
+     </datalist>
                             </div>
                         </label>
                     </div>
@@ -91,7 +97,7 @@
                                 Email
                             </label>
                             <div class="input-wrapper">
-                                <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="" required>
+     <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="" required>
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating field--half">
@@ -99,7 +105,7 @@
                                Phone Number
                             </label>
                             <div class="input-wrapper">
-                                <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="number" value="" min="11" required>
+        <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="number" value="" min="11" required>
                             </div>
                         </label>
                     </div>
@@ -122,15 +128,25 @@
                    
                     
                     <div class="form__row">
-                        <label class="form__field blurred form__field form__field--floating form__field">
-                            <label for="level" class="form__field__label">
-                                Enter your level (An Exco, a old Member or New Member)
-                            </label>
-                            <div class="input-wrapper">
-                                <input label="Enter your level (An Exco, a old Member or a New Member )" class="form__field__input" autocapitalize="off" type="text" id="level" inputmode="text" name="Level_Of involvement_in_psf" value="" pattern="[Ee]xco|[Mm]ember | [Nn]ew member" required>
-                            </div>
-                        </label>
-                    </div>
+     <label class="form__field form__field--radio">
+                           <input class="form__field__input" type="radio" name="level" value="New Member" required>
+                           <span class="form__field__label">
+                             New Member
+                           </span>
+                         </label>
+                         <label class="form__field form__field--radio">
+                           <input class="form__field__input" type="radio" name="level" value="Seed" required>
+                           <span class="form__field__label">
+                             Already A Seed
+                           </span>
+                         </label>
+                         <label class="form__field form__field--radio">
+                           <input class="form__field__input" type="radio" name="level" value="Exco" required>
+                           <span class="form__field__label">
+                             Exco
+                           </span>
+                         </label>
+                         </div>
                     <div class="level-more">
                         <a href="#0">Ah, what is level of involvement?</a>
 
@@ -143,17 +159,17 @@
                                 <li>
                                     <strong>One of the Excos</strong>: 
                                     <em>you belong to the management team</em>
-                                    of the edo provine 3 pastor seeds family, Please fill in <b>Excos</b> 
+                                    of the edo provine 3 pastor seeds family, Please select <b>Excos</b> 
                                 </li>
                                 <li>
                                     <strong>Just a Seed</strong>:
-                                     a old or <em>seed </em>
-                                      (not one of the excos). Please fill in <b>Member</b>
+                                     a old <em>seed </em>
+                                      (not one of the excos). Please select <b>Member</b>
                                     </li>
                                     <li>
                                         <strong>New to psf</strong>: 
                                         <em>Joining the edo province 3 pastors seed family for the first time</em>, 
-                                        Please fill in <b>New Member</b> 
+                                        Please select <b>New Member</b> 
                                     </li>
                                 </ul>
                             </div>
@@ -180,12 +196,12 @@
                         <label for="file" class="upload">
                         Upload your photo
                         </label>
-                        <div class="form-img__wrapper">
-                        <img src="" alt="upload a loving photo of you" class="form-img js-image-upload">
+         <div class="form-img__wrapper">
+         <img src="" alt="upload a loving photo of you" class="form-img js-image-upload">
                     </div>
                         <div class="input-wrapper">
    <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="upload" required>
-   <input type="hidden" name="upload-file" class="js-upload" />
+   <input type="hidden" name="avatar" class="js-upload" />
                         </div>
                     </label>
                 </div>
@@ -207,7 +223,7 @@
       </div>
 </body>
 
-<script src="js/image-upload.js"></script>
+<script src="js/registration-form.js"></script>
 <svg width="0" height="0" style="display:none" xmlns="http://www.w3.org/2000/">
     <symbol id="icon-cancel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11.414 10l6.293-6.293c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L10 8.586 3.707 2.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L8.586 10l-6.293 6.293c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L10 11.414l6.293 6.293c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L11.414 10z"></path></svg>
   </symbol>

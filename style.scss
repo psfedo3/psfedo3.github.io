@@ -448,9 +448,7 @@ $color-light: #fbf7ed;
          margin-bottom:0.4em
         }
        }
-      .testimonial {
-        
-      }
+      
       .testimonial__content {
         font-weight:400;
         display:inline;
@@ -593,20 +591,6 @@ background-position:center;
   position: relative;
   padding-left: 1.25rem;
 }
-.sidebar-item--has-children.sidebar-item--active .sidebar-link::before {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  position: absolute;
-  left: 0;
-  top: 0.6rem;
-  margin: 0 3px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  content: '';
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2020%2020%22%3E%3Cstyle%20type=%22text/css%22%3Ecircle,%20ellipse,%20line,%20path,%20polygon,%20polyline,%20rect,%20text%20%7B%20fill:%20rgb(255,%20255,%20255)%20!important;%20%7D%3C/style%3E%3Cpath%20d=%22M10%2014c-.256%200-.512-.098-.707-.293l-5-5c-.39-.39-.39-1.023%200-1.414s1.023-.39%201.414%200L10%2011.586l4.293-4.293c.39-.39%201.023-.39%201.414%200s.39%201.023%200%201.414l-5%205c-.195.195-.45.293-.707.293z%22/%3E%3C/svg%3E%0A");
-}
 
 /* articles */
 
@@ -715,24 +699,7 @@ article h1, article h2, .article h1, .article h2 {
  .subscribe__disclaimer {
   margin-top:16px
  }
- .subscribe__success {
-  opacity:0;
-  pointer-events:none;
-  position:absolute;
-  width:100%
- }
- .js-success .subscribe__success {
-  opacity:1;
-  left:50%;
-  top:50%;
-  transform:translate(-50%, -50%);
-  transition:opacity 300ms 0.2s;
-  pointer-events:auto
- }
- .js-success .subscribe__content {
-  opacity:0;
-  pointer-events:none
- }
+ 
  .subscribe--sidebar .subscribe__heading,
  .subscribe--sidebar .subscribe__success__heading {
   font-size:1em;
@@ -986,6 +953,8 @@ fieldset {
   border-radius: 11px;
   line-height: 160px;
   text-align: center;
+  object-fit: cover;
+  object-position: 50%;
 }
 form fieldset legend {
   font-weight: 700;
@@ -1097,8 +1066,13 @@ label {
   border-color: #dadada;
   outline: 0 !important;
 }
-
-
+.form__field__input:valid {
+  
+  border: 2px solid $color-green!important;
+}
+.form__field__input:invalid {
+    border: 2px solid red!important;
+}
  .form__field--floating {
   position: relative;
 }
@@ -1113,8 +1087,7 @@ label {
   padding: 18px 0;
   z-index: 1;
 }
-.form__field--floating:hover .form__field__label,
-.form__field--floating:focus .form__field__label {
+.form__field--floating.is-active .form__field__label {
   padding: 8px 0;
 }
 .form__field .input-wrapper {
