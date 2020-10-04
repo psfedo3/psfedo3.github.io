@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="join">
+  {{ for emails in site.data.seeds.data }}
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
         <div class="modal__header">
           <div class="modal__controls">
@@ -98,7 +103,9 @@
                                 Email
                             </label>
                             <div class="input-wrapper">
+    {% for emails in site.data.seeds.data %}
      <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="" required>
+     {% endfor %}
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating field--half">
