@@ -11,7 +11,7 @@ email.addEventListener("input", function(event) {
 inputField.addEventListener('input', function(event) {
   var floated = document.querySelectorAll('.form__field--floating');
   for (i = 0; i < floated.length; i++) {
-    floated[i].classList.add('cf');
+    floated[i].classList.add('is-active');
   }
 })
 
