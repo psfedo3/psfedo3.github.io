@@ -9,7 +9,7 @@ email.addEventListener("input", function(event) {
 });
 
 inputField.addEventListener('input', function(event) {
-  let floated = document.querySelector('.form__field--floating');
+  let floated = document.querySelectorAll('.form__field--floating');
    floated.classList.add('is-active')
 })
 
