@@ -9,10 +9,10 @@ email.addEventListener("input", function(event) {
 });
 
 inputField.addEventListener('input', function(event) {
-  let floated = document.querySelectorAll('.form__field--floating');
-  floated.forEach(function() {
-   floated.classList.add('is-active')
-  })
+  var floated = document.querySelectorAll('.form__field--floating');
+  for (i = 0; i < floated.length; i++) {
+    floated[i].classList.add('cf');
+  }
 })
 
 
