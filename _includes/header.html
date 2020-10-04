@@ -1,16 +1,19 @@
 
     <!-- Header Start -->
     <div class="page-width">
-    <section class="msg msg--alert text--center">
-        <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;
-        </span> 
-    <p><span aria-hidden="true">
-        Family meeting at open heaven parish <a href="event.html">Stay updated <svg width="20" height="20" viewBox="0 0 24 24">
-        <use xlink:href="#arrow-right"></use>
-    </svg></a>
-    </span>
-    </p>
-</section>
+     {% if page.url == "/index.html" %}
+         <section class="msg msg--alert text--center">
+           <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;
+           </span>
+           <p><span aria-hidden="true">
+               Family meeting at open heaven parish <a href="event.html">Stay updated <svg width="20" height="20" viewBox="0 0 24 24">
+                   <use xlink:href="#arrow-right"></use>
+                 </svg></a>
+             </span>
+           </p>
+         </section>
+     {% endif %}
+
     <header class="site-header">
         <div class="padded site-header__wrapper">
           <div class="site-header__start">
