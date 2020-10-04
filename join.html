@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="join">
+  
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
         <div class="modal__header">
           <div class="modal__controls">
@@ -34,7 +35,7 @@
     <form action="https://getsimpleform.com/messages?form_api_token=ce66fa5c102692dd1bffc621c0cc288f"
     method="POST"
     enctype="multipart/form-data" class="auth__modal__form">
-      <input type="hidden" name="redirect_to" value="{{ site.baseurl }}/thanks.html" />
+      <input type="hidden" name="redirect_to" value="/thanks.html" />
       
                 <fieldset>
      <legend class="membership-checkout__hint membership-checkout__hint--personal">
@@ -98,7 +99,7 @@
                                 Email
                             </label>
                             <div class="input-wrapper">
-     <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="" required>
+    
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating field--half">
