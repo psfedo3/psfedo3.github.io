@@ -1,115 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastors Seed Family - About</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.svg">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header about-header">
-    <div class="padded site-header__wrapper">
-      <div class="site-header__start">
-        <a href="#" class="brand">
-            #PSF-EDO3
-        </a>
-      </div>
-      <div class="site-header__middle"> 
-        <nav class="nav">
-          <button class="nav__toggle" aria-expanded="false" type="button">
-            <svg class="icon" width="26px" height="26px" tabindex="-1" role="img" aria-labelledby="title">
-                <title id="title">Toggle Menu</title>
-                <use xlink:href="#icon-burger"></use>
-            </svg>
-          </button>
-          <ul class="nav__wrapper">
-              <div class="nav__wrapper__inner">
-            <li class="nav__item"><a href="/">Home</a></li>
-            <li class="nav__item"><a href="/about.html">About</a></li>
-            <li class="nav__item"><a href="/gallary">Gallary</a></li>
-            <li class="nav__item"><a href="/events">Events</a></li>
-            <li class="nav__item"><a href="/contact.html">Contact</a></li>
-        </div>
-          </ul>
-        </nav>
-      </div>
-      <div class="site-header__end">
-        <a class="header-button" href="join.html">
-            Join
-        </a>
-      </div>
-    </div>
-    
-    <div class="js-mobile-nav mobile-nav mobile-nav--right" tabindex="-1">
-        <div class="mobile-nav__inner">
-          <div class="mobile-nav__top">
-            <div class="mobile-nav__logo">
-              <a href="/" class="mobile-nav__logo__psf">         
-                #PSF-EDO3
-            </a>     
-         </div>
-      
-            <button name="button" type="button" class="mobile-nav__close-btn js-mobile-nav__close">
-              <svg class="icon" aria-labelledby="icon-cancel-title" role="img">
-                  <title id="icon-cancel-title">
-                      Close Main Navigation
-                    </title> 
-                    <use xlink:href="#icon-close"></use>
-                 </svg>
-      </button>    
-    </div>
-      
-          <nav aria-label="Main Navigation">
-              <ul class="mobile-nav__items mobile-nav__items--primary" id="DrawerNavPrimaryAccordion">
-                <li>
-                    <a href="/" class="mobile-nav__item mobile-nav__item--primary">
-                        Home
-                    </a>
-                     </li>
-                <li><a href="/about.html" class="mobile-nav__item mobile-nav__item--primary">
-                    About Us
-                </a></li>
-                <li><a href="/contact.html" class="mobile-nav__item mobile-nav__item--primary">
-                    Contact Us
-                </a></li>
-                <li><a href="/gallary.html" class="mobile-nav__item mobile-nav__item--primary">
-                    Visit Gallery
-                </a></li>
-               
-              </ul>
-      
-              <ul class="mobile-nav__items mobile-nav__items--user js-is-initialized" id="DrawerNavSecondaryAccordion">
-                <li><a href="/about/history" class="mobile-nav__item">
-                    Our History&nbsp;<svg width="16px" height="16px" class="icon marketing-nav__external-indicator" aria-hidden="true" focusable="false"> 
-                        <use xlink:href="#modules-nav-external-indicator"></use> 
-                    </svg>
-                </a></li>
-                <li><a href="/family.html" class="mobile-nav__item">
-                    Meet the family
-                </a></li>
-                <li>
-                    <a href="/join.html" class="mobile-nav__item mobile-nav__item--join mobile-nav__button btn btn--small btn--green">
-                        Join The Familly    
-                    </a>
-                </form>
-              </ul>
-      
-             
-          </nav>
-        </div>
-      </div>
-  </header>
-  <!-- Header End -->
-
-      <section class="panel panel--tight section--primary about--heading">
-        <div class="grid">
-          <div class="grid__item">
-            <div class="panel-heading panel-heading--reset">
-              <p class="panel-heading__center h1 about--h1">
-                  Our Blog
-              </p>
-      </div></div></div></section>
+---
+layout: page
+permalink: /blog/
+---
       <div class="breadcrumbs-container">
         <nav aria-label="breadcrumbs" class="breadcrumbs"><ol itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList" role="list">
             <li class="breadcrumbs__item">
@@ -129,9 +21,7 @@
     </nav>
     </div>
 
-      <!-- main content -->
-
-<main id="main" role="main">
+      
     <div class="grid">
           <div class="grid__item">
             <div class="search-wrapper">
@@ -149,137 +39,42 @@
               </form>
             </div>
       
-      <nav id="SidebarAccordion" class="">
-        <div class="preview-links accordion-item--mobile">
+
+      <nav id="" class="">
+        <ul class="preview-links accordion-item--mobile">
           <h3 class="h5 accordion-link">
-            Resources
+            Recent Posts
           </h3>
       
-          <div class="accordion-content">
-              <a href="https://www.shopify.com/blog/trending-products">
+          <li class="accordion-content">
+           {% for post in site.posts %}
+              <a href="{{ post.url }}">
                 <h4 class="link__title">
-                  Trending Products
+            {{ post.title }}
                 </h4>
       
-                  <p class="txt--minor">Start a business selling in-demand products</p>
-      </a>        <a href="https://www.shopify.com/blog/make-money-on-instagram">
-                <h4 class="link__title">
-                  How to Make Money on Instagram
-                </h4>
-      
-                  <p class="txt--minor">Learn how to turn reach into revenue</p>
-      </a>        <a href="https://www.shopify.com/blog/19495812-22-awesome-t-shirt-templates-and-mockups-for-your-clothing-line">
-                <h4 class="link__title">
-                  T-Shirt Mockups &amp; Templates
-                </h4>
-      
-                  <p class="txt--minor">Design and sell t-shirts easily</p>
-      </a>        <a href="https://www.shopify.com/blog/low-investment-business-ideas">
-                <h4 class="link__title">
-                  Business Ideas
-                </h4>
-      
-                  <p class="txt--minor">Find a product or business idea and get started</p>
-      </a>        <a href="https://www.shopify.com/blog/home-business">
-                <h4 class="link__title">
-                  Home Business Ideas
-                </h4>
-      
-                  <p class="txt--minor">Find a business idea and work from anywhere</p>
-      </a>        <a href="https://www.shopify.com/blog/shopify-stores">
-                <h4 class="link__title">
-                  Shopify Store Examples
-                </h4>
-      
-                  <p class="txt--minor">Get inspired and launch your own business</p>
-      </a>        <a href="https://www.shopify.com/blog/ecommerce-business-blueprint">
-                <h4 class="link__title">
-                  Start an Ecommerce Business
-                </h4>
-      
-                  <p class="txt--minor">Practical tips for starting a business from scratch</p>
-      </a>        <a href="https://www.shopify.com/blog/start-online-tshirt-business">
-                <h4 class="link__title">
-                  Start a T-Shirt Business
-                </h4>
-      
-                  <p class="txt--minor">Everything you need to know about selling t-shirts</p>
-      </a>        <a href="https://www.shopify.com/blog/what-is-dropshipping">
-                <h4 class="link__title">
-                  What is Dropshipping?
-                </h4>
-      
-                  <p class="txt--minor">Learn about the dropshipping industry and how it works</p>
-      </a>        <a href="https://www.shopify.com/blog/print-on-demand">
-                <h4 class="link__title">
-                  What is Print on Demand?
-                </h4>
-      
-                  <p class="txt--minor">Sell customized products without holding inventory</p>
-      </a>    </div>
-      </div>
+                  <p class="txt--minor">{{ post.intro }}</p>
+            {% endfor %}
+      </a>          </li>
+      </ul>
       
       
-        <div class="preview-links accordion-item--mobile js-is-active">
-          <h3 class="heading--5 accordion-link">
-            Popular
+        <ul class="preview-links accordion-item--mobile">
+          <h3 class="h5 accordion-link">
+           Popular
           </h3>
       
-          <div class="accordion-content">
-      
-                
-              <a href="h4">
+          <li class="accordion-content">
+           {% for post in site.posts %}
+              <a href="{{ post.url }}">
                 <h4 class="link__title">
-                  Top Trending Product to Sell in 2020 (Updated Annually)
+            {{ post.title }}
                 </h4>
       
-      </a>        <a href="https://www.shopify.com/blog/start-online-tshirt-business">
-                <h4 class="link__title">
-                  How to Start an Online T-Shirt Business: Everything You Need to Know
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/shopify-stores">
-                <h4 class="link__title">
-                  The 50 Best Shopify Stores to Inspire New Entrepreneurs
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/low-investment-business-ideas">
-                <h4 class="link__title">
-                  10 Small Business Ideas You Can Start Online (No Inventory Required)
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/print-on-demand">
-                <h4 class="link__title">
-                  Print on Demand: A Low-Risk Way to Sell Custom T-Shirts, Books, and More
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/19495812-22-awesome-t-shirt-templates-and-mockups-for-your-clothing-line">
-                <h4 class="link__title">
-                  22 Awesome T-Shirt Templates and Mockups for Your Clothing Line
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/ecommerce-business-blueprint">
-                <h4 class="link__title">
-                  How to Start an Ecommerce Business (A Complete Blueprint)
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/make-money-on-instagram">
-                <h4 class="link__title">
-                  How to Make Money on Instagram (Whether You Have 1K or 100K Followers)
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/4660242-what-should-i-name-my-online-store">
-                <h4 class="link__title">
-                  What Should I Name My Online Store?
-                </h4>
-      
-      </a>        <a href="https://www.shopify.com/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell">
-                <h4 class="link__title">
-                  9 Simple Ways to Write Product Descriptions That Sell
-                </h4>
-      
-      </a>    </div>
-      </div>
+                  <p class="txt--minor">{{ post.intro }}</p>
+            {% endfor %}
+      </a>          </li>
+      </ul>
       
       
         
