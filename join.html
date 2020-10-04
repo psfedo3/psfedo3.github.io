@@ -12,9 +12,9 @@ layout: null
 </head>
 <body class="join">
   checking
-  {% assign checkEmail = site.data.seeds | map: "email" %}
+  {% assign checkEmail = site.data.seeds | map: "email" | uniq %}
   {{ checkEmail }}
-  supposed to work
+  supposed to work blab
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
         <div class="modal__header">
           <div class="modal__controls">
