@@ -3,11 +3,31 @@ jekyll_get_json:
     json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
 
 # Site wide configuration
+collections:
+  authors:
+    output: true
+    
 
-title: "My Site"
-description: "This is a description of my awesome site."
-logo: # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      
+      
+title: "Psfedo3"
+description: "RCCG Pastor seeds family of Edo province 3"
+logo: images/psf-navicon.png
 locale: en
 url:
 feed:
