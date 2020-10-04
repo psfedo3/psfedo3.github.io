@@ -10,5 +10,8 @@ permalink: /family/
   <figcaption>{{ site.data.seeds[0].data.firstname }}</figcaption>
 </figure>
 
+{% for seed in site.data.seeds %}
+  hello {{ member[1].firstname }}
+   {% endfor %}
 
 
