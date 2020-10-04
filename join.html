@@ -12,7 +12,7 @@ layout: null
 </head>
 <body class="join">
   checking
-  {% assign checkEmail = site.data.seeds.data | jsonify | find: "data", "email" %}
+  {% assign checkEmail = site.data.seeds.data | jsonify %}
   {{ checkEmail }}
   supposed to work blab
   
