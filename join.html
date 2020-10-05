@@ -12,11 +12,11 @@ layout: null
 </head>
 <body class="join">
   checking
-  {% assign checkEmail = site.data.seeds.data | jsonify %}
+  {% assign checkEmail = site.data.seeds | jsonify %}
   {{ checkEmail }}
-  supposed to work blab
+  supposed to work
   {% for item in checkEmail %}
-      {{ item.email }}
+      {{ item }}
       {% endfor %}
   <br />
   
