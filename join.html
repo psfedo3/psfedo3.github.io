@@ -15,7 +15,9 @@ layout: null
   {% assign checkEmail = site.data.seeds.data | jsonify %}
   {{ checkEmail }}
   supposed to work blab
-  
+  {% for item in checkEmail %}
+      {{ item.email }}
+      {% endfor %}
   <br />
   
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
