@@ -11,13 +11,11 @@ layout: null
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="join">
-  checking
-  
-  <br />
-  supposed to work o
-  {% for item in site.data.seeds | jsonify %}
-      {{ item.data.email }}
+  email list
+  {% for item in site.data.seeds %}
+     email: {{ item.data.email }}
       {% endfor %}
+      <br />
   <br />
   
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
