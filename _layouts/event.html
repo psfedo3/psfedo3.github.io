@@ -1,0 +1,128 @@
+---
+layout: default
+---
+
+<section class="event-header">
+  <div class="event-header__inner">
+    <div class="event-header__masthead">
+      <div class="event-header__tagline">
+        <div>
+          <div>
+            <h1 class="h1 gotham gutter-bottom--lg">
+              Theme: {{ page.title }}
+            </h1>
+            <p class="h4">
+        {{ page.intro }}
+            </p>
+            <ul class="event-header__actions">
+              <li><a href="contact.html">Contact us</a>
+              </li>
+              <li><a href="#speaker">
+                  Speakers
+                </a>
+              </li>
+              <li><a href="#time">
+                  Time & Date
+                </a>
+              </li>
+              <li>
+                <a href="#directions">
+                  Get Directions
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="event-header__illustration">
+        <a href="/events" title="Return back to the Events page">
+          <img src="{{ site.baseurl }}/images/friends.svg" alt="Event illustration" width="250" height="240">
+        </a>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <ol class="c">
+<li class="explanation-wrapper" id="time">
+    <img src="images/event.png" alt="Event Schedule image">
+    <div class="explanation">
+        <h2>The Event Schedule</h2>
+        <p>
+            This event({{ page.type }}) which is scheduled for  <strong>{{ page.event_date }}</strong>, Kicks off at exactly <strong>{{ page.event_time</strong> and its intended to last <span class="small-caps">{{ page.event_duration }}</span> Maximum. 
+        </p>
+        <div class="btn--lined">
+            <a href="#directions" class="btn btn--white btn--white--bordered btn--large">
+                Go Get Directions&nbsp;→
+            </a>
+        </div>
+        <p>
+        </p>
+        
+    </div>
+</li>
+<hr>
+
+<li id="speaker" class="dashboard-membership__desc peek-inside what-members-say next-scroll" id="what-members-say">
+    <h2 class="dashboard-membership__heading">
+        Meet Our Speaker of the day
+    </h2>
+    <div class="dashboard-membership__callout">
+        <div class="dashboard-membership__explanation">
+            <p>“<em>{{ page.speaker_name }}</em>
+           {{ page.speaker_bio }}
+                   ”
+                </p>
+            </div>
+            <div class="dashboard-membership__visuals">
+                <div class="w-64 h-64 bio-image__large rounded-3xl ml-auto mb-5">
+                    <figure role="presentation" class="bio-image bio-image--white">
+                        <a href="{{ page.speaker_link }}" class="bio-image-link">
+                            <div class="bio-image-wrapper">
+                                <img class="bio-image-image" src="{{ page.speaker_avatar }}" alt="{{ page.speaker_name }}">
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+                <div class="membership__visual__focus center padding">
+                    <p><em>{{ page.speaker_name }}</em>,
+                         <a href="{{ page.speaker_link">@{{ page.speaker_handle }}</a>, {{ page.speaker_title }}
+                
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+</li>
+<hr>
+<li class="explanation-wrapper" id="directions">
+    <img src="{{ site.baseurl }}/images/lost.png" alt="Get Directions">
+    <div class="explanation\">
+        <h2>Get Directions!</h2>
+        <p>Wanna Attend this event, But don't know the location?. Don't worry we got you covered. <strong>Get the directions</strong> to this location by simply calling us  <span class="small-caps">right now</span>.
+        </p>
+        <div class="btn--lined">
+            <a href="#0" class="btn btn--white btn--white--bordered btn--large">
+                Call for directions&nbsp;→
+            </a>
+        </div>
+        <p>
+        </p>
+        
+    </div>
+</li>
+</ol>
+
+     <div class="grid">
+     <div class="grid__item">
+      <div class="btn--lined">
+     <a href="#" data-scroll="#top">
+       <button class="btn btn--white btn--white--bordered btn--large">
+            Back to top&nbsp;↑
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
