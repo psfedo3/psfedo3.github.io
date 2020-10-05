@@ -6,24 +6,7 @@ jekyll_get_json:
 collections:
   authors:
     output: true
-    
-
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      
+   
       
 title: "Psfedo3"
 description: "RCCG Pastor seeds family of Edo province 3"
