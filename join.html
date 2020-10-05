@@ -14,9 +14,9 @@ layout: null
   checking
   {% assign checkEmail = site.data.seeds | jsonify %}
   <br />
-  supposed to work
+  supposed to work o
   {% for item in checkEmail %}
-      {{ item[1].email }}
+      {{ item.data }}
       {% endfor %}
   <br />
   
