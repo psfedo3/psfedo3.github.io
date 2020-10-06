@@ -36,7 +36,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-seo-tag
-  - jekyll-compose
   - jekyll-redirect-from
   - jekyll-get-json
 
