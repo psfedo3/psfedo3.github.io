@@ -45,11 +45,11 @@ layout: default
   
   <ol class="c">
 <li class="explanation-wrapper" id="time">
-    <img src="images/event.png" alt="Event Schedule image">
+    <img src="{{ site.baseurl }}images/event.png" alt="Event Schedule image">
     <div class="explanation">
         <h2>The Event Schedule</h2>
         <p>
-            This event({{ page.type }}) which is scheduled for  <strong>{{ page.event_date }}</strong>, Kicks off at exactly <strong>{{ page.event_time</strong> and its intended to last <span class="small-caps">{{ page.event_duration }}</span> Maximum. 
+            This event({{ page.type }}) which is scheduled for  <strong>{{ page.event_date }}</strong>, Kicks off at exactly <strong>{{ page.event_time }}</strong> and its intended to last <span class="small-caps">{{ page.event_duration }}</span> Maximum. 
         </p>
         <div class="btn--lined">
             <a href="#directions" class="btn btn--white btn--white--bordered btn--large">
@@ -79,7 +79,7 @@ layout: default
                     <figure role="presentation" class="bio-image bio-image--white">
                         <a href="{{ page.speaker_link }}" class="bio-image-link">
                             <div class="bio-image-wrapper">
-                                <img class="bio-image-image" src="{{ page.speaker_avatar }}" alt="{{ page.speaker_name }}">
+                                <img class="bio-image-image" src="{{ site.baseurl }}/{{ page.speaker_avatar }}" alt="{{ page.speaker_name }}">
                             </div>
                         </a>
                     </figure>

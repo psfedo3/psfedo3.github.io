@@ -2,15 +2,24 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-
-<p>
-  {{ page.date | date_to_string }}
   {% assign author = site.authors | where: 'name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
+    {% if author %}
+     <a href="{{ author.url }}">{{ author.name }}</a>
+
+    <div class="mb-5">
+       <div class="l-author-bio">
+     <div class="w-64 h-64 bio-image__large rounded-3xl mb-5">
+      <figure role="presentation" class="bio-image">
+    
+       <a href="{{ author.url }}" class="bio-image-link">
+                        <div class="bio-image-wrapper">
+                          <img class="bio-image-image" src="{{ author.avatar }}" loading="lazy" alt="Rachel Andrew"></div></a></figure></div><div class="l-author-bio-content author__desc" id="author__desc"><h3 class="author__desc__title">About The Author</h3><p> {{ author.bio }}
+               <a href="{{ author.url }}" class="show-more-link">More about
+               <span> {{ author.name }}
+               </span>…</a></p></div></div></div>
+       {% endif %}
+  {{ page.date | date_to_string }}
+<h1>{{ page.title }}</h1>
 
 {{ content }}
 
