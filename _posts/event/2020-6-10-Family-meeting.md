@@ -12,4 +12,5 @@ speaker_title: Zonal Pastor
 speaker_bio: Pastor John Doe is full pastor and the Pastor in charge of Excellent Zone parish and also a special assistant to G.O
 speaker_avatar: {{ site.baseurl }}/images/event-speakers/pastor.jpg
 speaker_handle: JohnDoe
+categories: event
 --- 
