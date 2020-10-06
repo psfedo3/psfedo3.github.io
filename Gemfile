@@ -13,7 +13,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-paginate-v2"
   gem "jekyll-seo-tag"
-  gem "jekyll-compose", "~> 0.5"
   gem "jekyll-redirect-from"
   gem "jekyll-get-json"
 end
