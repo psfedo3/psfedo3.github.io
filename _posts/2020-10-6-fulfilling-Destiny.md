@@ -1,6 +1,6 @@
 ---
 layout: event
-title: You're up and running!
+title: Fulfilling purpose
 intro: Learn about your purpose in live, how to recover lost purpose and how you can fulfill purpose in today's world
 type: Family meeting
 event_date: 7 October, 2020
