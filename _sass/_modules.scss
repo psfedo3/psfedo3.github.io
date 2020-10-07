@@ -165,7 +165,7 @@
 
 
 .panel--reset {
-    padding: 4em 0;
+    padding: 0 0;
 }
 .panel-gutter-bottom {
     margin-bottom: 2.8125em;
@@ -427,24 +427,95 @@ font-family: Gotham Rounded;
 /* pagination */
 
 .pagination {
-    padding-top: 16px;
-    text-align: center;
-
-    li {
-    display: inline-block;
-    padding: 1px;
-}
+    margin:0;
+    margin:2.5em auto 3em;
+    text-align:center;
+   }
+   .pagination ul {
+    margin:0 auto;
+    padding:0;
+    list-style:none;
+    display:inline-block;
 
     a {
-        display: inline-block;
-        padding: 10px;
-        transition: color 300ms ease;
-        color: $color-primary;
+        padding: 10px 0;
     }
-
-    
-}
-
-/* colors */
-
-
+   }
+   .pagination ul:after,
+   .pagination ul:before {
+    content:' ';
+    display:table;
+    clear:both
+   }
+   .pagination ul li {
+    float:left;
+    flex:1;
+    margin:.5em;
+    padding:0;
+    text-align:center;
+    border-radius:11px;
+    border:1px solid #ddd;
+    width:2.5em;
+    height:2.5em;
+    color:#333;
+    font-weight:700;
+   }
+   
+   .pagination ul li a {
+    text-shadow:none;
+    background:0 0;
+    border-radius:11px;
+    display:block;
+    width:100%;
+    height:100%;
+    color:inherit;
+    text-shadow:none;
+    background:0 0;
+    transition:all .2s ease-in-out;
+    text-decoration: none;
+   }
+   .pagination ul li a:focus,
+   .pagination ul li a:hover {
+    background: $color-primary;
+    color:#fff;
+    border-color: $color-primary
+   }
+   .pagination ul li a:focus svg,
+   .pagination ul li a:hover svg {
+    fill:#fff;
+    stroke:#fff
+   }
+   .pagination ul li.pagination__ellipsis {
+    padding:.25em
+   }
+   .pagination ul li.pagination__current {
+    padding:.5em;
+    background:#ddd;
+    border-color:#ddd;
+    word-break:keep-all
+   }
+   .pagination ul li.pagination__current a:focus,
+   .pagination ul li.pagination__current a:hover {
+    background:#ddd;
+    color:#000
+   }
+   .pagination__next a,
+   .pagination__prev a {
+    padding:0
+   }
+   .pagination__next a svg,
+   .pagination__prev a svg {
+    display:inline;
+    fill:#333;
+    stroke:#333
+   }
+   @media (max-width:40em) {
+    .pagination li {
+     display:none
+    }
+    .pagination li.pagination__current,
+    .pagination li.pagination__next,
+    .pagination li.pagination__prev {
+     display:inline
+    }
+   }
