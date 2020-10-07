@@ -10,6 +10,7 @@ speaker_link: "https://fb.com/me"
 speaker_handle: "@fbme"
 speaker_title: "PICP" 
 categories: events
+avatar: images/speakers/pastor.jpg
 intro: >
   Learn how, why to discover and recover any kind of lost destiny
 speaker_bio: >
