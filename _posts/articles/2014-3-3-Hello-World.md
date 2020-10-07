@@ -2,6 +2,7 @@
 layout: post
 title: You're up and running!
 author: Spruce
+categories: articles
 intro: >
   Welcome to the official RCCG Edo province 3 pastor seeds family
 ---
