@@ -1,5 +1,6 @@
 ---
 name: Psfedo3
+layout: author
 position: Site Maintenance
 avatar: images/path
 twitter: https://twitter.com/psfedo3

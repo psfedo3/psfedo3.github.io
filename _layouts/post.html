@@ -2,10 +2,11 @@
 layout: default
 ---
 
+<article class="grid">
+  <div class="grid__item">
+    
   {% assign author = site.authors | where: 'name', page.author | first %}
     {% if author %}
-     <a href="{{ author.url }}">{{ author.name }}</a>
-
     <div class="mb-5">
        <div class="l-author-bio">
      <div class="w-64 h-64 bio-image__large rounded-3xl mb-5">
@@ -25,3 +26,5 @@ layout: default
 
   {% include disqus.html %}
 
+  </div>
+  </article>

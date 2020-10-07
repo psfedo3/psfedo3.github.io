@@ -1,7 +1,8 @@
 ---
+layout: author
 name: Spruce
 position: Editor
-avatar: images/path
+avatar: images/authors/spruce.jpg
 department: Anchor
 twitter: https://twitter.com/psfedo3
 facebook: https://facebook.com/psfedo3
