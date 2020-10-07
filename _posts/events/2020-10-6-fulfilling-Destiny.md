@@ -9,6 +9,7 @@ speaker_name: "Pastor John Doe"
 speaker_link: "https://fb.com/me"
 speaker_handle: "@fbme"
 speaker_title: "PICP" 
+categories: events
 intro: >
   Learn how, why to discover and recover any kind of lost destiny
 speaker_bio: >
