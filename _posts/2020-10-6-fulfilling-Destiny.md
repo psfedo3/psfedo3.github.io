@@ -11,5 +11,7 @@ speaker_handle: "@fbme"
 speaker_title: "PICP" 
 intro: >
   Learn how, why to discover and recover any kind of lost destiny
+speaker_bio: >
+  Pastor John Doe is the pastor in charge of excellent zone parish and also the speaker of this program
 ---
 
