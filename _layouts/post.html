@@ -15,7 +15,7 @@ layout: default
     
        <a href="{{ author.url }}" class="bio-image-link">
                         <div class="bio-image-wrapper">
-                          <img class="bio-image-image" src="{{ author.avatar }}" loading="lazy" alt="Rachel Andrew"></div></a></figure></div><div class="l-author-bio-content author__desc" id="author__desc"><h3 class="author__desc__title">About The Author</h3><p> {{ author.bio }}
+                          <img class="bio-image-image" src="{{ site.baseurl }}/{{ author.avatar }}" loading="lazy" alt="{{ author.name }}"></div></a></figure></div><div class="l-author-bio-content author__desc" id="author__desc"><h3 class="author__desc__title">About The Author</h3><p> {{ author.bio }}
                <a href="{{ author.url }}" class="show-more-link">More about
                <span> {{ author.name }}
                </span>…</a></p></div></div></div>
