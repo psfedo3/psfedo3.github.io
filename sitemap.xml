@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/authors/Psfedo3.html</loc>
-<lastmod>2020-10-07T23:11:12+00:00</lastmod>
+<lastmod>2020-10-07T23:23:47+00:00</lastmod>
 </url>
 <url>
 <loc>/authors/Spruce.html</loc>
-<lastmod>2020-10-07T23:11:12+00:00</lastmod>
+<lastmod>2020-10-07T23:23:47+00:00</lastmod>
 </url>
 <url>
 <loc>/articles/2014/03/03/Hello-World.html</loc>
@@ -17,7 +17,7 @@
 <lastmod>2020-10-06T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/about/</loc>
+<loc>/blog/</loc>
 </url>
 <url>
 <loc>/contact/</loc>
