@@ -1,0 +1,109 @@
+---
+layout: page
+title: Journal
+permalink: /blog/
+---
+      <div class="breadcrumbs-container">
+ {% include breadcrumbs.html %}
+    </div>
+
+      
+    <div class="grid">
+          <div class="grid__item">
+            <div class="search-wrapper">
+              <form class="search-form" action="/blog/search" accept-charset="UTF-8" method="get" __bizdiag="113" __biza="W___">
+
+                <label class="input-wrapper">
+                  <span class="form-label form-label--hidden sr-only">
+                    Search articles
+                  </span>
+                  <input class="form-input search-form__input" id="SidebarSearch" placeholder="Search articles" type="search" name="q"><span class="marketing-form__messages"></span></label>
+              
+                <button type="submit" class="search-form__submit">
+                  <span class="sr-only">Search</span>
+                </button>
+              </form>
+            </div>
+      
+
+      <nav id="" class="">
+        <ul class="preview-links accordion-item--mobile">
+          <h3 class="h5 accordion-link">
+            Recent Posts
+          </h3>
+      
+          <li class="accordion-content">
+           {% for post in site.posts %}
+              <a href="{{ post.url }}">
+                <h4 class="link__title">
+            {{ post.title }}
+                </h4>
+      
+                  <p class="txt--minor">{{ post.intro }}</p>
+            {% endfor %}
+      </a>          </li>
+      </ul>
+      
+      
+   
+      
+        
+      </nav>
+      
+      <nav aria-label="Pagination">
+        <ul class="pagination">
+      
+          <li class="pagination__numbered-links">
+            <ul>
+                <li class="pagination__current-page">
+                  1
+                </li>
+                <li class="">
+                  <a aria-label="Go to page 2" href="https://www.shopify.com/blog?page=2">2</a>
+                </li>
+                <li class="">
+                  <a aria-label="Go to page 3" href="https://www.shopify.com/blog?page=3">3</a>
+                </li>
+            </ul>
+          </li>
+      
+            <li class="pagination__next">
+              <a aria-label="Continue to page 2" href="https://www.shopify.com/blog?page=2">Next ›</a>
+            </li>
+        </ul>
+      </nav>
+
+
+      <div class="subscribe subscribe--centered subscribe--padded js-subscribe gutter-bottom blog__subscribe">
+        <div class="subscribe__content-wrapper">
+          <div class="subscribe__content">
+            <svg class="icon icon--small icon--fill-white subscribe__icon" aria-hidden="true" focusable="false"> 
+              <use xlink:href="#icon-doc"></use> 
+            </svg>
+            <h3 class="subscribe__heading color-white">
+              Subscribe to our newsletter.
+            </h3>
+            <p class="subscribe__subhead color-white">
+              Get our blog post and relevant events delevared to you email.
+            </p>
+            <form class="marketing-form marketing-form--inline subscribe__form" novalidate="novalidate" action="/content-services/subscribers" accept-charset="UTF-8" method="post" __bizdiag="-1523980688" __biza="W___">
+              <div class="input-wrapper input-button-pair">
+                <div class="input-button-pair__field-wrapper">
+                  <label class="input-label label--in-field input-label--floating input-button-pair__label" for="SubscribeEmail-d104">
+                    Email address
+                  </label>
+                  <input placeholder="Email address" name="email" id="SubscribeEmail-d104" autocomplete="email" class="input-button-pair__input form-input form-input--floating subscribe__email" type="email">
+                  <button class="form-button form__button input-button-pair__button subscribe__submit" name="button" type="submit">
+                    Subscribe
+                  </button>
+                </div>
+                <span class="marketing-form__messages"></span>
+              </div>
+              </form>
+    <p class="subscribe__disclaimer gutter-bottom--reset">
+      No charge. Unsubscribe anytime.
+    </p>
+  </div>
+</div></div>
+      </div>
+        </div>
