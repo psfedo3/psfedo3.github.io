@@ -1,9 +1,6 @@
 ---
 layout: page
 title: Journal
-  pagination:
-  enabled: true
-  category: articles
   
 ---
       <div class="breadcrumbs-container">
@@ -14,7 +11,7 @@ title: Journal
       
     <section class="panel panel--reset">
         <div class="grid">
-   {% for post in paginator.posts %}
+   {% for post in site.posts %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
             <article class="article--post">
