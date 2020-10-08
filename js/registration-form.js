@@ -2,23 +2,21 @@
 layout: blank
 ---
 
- {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
-const email = document.getElementById("email");
-var emailValue = email.value;
 
-let inputField = document.querySelector('.form__field__input');
-email.addEventListener("input", function(event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("Sorry your email should contain an @");
-  } else {
-    email.setCustomValidity("");
+
+{% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
+ var emailArray = {{ emails }};
+function validateForm() {
+  var email = document.getElementById("email").value;
+    if (emailArray.includes(email)) {
+    alert("This Email has already been used by another seed");
+    return false;
   }
- {% if emails contains emailValue %}
- email.setCustomValidity("Sorry The Email you entered as been used before(Perhaps by your Evil Twin)");
- {% endif %}
+}
 
-});
-
+ 
+ 
+let inputField = document.querySelector('.form__field__input');
 inputField.addEventListener('input', function(event) {
   var floated = document.querySelectorAll('.form__field--floating');
   for (i = 0; i < floated.length; i++) {

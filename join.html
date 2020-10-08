@@ -31,8 +31,8 @@ layout: default
 
     <form action="https://getsimpleform.com/messages?form_api_token=ce66fa5c102692dd1bffc621c0cc288f"
     method="POST"
-    enctype="multipart/form-data" class="auth__modal__form">
-      <input type="hidden" name="redirect_to" value="{{ site.baseurl }}/thanks.html" />
+    enctype="multipart/form-data" onsubmit="return validateForm()" class="auth__modal__form">
+      <input type="hidden" name="redirect_to" value="https://psfedo3.github.com/thanks.html" />
       
                 <fieldset>
      <legend class="membership-checkout__hint membership-checkout__hint--personal">
