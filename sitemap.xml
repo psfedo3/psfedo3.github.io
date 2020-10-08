@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/authors/Psfedo3.html</loc>
-<lastmod>2020-10-08T11:24:02+00:00</lastmod>
+<loc>/authors/Psfedo3/</loc>
+<lastmod>2020-10-08T11:35:12+00:00</lastmod>
 </url>
 <url>
-<loc>/authors/Spruce.html</loc>
-<lastmod>2020-10-08T11:24:02+00:00</lastmod>
+<loc>/authors/Spruce/</loc>
+<lastmod>2020-10-08T11:35:12+00:00</lastmod>
 </url>
 <url>
-<loc>/articles/2014/03/03/Hello-World.html</loc>
+<loc>/2014/03/</loc>
 <lastmod>2014-03-03T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/events/2020/10/06/fulfilling-Destiny.html</loc>
+<loc>/2020/10/</loc>
 <lastmod>2020-10-06T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -32,7 +32,7 @@
 <loc>/</loc>
 </url>
 <url>
-<loc>/join.html</loc>
+<loc>/join/</loc>
 </url>
 <url>
 <loc>/thank/</loc>
