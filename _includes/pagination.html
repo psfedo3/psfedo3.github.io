@@ -1,26 +1,17 @@
 
-  
         <nav class="pagination col col-12">
           <ul>
-       {% if paginator.page == 1 %}
-            <li class="pagination__current">
-              1
-            </li>
-      {% else %}
-               <li>
-                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-        {{ paginator.page }}
-                 </a>
-               </li>
-       {% endif %}
-   
 {% if paginator.page_trail %}
             {% for trail in paginator.page_trail %}
-            <li {% if page.url == trail.path %}class="selected" {% endif %}>
+            <li {% if page.url == trail.path %}class="pagination__current" {% endif %}>
               <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
             </li>
             {% endfor %}
             {% endif %}
+            
+          <li class="pagination__ellipsis">
+              ...
+            </li>
     {% if paginator.next_page %}
             <li class="pagination__next">
               <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
@@ -33,4 +24,4 @@
       {% endif %}
           </ul>
         </nav>
-          
+           {% endif %} 
