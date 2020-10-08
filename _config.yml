@@ -2,12 +2,12 @@ jekyll_get_json:
   - data: seeds
     json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
 
-
+permalink: /:year/:month/
 # Pagination Settings
 pagination:
   enabled: true
   per_page: 2
-  permalink: '/page/:num/'
+  permalink: '/blog/:num/'
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
