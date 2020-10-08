@@ -21,7 +21,7 @@
             </li>
             {% endfor %}
             {% endif %}
-       {% if paginator.next_page %
+    {% if paginator.next_page %}
             <li class="pagination__next">
               <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
                 <svg viewBox="0 0 100 100" width="20" height="20" tabindex="-1" role="img" aria-labelledby="title">
