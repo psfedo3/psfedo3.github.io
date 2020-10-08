@@ -4,7 +4,7 @@ title: Journal
 permalink: /blog/
 pagination:
   enabled: true
-  category: cars
+  category: articles
   permalink: /:num/
   sort_field: 'title'
   sort_reverse: false
@@ -17,8 +17,7 @@ pagination:
       
     <section class="panel panel--reset">
         <div class="grid">
-   {% for category in site.categories %}
-   {% for post in category.articles %}
+   {% for post in paginator.post %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
             <article class="article--post">
@@ -75,7 +74,6 @@ pagination:
             </p>
         </div>
     </article>
-     {% endfor %}
      {% endfor %}
      {% include pagination.html %}
  </div>
