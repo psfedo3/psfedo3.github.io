@@ -7,7 +7,6 @@ jekyll_get_json:
 pagination:
   enabled: true
   per_page: 5
-  permalink: '/blog/page:num/'
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
