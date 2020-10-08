@@ -2,6 +2,17 @@ jekyll_get_json:
   - data: seeds
     json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
 
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 # Site wide configuration
 collections:
   authors:

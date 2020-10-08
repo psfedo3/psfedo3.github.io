@@ -2,6 +2,12 @@
 layout: page
 title: Journal
 permalink: /blog/
+pagination:
+  enabled: true
+  category: cars
+  permalink: /:num/
+  sort_field: 'title'
+  sort_reverse: false
 ---
       <div class="breadcrumbs-container">
  {% include breadcrumbs.html %}
@@ -11,7 +17,8 @@ permalink: /blog/
       
     <section class="panel panel--reset">
         <div class="grid">
-   {% for category in site.categories.articles %}
+   {% for category in site.categories %}
+   {% for post in category.articles %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
             <article class="article--post">
@@ -69,7 +76,7 @@ permalink: /blog/
         </div>
     </article>
      {% endfor %}
-     
+     {% endfor %}
      {% include pagination.html %}
  </div>
      </section>
