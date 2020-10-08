@@ -1,4 +1,11 @@
+---
+layout: blank
+---
+
+ {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
 const email = document.getElementById("email");
+var emailValue = email.value;
+
 let inputField = document.querySelector('.form__field__input');
 email.addEventListener("input", function(event) {
   if (email.validity.typeMismatch) {
@@ -6,6 +13,10 @@ email.addEventListener("input", function(event) {
   } else {
     email.setCustomValidity("");
   }
+ {% if emails contains emailValue %}
+ email.setCustomValidity("Sorry The Email you entered as been used before(Perhaps by your Evil Twin)");
+ {% endif %}
+
 });
 
 inputField.addEventListener('input', function(event) {
