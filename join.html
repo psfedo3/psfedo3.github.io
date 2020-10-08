@@ -1,22 +1,9 @@
 ---
-layout: null
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Family</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body class="join">
-  email list
-  {% for item in site.data.seeds %}
-     email: {{ item.data.email }}
-      {% endfor %}
-      <br />
-  <br />
+  
  
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
         <div class="modal__header">
@@ -109,9 +96,9 @@ layout: null
                                 Email
                             </label>
                             <div class="input-wrapper">
-    {% for emails in site.data.seeds.data %}
+    
      <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="" required>
-     {% endfor %}
+   
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating field--half">
@@ -238,10 +225,3 @@ layout: null
 </body>
 
 <script src="js/registration-form.js"></script>
-<svg width="0" height="0" style="display:none" xmlns="http://www.w3.org/2000/">
-    <symbol id="icon-cancel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11.414 10l6.293-6.293c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L10 8.586 3.707 2.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L8.586 10l-6.293 6.293c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L10 11.414l6.293 6.293c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L11.414 10z"></path></svg>
-  </symbol>
-
-    </svg>
-    
-</html>
