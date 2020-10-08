@@ -2,10 +2,10 @@
 layout: default
 ---
 
+  {% include breadcrumbs.html %}
 <section class="panel panel--tight">
 <article class="grid">
   <div class="grid__item">
-  {% include breadcrumbs.html %}
   {% assign author = site.authors | where: 'name', page.author | first %}
     {% if author %}
     <div class="mb-5">
