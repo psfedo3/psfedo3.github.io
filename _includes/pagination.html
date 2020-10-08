@@ -1,45 +1,36 @@
-          {% if paginator.total_pages > 1 %}
-   <ul class="pager">
-     {% if paginator.previous_page %}
-     <li class="previous">
-       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-     </li>
-     {% endif %}
-     {% if paginator.next_page %}
-     <li class="next">
-       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-     </li>
-     {% endif %}
-   </ul>
-              {% endif %} 
-              
-          {% if paginator.total_pages > 1 %}
+
+  
         <nav class="pagination col col-12">
           <ul>
+       {% if paginator.page == 1 %}
             <li class="pagination__current">
               1
             </li>
-            <li>
-              <a href="/author/rachel-andrew/page/2/">
-                2
-              </a>
+      {% else %}
+               <li>
+                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }">
+        {{ paginator.page }}
+                 </a>
+               </li>
+       {% endif %}
+   
+{% if paginator.page_trail %}
+            {% for trail in paginator.page_trail %}
+            <li {% if page.url == trail.path %}class="selected" {% endif %}>
+              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
             </li>
-            <li>
-              <a href="/author/rachel-andrew/page/3/">
-                3
-              </a>
-            </li>
-            <li class="pagination__ellipsis">
-              ...
-            </li>
+            {% endfor %}
+            {% endif %}
+       {% if paginator.next_page %
             <li class="pagination__next">
-              <a href="/author/rachel-andrew/page/2/">
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
                 <svg viewBox="0 0 100 100" width="20" height="20" tabindex="-1" role="img" aria-labelledby="title">
                   <title>Next</title>
                   <path d="M10 50l50 50L70 90 30 50 70 10 60 0z" transform="translate(0 0) rotate(180 50 50)"></path>
                 </svg>
               </a>
             </li>
+      {% endif %}
           </ul>
         </nav>
-           {% endif %} 
+          
