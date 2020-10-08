@@ -7,10 +7,11 @@ permalink: /blog/
  {% include breadcrumbs.html %}
     </div>
 
+
       
     <section class="panel panel--reset">
         <div class="grid">
-   {% for post in site.posts %}
+   {% for category in site.categories.articles %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
             <article class="article--post">
@@ -68,5 +69,7 @@ permalink: /blog/
         </div>
     </article>
      {% endfor %}
+     
+     {% include pagination.html %}
  </div>
      </section>
