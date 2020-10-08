@@ -7,11 +7,14 @@ jekyll_get_json:
 pagination:
   enabled: true
   per_page: 5
-  permalink: '/page/:num/'
+  permalink: '/blog/page:num/'
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+  trail: 
+      before: 2
+      after: 2
 
 # Site wide configuration
 collections:
