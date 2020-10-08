@@ -15,7 +15,7 @@ permalink: /Journal/
       
     <section class="panel panel--reset">
         <div class="grid">
-   {% for post in paginator.post %}
+   {% for post in paginator.posts %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
             <article class="article--post">
