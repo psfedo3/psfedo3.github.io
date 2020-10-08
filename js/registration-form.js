@@ -1,18 +1,16 @@
- 
-const email = document.getElementById("email");
-var emailValue = email.value;
 
-let inputField = document.querySelector('.form__field__input');
-email.addEventListener("input", function(event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("Sorry your email should contain an @");
-  } else {
-    email.setCustomValidity("");
+ var emailArray = [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;];
+function validateForm() {
+  var email = document.getElementById("email").value;
+    if (emailArray.includes(email)) {
+    alert("This Email has already been used by another seed");
+    return false;
   }
+}
+
  
-
-});
-
+ 
+let inputField = document.querySelector('.form__field__input');
 inputField.addEventListener('input', function(event) {
   var floated = document.querySelectorAll('.form__field--floating');
   for (i = 0; i < floated.length; i++) {
