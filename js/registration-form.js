@@ -1,4 +1,7 @@
+ 
 const email = document.getElementById("email");
+var emailValue = email.value;
+
 let inputField = document.querySelector('.form__field__input');
 email.addEventListener("input", function(event) {
   if (email.validity.typeMismatch) {
@@ -6,6 +9,8 @@ email.addEventListener("input", function(event) {
   } else {
     email.setCustomValidity("");
   }
+ 
+
 });
 
 inputField.addEventListener('input', function(event) {
