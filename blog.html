@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Journal
-  
+pagination:
+  enabled: true
 ---
       <div class="breadcrumbs-container">
  {% include breadcrumbs.html %}
@@ -11,7 +12,7 @@ title: Journal
       
     <section class="panel panel--reset">
         <div class="grid">
-   {% for post in site.posts %}
+   {% for post in paginator.posts %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
             <article class="article--post">
