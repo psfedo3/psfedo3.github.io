@@ -163,12 +163,13 @@
   
  
  
- [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;]
+ [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;]
  <script type="text/javascript" charset="utf-8">
-   function validateForm() {
-   var email = document.getElementById("email").value;
-    var emailArray = [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;];
+ var email = document.getElementById("email").value;
+ alert(email);
+ var emailArray = [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;];
  alert(emailArray);
+   function validateForm() {
    if (emailArray.includes(email)) {
    alert("This Email has already been used by another seed");
    return false;
