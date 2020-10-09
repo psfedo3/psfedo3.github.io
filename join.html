@@ -6,8 +6,11 @@ layout: default
   
  
 
+ {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
+ 
+ <script>
+  document.write( {{ emails }} );
 
- <script type="text/javascript" charset="utf-8">
  var email = document.getElementById("email").value;
  alert(email);
  var emailArray = {{ emails }};

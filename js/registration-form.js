@@ -1,9 +1,3 @@
----
-layout: blank
----
-
- {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
- document.write( {{ emails }} );
 
 let inputField = document.querySelector('.form__field__input');
 inputField.addEventListener('input', function(event) {
