@@ -5,6 +5,8 @@ author: Spruce
 categories: articles
 intro: >
   Welcome to the official RCCG Edo province 3 pastor seeds family
+comments: true
+comments_locked: true
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
