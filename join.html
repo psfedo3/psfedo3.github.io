@@ -8,10 +8,11 @@ layout: default
  {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
  {{ emails }}
  <script type="text/javascript" charset="utf-8">
-   function validateForm() {
-   var email = document.getElementById("email").value;
-    var emailArray = {{ emails }};
+ var email = document.getElementById("email").value;
+ alert(email);
+ var emailArray = {{ emails }};
  alert(emailArray);
+   function validateForm() {
    if (emailArray.includes(email)) {
    alert("This Email has already been used by another seed");
    return false;
