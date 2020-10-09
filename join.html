@@ -5,6 +5,20 @@ layout: default
 <body class="join">
   
  
+ {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
+ {{ emails }}
+ <script type="text/javascript" charset="utf-8">
+   function validateForm() {
+   var email = document.getElementById("email").value;
+    var emailArray = {{ emails }};
+ alert(emailArray);
+   if (emailArray.includes(email)) {
+   alert("This Email has already been used by another seed");
+   return false;
+   }
+   }
+ </script>
+ 
     <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
         <div class="modal__header">
           <div class="modal__controls">
