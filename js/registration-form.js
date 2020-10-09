@@ -1,29 +1,11 @@
 
- var emailArray = [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;];
-function validateForm() {
-  var email = document.getElementById("email").value;
-    if (emailArray.includes(email)) {
-    alert("This Email has already been used by another seed");
-    return false;
-  }
-}
-
- 
- 
 let inputField = document.querySelector('.form__field__input');
 inputField.addEventListener('input', function(event) {
   var floated = document.querySelectorAll('.form__field--floating');
   for (i = 0; i < floated.length; i++) {
-    floated[i].classList.add('is-active');
+    floated.classList.add('is-active');
   }
 })
-
-
-
-
-
-
-
 
 
 
