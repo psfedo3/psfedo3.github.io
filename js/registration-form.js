@@ -1,5 +1,3 @@
- 
- document.write( [&quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;, &quot;sprucekhalifa3@gmail.com&quot;] );
 
 let inputField = document.querySelector('.form__field__input');
 inputField.addEventListener('input', function(event) {
