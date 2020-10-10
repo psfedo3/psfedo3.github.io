@@ -29,6 +29,14 @@ url:
 feed:
   path: atom.xml
 
+# repo
+repository: "psfedo3/psfedo3.github.io"
+url: "https://psfedo3.github.io"
+
+# Staticman comments (full configuration in staticman.yml)
+staticman:
+  branch: "source"
+
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
