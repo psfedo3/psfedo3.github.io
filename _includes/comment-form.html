@@ -1,38 +1,71 @@
 {% unless page.comments_locked == true %}
   <!-- Start comment form -->
   <div id="respond" class="comment__form">
-    <h2 class="title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" style="display:none;">Cancel reply</a></small></h2>
-    <form id="comment-form" class="js-form" method="post" action="https://api.staticman.net/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
-      <div class="form__group">
-        <label for="comment-form-name">Name
-          <input type="text" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
-        </label>
-        <label for="comment-form-email">E-mail
-          <input type="email" id="comment-form-email" name="fields[email]" required spellcheck="false" placeholder="email@domain.com">
-        </label>
-        <label for="comment-form-url">Website (optional)
-          <input type="url" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
-        </label>
+    <a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" style="display:none;">Cancel reply</a></small></h2>
+      <form id="comment-form" class="js-form" method="post" action="https://api.staticman.net/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+      <h4 class="article__comments__form__desc">
+        Leave a comment
+    </h4>
+    <small class="article__comments--notes">
+        <span>Comments
+         are moderated and will only be made live if they add to the discussion 
+        in a constructive way. If you disagree with a point, be polite. This 
+        should be a conversation between professional people with the aim that 
+        we all learn. If your comment is about a typo, problem with the website 
+        or anything else, please use our <a href="https://www.smashingmagazine.com/contact/">contact form</a>.
+        <br><br>We use <em>GitHub Flavored Markdown</em> for comments. E.g., you can call out code or a command within a sentence with single backticks (<code>`command`</code>). To format code into its own distinct block, please use triple 
+        backticks (<code>```code&nbsp;block```</code>).</span></small>
+        <div class="comment__message-field">
+            <div class="comment__reply-to-container">
+      <label class="form__field blurred comment__message-field form__field--floating comment__message-field">
+     <label for="comment-form-message" class="form__field__label">
+          Your message
+          </label>
+      <div class="input-wrapper">
+<textarea label="Your message" type="textarea" class="" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message">
+
+            </textarea>
       </div>
-      <div class="form__group">
-        <label for="comment-form-message">Comment
-          <textarea rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message"></textarea>
-        </label>
-      </div>
-      <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
-      <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
-      <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
-      <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
-      <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
-      <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
-      <!-- Start comment form alert messaging -->
-      <div class="hidden js-notice notice">
-        <p class="js-notice-text"></p>
-      </div>
-      <!-- End comment form alert messaging -->
-      <div class="g-recaptcha form__group" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-      <button type="submit" id="comment-form-submit">Send comment</button>
-    </form>
+          </label>
+            </div>
+        </div>
+     <label class="form__field blurred comment__name-field form__field--floating comment__name-field">
+   <label for="comment-form-name" class="form__field__label">
+         Your (real) name</label>
+     <div class="input-wrapper">
+      <input label="Your (real) name" class="form__field__input" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
+                </div>
+            </label>
+       <label class="form__field blurred comment__twitter-field form__field--floating comment__twitter-field">
+        <label for="comment-form-email" class="form__field__label">
+                    Your Email
+                </label>
+                <div class="input-wrapper">
+        <input label="Your Email" class="form__field__input" type="email" id="comment-form-email" name="fields[email]" required spellcheck="false" placeholder="email@domain.com">
+                </div>
+            </label>
+       <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
+       <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
+       <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+       <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+       <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
+       <!-- Start comment form alert messaging -->
+       <div class="hidden js-notice notice">
+         <p class="js-notice-text"></p>
+       </div>
+       <!-- End comment form alert messaging -->
+       <div class="g-recaptcha form__group" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+       
+            <div class="btn--lined">
+       <button class="btn btn--green btn--large">
+        <span class="ladda-label">
+         <span class="ladda-label">
+                            Post Comment</span>
+                        </span>
+                    </button>
+                </div>
+            </form>
   </div>
   <!-- End comment form -->
   <script async src="https://www.google.com/recaptcha/api.js"></script>
@@ -42,3 +75,5 @@
     <p>If you have a question concerning the content of this page, please feel free to <a href="/contact/">contact me</a>.</p>
   </div>
 {% endunless %}
+
+
