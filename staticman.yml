@@ -10,14 +10,14 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "url", "message", "replying_to"]
+  allowedFields: ["name", "email", "url", "message"]
 
   # (*) REQUIRED WHEN USING NOTIFICATIONS
   #
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted. The origin is sent as part as the `options` object
   # (e.g. <input name="options[origin]" value="http://yourdomain.com/post1")
-  allowedOrigins: ["psfedo3.github.io"]
+  allowedOrigins: ["psdedo3.github.io]
 
   # (*) REQUIRED
   #
@@ -66,9 +66,9 @@ comments:
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
   # with Mailgun, which you can get for free at http://mailgun.com.
-  #notifications:
+ # notifications:
     # Enable notifications
-    #enabled: true
+   # enabled: true
 
     # (!) ENCRYPTED
     #
@@ -78,7 +78,8 @@ comments:
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-   # domain: "
+    #domain: 
+  
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
@@ -94,7 +95,7 @@ comments:
     email: md5
 
   # reCaptcha
- # reCaptcha:
-   # enabled: true
-  #  siteKey: ""
-   # secret: "/
+  reCaptcha:
+    enabled: true
+    siteKey: "6Ldty9UZAAAAAEfaHK-JDfrUeMLX_YhWMshU2gnG"
+    secret: "hg7MBRwH0yuJQDJOKCH9PADn+FfbVXV4hAGJIO3NEueFiCtDKwiiJDTJtZESX5PiPIjEg0U+xd4quipPfKjnA0JGD9p1kq5F9yMIFAf440KeUIMmhWuOhKaIG8qBe13syB0CmAgAeqi3Vzy5/+ThxZPu5k/SZkrmFuo7IydJEpU="
