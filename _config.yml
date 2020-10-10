@@ -98,3 +98,7 @@ exclude:
   - package.json
   - spec
   - tmp
+
+reCaptcha:
+  siteKey: "6Ldty9UZAAAAAEfaHK-JDfrUeMLX_YhWMshU2gnG"
+  secret: "6Ldty9UZAAAAAJ12DkqKDVOgW0kznlGvBcvNHZ9G"
