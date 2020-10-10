@@ -1181,7 +1181,7 @@ col-1,
   margin-bottom: 1em;
   padding-bottom: 0.25em;
   font-family: Gotham Rounded;
-  font-size: ms(-1);
+  font-size: 16px;
   border-bottom: 2px solid;
 }
 .comment__meta a {
