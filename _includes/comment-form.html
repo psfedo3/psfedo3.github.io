@@ -4,18 +4,18 @@
 	  <h2 class="title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" style="display:none;">Cancel reply</a></small></h2>
 	  <form id="comment-form" class="js-form" method="post" action="https://api.staticman.net/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
 	    <div class="form__group">
-	      <label for="comment-form-name">Name
-	        <input type="text" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
+	      <label for="comment-form-name" class="form__field__label">Name
+	        <input class="form__field__input" type="text" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
 	      </label>
-	      <label for="comment-form-email">E-mail
-	        <input type="email" id="comment-form-email" name="fields[email]" required spellcheck="false" placeholder="email@domain.com">
+	      <label for="comment-form-email" class="form__field__label">E-mail
+	        <input class="form__field__input" type="email" id="comment-form-email" name="fields[email]" required spellcheck="false" placeholder="email@domain.com">
 	      </label>
-	      <label for="comment-form-url">Website (optional)
-	        <input type="url" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
+	      <label for="comment-form-url" class="form__field__label">Website (optional)
+	        <input class="form__field__input" type="url" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
 	      </label>
 	    </div>
 	    <div class="form__group">
-	      <label for="comment-form-message">Comment
+	      <label for="comment-form-message" class="form__field__label">Comment
 	        <textarea rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message"></textarea>
 	      </label>
 	    </div>
@@ -29,13 +29,15 @@
 	    <div class="hidden js-notice notice">
 	      <p class="js-notice-text"></p>
 	    </div>
-	    <!-- End comment form alert messaging -->
+	    <!-- End comment form alert messaging 
 	    <div class="g-recaptcha form__group" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+	    -->
 	    <button type="submit" id="comment-form-submit">Send comment</button>
 	  </form>
 	</div>
-	<!-- End comment form -->
+	<!-- End comment form 
 	<script async src="https://www.google.com/recaptcha/api.js"></script>
+	-->
 	{% else %}
 	<div class="notice">
 	  <h4>Comments are closed</h4>
