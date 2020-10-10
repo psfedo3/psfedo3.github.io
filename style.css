@@ -1148,6 +1148,82 @@ col-1,
     max-width: 100%;
   }
 }
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+.comment {
+  display: flex;
+}
+.comment + .comment {
+  margin-top: 2em;
+}
+.comment.child {
+  margin-left: 40px;
+}
+
+.comment__avatar {
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #e3e3e3;
+}
+.comment__avatar img {
+  width: 120px;
+  height: 120px;
+}
+
+.comment__main {
+  min-width: calc(100% - 40px);
+}
+
+.comment__meta {
+  margin-bottom: 1em;
+  padding-bottom: 0.25em;
+  font-family: Gotham Rounded;
+  font-size: ms(-1);
+  border-bottom: 2px solid;
+}
+.comment__meta a {
+  color: inherit;
+}
+
+.comment__message {
+  font-size: 1em;
+}
+.comment__message > *:last-child {
+  margin-bottom: 0;
+}
+.comment__message img {
+  max-width: 100%;
+}
+
+.comment__reply {
+  margin-top: 0.5em;
+  font-family: Gotham Rounded Book;
+  font-size: 1em;
+}
+
+.comment__form {
+  margin-bottom: 2px;
+}
+.comment__form .title {
+  margin-top: 2px;
+}
+.comment__form .title:before {
+  margin-bottom: 1px;
+  content: '';
+  display: block;
+  width: 2em;
+  height: 0.125em;
+  background-color: #000;
+}
+
+#cancel-comment-reply-link {
+  margin-left: 1em;
+  color: red;
+}
+
 /* 
 ** The Header Media Queries **
 ** Tweak as per your needs **
