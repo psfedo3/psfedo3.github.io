@@ -1,106 +1,103 @@
 // Static comments
-// from: https://github.com/eduardoboucas/popcorn/blob/gh-pages/js/main.js 
-(function ($) {
-  var $comments = $('.js-comments');
-
-  $('.js-form').submit(function () {
+(function($) {
+  $("#comment-form").submit(function() {
     var form = this;
 
-//Spinner from Travis Downs and MadeMistakes
-    $(form).addClass('disabled');
-    $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i>  Submitting');
-//
-    $.ajax({
-      type: $(this).attr('method'),
-      url:  $(this).attr('action'),
-      data: $(this).serialize(),
-      contentType: 'application/x-www-form-urlencoded',
-      success: function (data) {
-        showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/willymcallister/willymcallister.github.io/pulls">pending</a>. It will appear when approved.');
-        //Spinner
-        $("#comment-form-submit")
-          .html("Submit");
+    $(form).addClass("disabled");
+    $("#comment-form-submit").html(
+      '<svg class="icon spin"><use xlink:href="/assets/icons/icons.svg#icon-loading"></use></svg> Loading...'
+    );
 
-        //$(form)[0].reset();   // clear contents of form after submit (commented out by WMc)
-        $(form).removeClass('disabled');
-        grecaptcha.reset();
-        //
+    $.ajax({
+      type: $(this).attr("method"),
+      url: $(this).attr("action"),
+      data: $(this).serialize(),
+      contentType: "application/x-www-form-urlencoded",
+      success: function(data) {
+        $("#comment-form-submit")
+          .html("Submitted")
+          .addClass("btn--disabled");
+        $("#comment-form .js-notice")
+          .removeClass("danger")
+          .addClass("success");
+        showAlert(
+          '<strong>Thanks for your comment!</strong> It is <a href="https://github.com/mmistakes/made-mistakes-jekyll/pulls">currently pending</a> and will show on the site once approved.'
+        );
       },
-      error: function (err) {
+      error: function(err) {
         console.log(err);
-        //Spinner
-        var ecode = (err.responseJSON || {}).errorCode || "unknown";
-        showModal('Error', 'An error occured.<br>[' + ecode + ']');
-        $('#comment-form-submit').html('Submit')
-        $(form).removeClass('disabled');
-        grecaptcha.reset();
-        //
+        $("#comment-form-submit").html("Submit Comment");
+        $("#comment-form .js-notice")
+          .removeClass("success")
+          .addClass("danger");
+        showAlert(
+          "<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again."
+        );
+        $(form).removeClass("disabled");
       }
     });
+
     return false;
   });
 
-  $('.js-close-modal').click(function () {
-    $('body').removeClass('show-modal');
-  });
-
-  function showModal(title, message) {
-    $('.js-modal-title').text(title);
-    $('.js-modal-text').html(message);
-    $('body').addClass('show-modal');
+  function showAlert(message) {
+    $("#comment-form .js-notice").removeClass("hidden");
+    $("#comment-form .js-notice-text").html(message);
   }
 })(jQuery);
 
-// Staticman comment replies, from https://github.com/mmistakes/made-mistakes-jekyll
+// Staticman comment replies
 // modified from Wordpress https://core.svn.wordpress.org/trunk/wp-includes/js/comment-reply.js
 // Released under the GNU General Public License - https://wordpress.org/about/gpl/
-// addComment.moveForm is called from comment.html when the reply link is clicked.
 var addComment = {
-  moveForm: function( commId, parentId, respondId, postId ) {
-    var div, element, style, cssHidden,
-    t           = this,                    //t is the addComment object, with functions moveForm and I, and variable respondId
-    comm        = t.I( commId ),                                //whole comment
-    respond     = t.I( respondId ),                             //whole new comment form
-    cancel      = t.I( 'cancel-comment-reply-link' ),           //whole reply cancel link
-    parent      = t.I( 'comment-replying-to' ),                 //a hidden element in the comment
-    post        = t.I( 'comment-post-slug' ),                   //null
-    commentForm = respond.getElementsByTagName( 'form' )[0];    //the <form> part of the comment_form div
+  moveForm: function(commId, parentId, respondId, postId) {
+    var div,
+      element,
+      style,
+      cssHidden,
+      t = this,
+      comm = t.I(commId),
+      respond = t.I(respondId),
+      cancel = t.I("cancel-comment-reply-link"),
+      parent = t.I("comment-replying-to"),
+      post = t.I("comment-post-slug"),
+      commentForm = respond.getElementsByTagName("form")[0];
 
-    if ( ! comm || ! respond || ! cancel || ! parent || ! commentForm ) {
+    if (!comm || !respond || !cancel || !parent || !commentForm) {
       return;
     }
 
     t.respondId = respondId;
     postId = postId || false;
 
-    if ( ! t.I( 'sm-temp-form-div' ) ) {
-      div = document.createElement( 'div' );
-      div.id = 'sm-temp-form-div';
-      div.style.display = 'none';
-      respond.parentNode.insertBefore( div, respond ); //create and insert a bookmark div right before comment form
+    if (!t.I("sm-temp-form-div")) {
+      div = document.createElement("div");
+      div.id = "sm-temp-form-div";
+      div.style.display = "none";
+      respond.parentNode.insertBefore(div, respond);
     }
 
-    comm.parentNode.insertBefore( respond, comm.nextSibling );  //move the form from the bottom to above the next sibling
-    if ( post && postId ) {
+    comm.parentNode.insertBefore(respond, comm.nextSibling);
+    if (post && postId) {
       post.value = postId;
     }
     parent.value = parentId;
-    cancel.style.display = '';                        //make the cancel link visible
+    cancel.style.display = "";
 
     cancel.onclick = function() {
-      var t       = addComment,
-      temp    = t.I( 'sm-temp-form-div' ),            //temp is the original bookmark
-      respond = t.I( t.respondId );                   //respond is the comment form
+      var t = addComment,
+        temp = t.I("sm-temp-form-div"),
+        respond = t.I(t.respondId);
 
-      if ( ! temp || ! respond ) {
+      if (!temp || !respond) {
         return;
       }
 
-      t.I( 'comment-replying-to' ).value = null;      //forget the name of the comment
-      temp.parentNode.insertBefore( respond, temp );  //move the comment form to its original location
-      temp.parentNode.removeChild( temp );            //remove the bookmark div
-      this.style.display = 'none';                    //make the cancel link invisible
-      this.onclick = null;                            //retire the onclick handler
+      t.I("comment-replying-to").value = null;
+      temp.parentNode.insertBefore(respond, temp);
+      temp.parentNode.removeChild(temp);
+      this.style.display = "none";
+      this.onclick = null;
       return false;
     };
 
@@ -110,30 +107,33 @@ var addComment = {
      * 'inherit' when the visibility value is inherited from an ancestor.
      */
     try {
-      for ( var i = 0; i < commentForm.elements.length; i++ ) {
+      for (var i = 0; i < commentForm.elements.length; i++) {
         element = commentForm.elements[i];
         cssHidden = false;
 
         // Modern browsers.
-        if ( 'getComputedStyle' in window ) {
-          style = window.getComputedStyle( element );
-        // IE 8.
-        } else if ( document.documentElement.currentStyle ) {
-        style = element.currentStyle;
+        if ("getComputedStyle" in window) {
+          style = window.getComputedStyle(element);
+          // IE 8.
+        } else if (document.documentElement.currentStyle) {
+          style = element.currentStyle;
         }
 
-      /*
-       * For display none, do the same thing jQuery does. For visibility,
-       * check the element computed style since browsers are already doing
-       * the job for us. In fact, the visibility computed style is the actual
-       * computed value and already takes into account the element ancestors.
-       */
-        if ( ( element.offsetWidth <= 0 && element.offsetHeight <= 0 ) || style.visibility === 'hidden' ) {
+        /*
+         * For display none, do the same thing jQuery does. For visibility,
+         * check the element computed style since browsers are already doing
+         * the job for us. In fact, the visibility computed style is the actual
+         * computed value and already takes into account the element ancestors.
+         */
+        if (
+          (element.offsetWidth <= 0 && element.offsetHeight <= 0) ||
+          style.visibility === "hidden"
+        ) {
           cssHidden = true;
         }
 
         // Skip form elements that are hidden or disabled.
-        if ( 'hidden' === element.type || element.disabled || cssHidden ) {
+        if ("hidden" === element.type || element.disabled || cssHidden) {
           continue;
         }
 
@@ -141,13 +141,12 @@ var addComment = {
         // Stop after the first focusable element.
         break;
       }
-
-    } catch( er ) {}
+    } catch (er) {}
 
     return false;
   },
 
-  I: function( id ) {
-    return document.getElementById( id );
+  I: function(id) {
+    return document.getElementById(id);
   }
 };

@@ -1,79 +1,46 @@
-<form class="js-form form" method="post" action="{{ site.staticmanUrl }}" autocomplete="off">
-  <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
-  <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
-  <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
-  <input type="hidden" name="options[slug]" value="{{ post_slug }}">
-  <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
-  <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
-
-  <fieldset>
-  <div class="textfield">
-    <label for="comment-form-message"><h2>Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></small></h2>
-      <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message"></textarea>
-    </label>
-  </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="textfield">
-      <label for="comment-form-name">Name
-        <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name"/>
-      </label>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="textfield">
-      <label for="comment-form-email">E-mail
-        <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional, used only to send comments.)"/>
-      </label>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="notify-me">
-      <label for="comment-form-reply">
-        <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
-      </label>
-      Send me an email when someone comments.
-    </div>
-  </fieldset>
-
-    <fieldset>
-    <div class="textfield">
-      <label for="hp">
-        <input class="textfield__input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
-      </label>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <!--div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}" data-theme="dark"></div-->
-    <div id="reCaptcha"></div>
-  </fieldset>
-
-  <fieldset>
-    <button class="button" id="comment-form-submit"> <!-- add id for Spinner -->
-      Submit
-    </button>
-  </fieldset>
-
-</form>
-
-<br>
-<small>
-<p>Comments are held for moderation. There will be a delay before they appear.<br>
-Comments may include <a href="https://commonmark.org/help/" rel="nofollow"><strong>Markdown</strong></a>.<br>
-To share something privately: <a href="mailto:willy@spinningnumbers.org">Contact me</a>.</p>
-</small>
-
-<script>
-function showReCaptcha() {
-  var node = document.createElement("div");
-  node.setAttribute('class', 'g-recaptcha');
-  node.setAttribute('data-sitekey', '{{ site.reCaptcha.siteKey }}');
-  node.setAttribute('data-theme', localStorage.theme);
-  document.getElementById("reCaptcha").appendChild(node);
-}
-showReCaptcha();
-</script>
+	{% unless page.comments_locked == true %}
+	<!-- Start comment form -->
+	<div id="respond" class="comment__form">
+	  <h2 class="title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" style="display:none;">Cancel reply</a></small></h2>
+	  <form id="comment-form" class="js-form" method="post" action="https://api.staticman.net/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+	    <div class="form__group">
+	      <label for="comment-form-name" class="form__field__label">Name
+	        <input class="form__field__input" type="text" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
+	      </label>
+	      <label for="comment-form-email" class="form__field__label">E-mail
+	        <input class="form__field__input" type="email" id="comment-form-email" name="fields[email]" required spellcheck="false" placeholder="email@domain.com">
+	      </label>
+	      <label for="comment-form-url" class="form__field__label">Website (optional)
+	        <input class="form__field__input" type="url" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
+	      </label>
+	    </div>
+	    <div class="form__group">
+	      <label for="comment-form-message" class="form__field__label">Comment
+	        <textarea rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message"></textarea>
+	      </label>
+	    </div>
+	    <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
+	    <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
+	    <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+	    <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+	    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+	    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
+	    <!-- Start comment form alert messaging -->
+	    <div class="hidden js-notice notice">
+	      <p class="js-notice-text"></p>
+	    </div>
+	    <!-- End comment form alert messaging 
+	    <div class="g-recaptcha form__group" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+	    -->
+	    <button type="submit" id="comment-form-submit">Send comment</button>
+	  </form>
+	</div>
+	<!-- End comment form 
+	<script async src="https://www.google.com/recaptcha/api.js"></script>
+	-->
+	{% else %}
+	<div class="notice">
+	  <h4>Comments are closed</h4>
+	  <p>If you have a question concerning the content of this page, please feel free to <a href="/contact/">contact me</a>.</p>
+	</div>
+	{% endunless %}

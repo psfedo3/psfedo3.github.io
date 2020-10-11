@@ -33,9 +33,9 @@ feed:
 repository: "psfedo3/psfedo3.github.io"
 url: "https://psfedo3.github.io"
 
-# Staticman comments
-staticmanUrl: https://github.com/v2/entry/psfedo3/psfedo3.github.io/source/comments
-enableComments: true
+# Staticman comments (full configuration in staticman.yml)
+staticman:
+  branch: "source"
 
 
 # Jekyll 3 now only supports Kramdown for Markdown
