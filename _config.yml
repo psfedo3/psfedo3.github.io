@@ -2,7 +2,8 @@ jekyll_get_json:
   - data: seeds
     json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
 
-permalink: /:categories/:title/
+
+permalink: /:categories/:year/:month/:day/:title:output_ext
 # Pagination Settings
 pagination:
   enabled: true
@@ -34,8 +35,7 @@ repository: "psfedo3/psfedo3.github.io"
 url: "https://psfedo3.github.io"
 
 # Staticman comments
-staticmanUrl: https://github.com/v2/entry/psfedo3/psfedo3.github.io/source/comments
-enableComments: true
+staticman_url: https://psfstaticman.herokuapp.com/v2/entry/psfedo3/psfedo3.github.io/source/comments
 
 
 # Jekyll 3 now only supports Kramdown for Markdown
@@ -99,8 +99,7 @@ exclude:
   - spec
   - tmp
 
-# reCAPTCHA keys
+#reCaptcha
 reCaptcha:
-  siteKey: "6Ldty9UZAAAAAEfaHK-JDfrUeMLX_YhWMshU2gnG"
-  secret: "hg7MBRwH0yuJQDJOKCH9PADn+FfbVXV4hAGJIO3NEueFiCtDKwiiJDTJtZESX5PiPIjEg0U+xd4quipPfKjnA0JGD9p1kq5F9yMIFAf440KeUIMmhWuOhKaIG8qBe13syB0CmAgAeqi3Vzy5/+ThxZPu5k/SZkrmFuo7IydJEpU="
-
+  siteKey: 6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7 
+  secret: rvZNSi0JgVsll+jduqG8kWrVk6m12bQYMcfRiOyzZMej241EHPpIZADhqxDIH8rZGCFf5+JlZUt5hdTh0pzcMS4SztztHimRRq2Abdma6BVEHmK51x+/qXCEqhEtCZhEeweOlMkiP9tSBTAN+qZ+Yy9+GoyL0tUfexjXwNOHhhZ5DMFXlzPXukviPwqwSjhFHyMl/d2vJ09QqNWmhmrEETlqnyo1K2+/faoUw+z1MqPIp+5yI1b7VaGN5Z2Syg9JCKkawVsoFVkZxXIE2CbGXY0mYOECIf1O0T/3a6+xD6areipgmg4HQdw5HlmfXoVxyEpuIh3JkkEvNlftnYerqA==
