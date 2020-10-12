@@ -1148,80 +1148,149 @@ col-1,
     max-width: 100%;
   }
 }
-/* ==========================================================================
-   Comments
-   ========================================================================== */
-.comment {
-  display: flex;
-}
-.comment + .comment {
-  margin-top: 2em;
-}
-.comment.child {
-  margin-left: 40px;
+fieldset {
+  border: none;
+  padding: 0;
 }
 
-.comment__avatar {
-  flex-shrink: 0;
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-  background-color: #e3e3e3;
-}
-.comment__avatar img {
-  width: 120px;
-  height: 120px;
+.textfield {
+  max-width: 100%;
+  padding: 0.5rem 0;
 }
 
-.comment__main {
-  min-width: calc(100% - 40px);
+.narrowfield {
+  width: 420px;
+}
+
+.hp {
+  display: none;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+.textfield__input {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 4px 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.notify-me, .g-recaptcha {
+  padding: 0.5rem 0;
+}
+
+.comment__new {
+  padding: 0px 0px 14px 0px;
+}
+
+.comment__author {
+  color: #333;
+}
+
+.comment__date {
+  font-size: .9em;
+}
+
+.comment__body {
+  font-size: 1em;
 }
 
 .comment__meta {
+  text-align: left;
+  color: #646e73;
+  font-size: .9em;
+}
+
+.comments__existing {
+  padding: 8px 0px 0px 0px;
+}
+
+.comment {
+  border-top: 0px solid #ededed;
+  padding: 0px 0px 0px 0px;
   margin-bottom: 1em;
-  padding-bottom: 0.25em;
-  font-family: Gotham Rounded;
-  font-size: 16px;
-  border-bottom: 2px solid;
-}
-.comment__meta a {
-  color: inherit;
 }
 
-.comment__message {
-  font-size: 1em;
-}
-.comment__message > *:last-child {
-  margin-bottom: 0;
-}
-.comment__message img {
-  max-width: 100%;
+.comment.child {
+  margin-left: 3em;
 }
 
-.comment__reply {
-  margin-top: 0.5em;
-  font-family: Gotham Rounded Book;
-  font-size: 1em;
+.comment__reply-link {
+  color: #646e73;
+  font-size: .9em;
+  cursor: pointer;
 }
 
-.comment__form {
-  margin-bottom: 2px;
+.show-modal {
+  overflow: hidden;
+  position: relative;
 }
-.comment__form .title {
-  margin-top: 2px;
-}
-.comment__form .title:before {
-  margin-bottom: 1px;
+
+.show-modal:before {
+  position: absolute;
   content: '';
-  display: block;
-  width: 2em;
-  height: 0.125em;
-  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
-#cancel-comment-reply-link {
-  margin-left: 1em;
-  color: red;
+.show-modal .modal {
+  display: block;
+}
+
+.mdl-card {
+  min-height: 200px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 330px;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  min-height: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.14);
+  padding: 16px;
+  border-radius: 2px;
+  background: white;
+}
+
+.mdl-shadow--16dp {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-card__supporting-text {
+  overflow: hidden;
+  padding: 16px;
+  width: 90%;
+}
+
+.modal-title {
+  margin-bottom: 0px;
+}
+
+.disabled input,
+.disabled button,
+.disabled textarea,
+.disabled label {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+  opacity: 0.65;
 }
 
 /* 
