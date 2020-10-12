@@ -1,8 +1,7 @@
 ---
 layout: post
-title: >
-  About the Pastor's Seed Family
-author: psfedo3
+title: About the Pastor Seed Family
+author: Psfedo3
 categories: articles
 intro: >
   Learn About The Reedemed Christan Church Pastors Seed Family
