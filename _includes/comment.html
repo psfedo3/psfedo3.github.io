@@ -48,8 +48,8 @@
 <footer>
     {% unless include.is_last == false or page.comments_locked == true %}
                 <div class="comment__reply">
-                  <a rel="nofollow" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')" class="btn btn--white btn--white--bordered btn--small">
-                    &#x2BA9; Reply</a>
+   <a rel="nofollow" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')" class="btn btn--white btn--white--bordered btn--small">
+          &#x2BA9; Reply</a>
                 </div>
                 {% endunless %}
    </footer>
