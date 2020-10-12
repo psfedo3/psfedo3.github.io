@@ -3,13 +3,14 @@
 # The values here represent the defaults if nothing is set
 autopages:
   enabled: true
+  categories:
     layouts: 
       - 'autopage_cat.html'
     title: 'Posts in category :cat'
     permalink: '/category/:cat'
-        slugify:
-          mode: 'default'
-          case: false 
+    slugify:
+      mode: 'default'
+      case: false 
     
 
 
