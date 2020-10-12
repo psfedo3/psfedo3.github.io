@@ -9,34 +9,29 @@
    <figure class="author bio-image">
     <div class="bio-image-wrapper">
     <div class="bio-image-image">
-       {% if include.avatar %}
+       {%- if include.avatar -%}
        <noscript><img src="{{ include.avatar }}" alt=""></noscript>
        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ include.avatar }}" alt="" class="lazyload blur-up">
-       {% elsif include.email %}
+       {%- elsif include.email -%}
        <noscript><img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60" alt=""></noscript>
        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=120 2x" alt="" class="lazyload blur-up">
-       {% else %}
+       {%- else -%}
        <noscript><img src="/images/avatar-60.png" alt=""></noscript>
        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, /images/avatar-120.png 2x" alt="" class="lazyload blur-up">
-       {% endif %}
+       {%- endif -%}
         </div>
        </div>
       </figure>
        </div>
+     <span>    {{- include.name | strip_html -}},</span> wrote
+      {%- if include.date -%}
+          On <a href="#{{ comment_id}}" title="Permalink to this comment">
+             {{- include.date | date:"%B %eth, %Y %H:%M" -}}
+           </a>
+           {%- endif -%}
+     </header>
 
-     <span>      {% unless include.url == blank or include.url == "" %}
-           <a rel="external nofollow" href="{{ include.url }}"><strong class="h-card">{{ include.name | strip_html }}</strong></a>
-           {% else %}
-           <strong class="h-card">{{ include.name | strip_html }}</strong>
-           {% endunless %}</span> wrote
-        {% if include.date %}
-            on
-            {% if include.uid %}<a href="#comment{% if r %}{{ id | prepend: '-' }}{% else %}{{ include.id | prepend: '-' }}{% endif %}" title="Permalink to this comment">{% endif %}
-              <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date: "%B %-d, %Y" }}</time>
-              {% if include.uid %}</a>{% endif %}
-            {% endif %}
-       </header>
-     <div class="comment__content">
+     <div class="comment__body comment__content">
                <p>
 
           </p>
@@ -47,17 +42,14 @@
 
         </p>
     </div>
-<footer>
-    {% if include.is_reply == true page.comments_locked == true %}
-                <div class="comment__reply">
-   <a rel="nofollow" onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ page.slug }}', '{{ include.uid }}')" class="btn btn--white btn--white--bordered btn--small comment__reply-link">
-          Reply {{ include.name }} </a>
-                </div>
-                {% endif %}
-   </footer>
-    </figure>
+     </figure>
+{% if include.is_reply %}
 </article>
-
+{% else %}
+    <div class="comment__meta">
+      <a rel="nofollow" class="comment__reply-link btn btn--small btn--green" onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ page.slug }}', '{{ include.uid }}')">Reply to {{ include.name }}</a>
+    </div>
+</article>
 
   {%- capture this_uid %}{{ include.uid }}{% endcapture %}
   {%- assign replies = site.data.comments[page.slug] | where_exp: 'item', 'item.replying_to_uid == this_uid' %}
@@ -69,7 +61,9 @@
     {%- assign date        = reply.date -%}
     {%- assign message     = reply.message -%}
     {%- assign uid         = reply._id -%}
-    {%- assign avatar         = reply.avatar -%}
+    {%- assign avatar        = reply.avatar -%}
     {% include comment.html is_reply=true uid=uid email=email name=name url=url date=date message=message %}
   {% endfor %}
 
+  <hr style="border-top: 1px solid #ccc; background: transparent; margin-bottom: 10px;">
+{% endif %}
