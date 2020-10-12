@@ -1,26 +1,48 @@
-jekyll_get_json:
-  - data: seeds
-    json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
+############################################################
+# Site configuration for the Auto-Pages feature
+ # The values here represent the defaults if nothing is set
+ autopages:
+   enabled: true
+  # Category pages, omit entire config element to disable
+  categories: 
+        # Optional, the list of layouts that should be processed for every category found in the site
+        layouts: 
+          - 'autopage_cat.html'
+        # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
+        title: 'Posts in category :cat'
+        # Optional, the permalink for the  pagination page (:cat is replaced), 
+        # the pagination permalink path is then appended to this permalink structure
+        permalink: '/category/:cat'
+        slugify:
+          mode: 'default'   # :cat is slugified. Modes: default, raw, pretty, ascii, latin
+          case: false       # Whether to replace all uppercase letters with their lowercase counterparts
+    
 
 
-permalink: /:year/:month/
-# Pagination Settings
-pagination:
-  enabled: true
-  per_page: 5
-  title: ' - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  trail: 
-    before: 2
-    after: 2  
+# Due to us using the categories for posts then it is advisable to explicitly specify a 
+    # permalink structure for the site. Otherwise Jekyll attempts to organize the pages in folders
+    # by the category names and it doesn't understand multi-categories to well :/
+    permalink: /:year/:month/:title.html
+    #permalink: pretty
+    
+    # Pagination Settings
+    pagination:
+      enabled: true
+      per_page: 2
+      permalink: '/page/:num/'
+      title: ' - page :num'
+      limit: 0
+      sort_field: 'date'
+      sort_reverse: true
+      trail: 
+        before: 2
+        after: 2  
   
 # Site wide configuration
 collections:
   authors:
     output: true
-   
+
       
 title: "Psfedo3"
 description: "RCCG Pastor seeds family of Edo province 3"
