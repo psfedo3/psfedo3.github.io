@@ -3,7 +3,7 @@ jekyll_get_json:
     json: 'http://getsimpleform.com/messages.js?api_token=d106a0ea4a6e2f746194d0b233704f91'
 
 
-permalink: /:categories/:year/:month/:day/:title:output_ext
+
 # Pagination Settings
 pagination:
   enabled: true
