@@ -32,15 +32,11 @@
      </header>
 
      <div class="comment__body comment__content">
-               <p>
-
-          </p>
+      
       <p>
           {{ include.message | markdownify }}
       </p>
-        <p>
-
-        </p>
+   
     </div>
      </figure>
 {% if include.is_reply %}
@@ -65,5 +61,5 @@
     {% include comment.html is_reply=true uid=uid email=email name=name url=url date=date message=message %}
   {% endfor %}
 
-  <hr style="border-top: 1px solid #ccc; background: transparent; margin-bottom: 10px;">
+ 
 {% endif %}
