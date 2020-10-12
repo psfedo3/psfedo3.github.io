@@ -48,7 +48,7 @@
         </p>
     </div>
 <footer>
-    {% unless include.is_reply == false or page.comments_locked == true %}
+    {% if include.is_reply == true page.comments_locked == true %}
                 <div class="comment__reply">
    <a rel="nofollow" onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ page.slug }}', '{{ include.uid }}')" class="btn btn--white btn--white--bordered btn--small comment__reply-link">
           Reply {{ include.name }} </a>
