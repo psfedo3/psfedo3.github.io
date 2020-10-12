@@ -35,7 +35,7 @@ repository: "psfedo3/psfedo3.github.io"
 url: "https://psfedo3.github.io"
 
 # Staticman comments
-staticman_url: https://psfstaticman.herokuapp.com/v2/entry/psfedo3/psfedo3.github.io/source/comments
+staticman_url: "https://psfstaticman.herokuapp.com/v2/entry/psfedo3/psfedo3.github.io/source/comments"
 
 
 # Jekyll 3 now only supports Kramdown for Markdown
@@ -101,5 +101,5 @@ exclude:
 
 #reCaptcha
 reCaptcha:
-  siteKey: 6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7 
-  secret: rvZNSi0JgVsll+jduqG8kWrVk6m12bQYMcfRiOyzZMej241EHPpIZADhqxDIH8rZGCFf5+JlZUt5hdTh0pzcMS4SztztHimRRq2Abdma6BVEHmK51x+/qXCEqhEtCZhEeweOlMkiP9tSBTAN+qZ+Yy9+GoyL0tUfexjXwNOHhhZ5DMFXlzPXukviPwqwSjhFHyMl/d2vJ09QqNWmhmrEETlqnyo1K2+/faoUw+z1MqPIp+5yI1b7VaGN5Z2Syg9JCKkawVsoFVkZxXIE2CbGXY0mYOECIf1O0T/3a6+xD6areipgmg4HQdw5HlmfXoVxyEpuIh3JkkEvNlftnYerqA==
+  siteKey: "6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7" 
+  secret: "rvZNSi0JgVsll+jduqG8kWrVk6m12bQYMcfRiOyzZMej241EHPpIZADhqxDIH8rZGCFf5+JlZUt5hdTh0pzcMS4SztztHimRRq2Abdma6BVEHmK51x+/qXCEqhEtCZhEeweOlMkiP9tSBTAN+qZ+Yy9+GoyL0tUfexjXwNOHhhZ5DMFXlzPXukviPwqwSjhFHyMl/d2vJ09QqNWmhmrEETlqnyo1K2+/faoUw+z1MqPIp+5yI1b7VaGN5Z2Syg9JCKkawVsoFVkZxXIE2CbGXY0mYOECIf1O0T/3a6+xD6areipgmg4HQdw5HlmfXoVxyEpuIh3JkkEvNlftnYerqA=="
