@@ -67,7 +67,7 @@ pagination:
                 <time datetime="{{ post.date | date_to_string }}" class="article--post__time">
           {{ post.date | date_to_string }}
                 </time>
-           {{ post.excerpt | truncatewords: 20, "..." }}
+           {{ post.excerpt | strip_html | truncatewords: 20, "..." }}
                 <a href="{{ post.url }}" class="read-more-link">Read More…</a>
             </p>
         </div>

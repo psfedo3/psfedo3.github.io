@@ -9,7 +9,6 @@ comments: false
 ---
 
 
- <h1 class='article-intro gotham'>About Pastors' Seed Family </h1>
  <p>
 The Pastors' Seeds Family of The Redeemed Christian Church of God is the fellowship of the seeds(children) of Pastors and Ministers in the Redeemed Christian Church of God. This does not limit our reach as we welcome the association with other Bible-believing ministries.
 </p>
