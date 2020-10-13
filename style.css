@@ -1704,18 +1704,10 @@ textarea {
 }
 
 /* breadcrumbs */
-.breadcrumbs-container {
-  background: #ffffff;
-  border-bottom: 1px solid #dfe3e8;
-}
-
 .breadcrumbs {
-  padding-top: 15px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-top: 10px;
   font-size: 1rem;
   border: 0;
-  margin-bottom: 0.9375em;
 }
 
 .breadcrumbs__item {
@@ -1784,7 +1776,7 @@ textarea {
 
 .event--heading {
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cover.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
