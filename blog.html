@@ -7,18 +7,13 @@ pagination:
   category: articles
   permalink: /:num/
 ---
-      <div class="breadcrumbs-container">
  {% include breadcrumbs.html %}
-    </div>
-
-
-      
-    <section class="panel panel--reset">
+    <section class="panel--reset">
         <div class="grid">
    {% for post in paginator.posts %}
   {% assign author = site.authors | where: 'name', post.author | first %}
 
-            <article class="article--post">
+      <article class="article--post">
                 <header>
                     <div class="article--post__image rounded-lg w-20 h-20">
       {% if author %}
