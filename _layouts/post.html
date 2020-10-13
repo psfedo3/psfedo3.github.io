@@ -37,10 +37,17 @@ layout: default
   </header>
   
   <div class="article--meta">
+   
     <ul class="meta-box meta-box--article">
-    <li class="meta-box--item meta-box--published">12 min read</li>
+    <li class="meta-box--item meta-box--published">
+      {% include reading-time.html %}
+      </li>
     <li class="meta-box--item meta-box--tags">
-        <a href="https://www.smashingmagazine.com/category/forms">Forms</a>,
+    
+        <a href="https://www.smashingmagazine.com/category/forms">
+        {{ post.tags | sort | join: ", " }}
+
+        </a>,
 <a href="https://www.smashingmagazine.com/category/react">React</a>,
 <a href="https://www.smashingmagazine.com/category/tools">Tools</a>
 </li>
@@ -49,13 +56,14 @@ layout: default
 <div class="article-post__content">
   {{ content }}
 </div>
-
+<hr />
   {% if page.comments == true %}
   {% include comments.html %}
   {% else %}
-          <div class="v">
+          <div class="c">
         <div class="info">
-      <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/psf-coloured.png" class="partycat">
+      <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/authors/psf.jpg
+      " class="partycat">
            <div>
      <p>
       Please note <strong>Commenting</strong>

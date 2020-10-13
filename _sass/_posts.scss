@@ -14,7 +14,7 @@ ol>li::before{
   counter(listCounter,decimal-leading-zero);
   font-size:.7em;
   font-weight:700;
-  color:#d33a2c;
+  color: $color-primary;
   left:.8em;
   position:absolute;
   font-family: Gotham Rounded;

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 <!-- Just some nice to have styles for the pager buttons -->
 <style>
@@ -22,7 +22,8 @@ layout: page
     -->
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{%
+        if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>

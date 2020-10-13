@@ -1,0 +1,21 @@
+---
+layout: page
+title: Our gallery
+permalink: /gallery.html
+---
+  <section class="panel--padding-bottom-only">
+    <ol class="c-listing c-listing--images c-listing--inset">
+   {% for image in site.data.gallery %}
+      <li>
+     <figure class="c-images h-entry">
+           
+      <img src="{{ site.baseurl }}/{{ image.image }}" alt="" class="c-images__img">
+        <figcaption>
+   {{ image.caption }}
+            </figcaption>
+        </figure>
+        </li>
+{% endfor %}
+    </ol>
+
+</section>

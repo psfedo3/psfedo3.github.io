@@ -55,7 +55,6 @@ pagination:
 collections:
   authors:
     output: true
-
       
 title: "Psfedo3"
 description: "RCCG Pastor seeds family of Edo province 3"

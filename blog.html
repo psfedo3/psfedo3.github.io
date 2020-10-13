@@ -41,10 +41,7 @@ pagination:
         <footer class="article--post__stats">
             <ul>
                 <li class="article--post__reading-time">
-                    <svg width="18px" height="18px" class="icon">
-                        <use xlink:href="#icon-time"></use>
-                    </svg>
-                    <span class="small-caps">11</span> min read
+{% include reading-time.html %}
                 </li>
                 <li class="article--post__comments-count">
                     <a href="{{ post.url }}#comments">
