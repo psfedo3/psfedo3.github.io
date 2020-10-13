@@ -1,0 +1,12 @@
+    /* breadcrumbs */
+
+
+.breadcrumbs {
+  padding: 1em;
+  font-size: 1rem;
+  border: 0;
+  
+   * + * {
+    padding: .5em;
+  }
+}

@@ -1,0 +1,40 @@
+.article-post {
+
+
+  ol,ul
+{padding:0;margin:1em 0;max-width:100%}
+ol{list-style:none;counter-reset:listCounter}
+ol>li
+{padding-left:1.75em;padding-left:calc(1.65em + .7vw);
+position:relative;
+counter-increment:listCounter;
+margin-bottom:1em}
+ol>li::before{
+  content:
+  counter(listCounter,decimal-leading-zero);
+  font-size:.7em;
+  font-weight:700;
+  color:#d33a2c;
+  left:.8em;
+  position:absolute;
+  font-family: Gotham Rounded;
+  
+}
+ol ol>li {
+  padding-left:2.25em;
+  padding-left:calc(1.35em + .7vw)}
+  ol ol ol>li
+  {padding-left:3em;padding-left:calc(2.4em + 1.4vw)}
+  ol[start='0']
+  {counter-reset:listCounter -1}
+  ol ul li:before{content:''}
+  ol ol{
+    margin-left:1em;
+    margin-top:0;
+    margin-bottom:0
+  }
+  ol ol>li::before
+  {
+    content:counters(listCounter, ".", decimal-leading-zero) " ";left:-1.5em}
+    
+}
