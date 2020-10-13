@@ -29,12 +29,12 @@ pagination:
                                 </div>
                             </a>
                         </figure>
-        {% endif %}
                     </div>
                     <span class="article--post__author-name grey">
-                        <a href="/">
+                        <a href="{{ author.url }}">
               {{ post.author }}
                         </a>
+                 {% endif %}
                 <span>wrote</span>
             </span>
         </header>
@@ -64,10 +64,10 @@ pagination:
         </footer>
         <div class="article--post__content">
             <p class="article--post__teaser">
-                <time datetime="2020-09-11" class="article--post__time">
-                    September 11, 2020 —
+                <time datetime="{{ post.date | date_to_string }}" class="article--post__time">
+          {{ post.date | date_to_string }}
                 </time>
-           {{ post.excerpt }}
+           {{ post.excerpt | truncatewords: 20, "..." }}
                 <a href="{{ post.url }}" class="read-more-link">Read More…</a>
             </p>
         </div>

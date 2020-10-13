@@ -5,25 +5,39 @@
   <input type="hidden" name="options[slug]" value="{{ page.slug }}">
   <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
   <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
+  
+      <fieldset>
+      <legend>
+    <h2>Add Comment<small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></small></h2>
+    </legend>
+            <label for="comment-form-name" class="form__field">
+              <span class="form__field__label">
+                What's your name?
+              </span>
+              <input class="form__field__input" type="text" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
+            </label>
+            <label for="comment-form-email" class="form__field">
+              <span class="form__field__label">
+                What email can we reach you at?
+              </span>
+              <input class="form__field__input" type="email" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
+            </label>
+          </fieldset>
 
-  <div class="textfield">
-    <label for="comment-form-message"><h2>Add Comment<small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></small></h2>
-      <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
-    </label>  
-  </div>
-
-    <div class="textfield narrowfield">
-      <label for="comment-form-name" class="input__field__label">Name
-        <input class="textfield__input form__field__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
-      </label>
-    </div>
-
-    <div class="textfield narrowfield">
-      <label for="comment-form-email" class="form__field__label">E-mail
-        <input class="textfield__input form__field__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
-      </label>
-    </div>
-
+  
+    <fieldset>
+      <legend>
+        Your Comment
+       </legend>
+       <label for="comment-form-message" class="form__field form__field--textarea">
+      <span class="form__field__label">
+     markdown accepted
+         </span>
+ <textarea class="form__field__textarea" name="fields[message]" type="text" id="comment-form-message" required rows="6"></textarea>
+      
+              </label>
+            </fieldset>
+            
     <div class="textfield narrowfield hp">
       <label for="hp">
         <input class="textfield__input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
@@ -31,7 +45,7 @@
     </div>
 
     <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
- <div class="btn--lined btn--lined__membership"> 
+ <div class="btn--lined btn--lined--white-border submit-button-wrapper"> 
       <button class="btn btn--green btn--large" id="comment-form-submit">
 
           <span class="ladda-label">

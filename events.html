@@ -2,6 +2,10 @@
 layout: page
 title: Events
 permalink: /events/
+pagination:
+  enabled: true
+  category: events
+  permalink: /:num/
 ---
 
 
@@ -35,71 +39,29 @@ permalink: /events/
         <div class="vs">
             <div class="v">
                 <ul id="all-events" style="scroll-padding-top: 2em;">
-                    <li><strong>
-                        <a href="event.html">
-                            (Upcoming) - Jesus in the market
+    {% for post in paginator.posts %}
+         <li><strong>
+         <a href="{{ post.url }}">
+       ({{ post.event }}) {{ post.title }}
                         </a>
                     </strong>
                     <br>
-                    with Psf region 13. Sep 22 – Oct 6.
+  With {{ post.speaker }}. {{ post.date }}
                 </li>
-                <li>
-                    <strong>
-                        <a href="event.html"> 
-                            (Upcoming) - Family meeting on purpose
-                        </a>
-                    </strong>
-                    <br>
-                    with Pastor Paul. Oct 8–22.
-                </li>
-                <li>
-                    <strong>
-                        <a href="event.html">
-                            (Past) - Family meeting on vision
-                        </a>
-                    </strong>
-                    <br>
-                    with Pastor Ayomide. Oct 12–26.
-                </li>
-                <li>
-                    <strong>
-                        <a href="event.html">
-                            (Past) - Seminar on music
-                        </a>
-                    </strong>
-                    <br>
-                    with Imiegba psf. Oct 28–29.
-                </li>
+
             </ul>
         </div>
         <div class="v">
             <ul>
+        {% for post in paginator.posts %}
                 <li><strong>
-                    <a href="event.html">
-                       (Upcoming) Learn how to make beads
+                    <a href="{{ post.url }}">
+                      ({{ post.event }}) {{ post.title }}
                     </a>
-                </strong>
-                <br>
-                with Joy christy. Nov 12–27.
-            </li>
-            <li>
-                <strong>
-                    <a href="event.html">
-                        (Past) - Identifying relationship flags
-                    </a>
-                </strong>
-                <br>
-                with Mary Bella. Nov 18–26.
-            </li>
-            <li>
-                <strong>
-                    <a href="event.html">
-                        (Past) - Knowing your worth as a seed
-                    </a>
-                </strong>
-                <br>
-                with Pst Bigman. Dec 3–17.
-            </li>
+                  </strong>
+                  <br>
+                  With {{ post.speaker }}. {{ post.date }}
+                </li>
         </ul>
     </div>
 </div>
@@ -130,13 +92,13 @@ permalink: /events/
         </div>
         <div class="v">
             <div class="info">
-                <img alt="Topple is feeling very festive" src="{{ site.baseurl }}/images/psf-coloured.png" class="partycat">
+       <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/psf-coloured.png" class="partycat">
                 <div>
                     <p>
                         Please note <strong>all events</strong> 
                         are planned and held by the pastor's seeds family of edo province 3
                         <br>Have a question?
-                        <a href="contact.html">
+                        <a href="{{site.baseurl }}/contact.html">
                             contact us
                         </a>!
                     </p>

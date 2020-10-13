@@ -23,9 +23,8 @@
        </div>
       </figure>
        </div>
-     <span>    {{- include.name | strip_html -}},</span> wrote
-      {%- if include.date -%}
-          On <a href="#{{ comment_id}}" title="Permalink to this comment">
+     <span>    {{- include.name | strip_html -}} - </span> wrote On{%- if include.date -%}
+               <a href="#{{ comment_id}}" title="Permalink to this comment">
              {{- include.date | date:"%B %eth, %Y %H:%M" -}}
            </a>
            {%- endif -%}
@@ -43,7 +42,7 @@
 </article>
 {% else %}
     <div class="comment__meta">
-      <a rel="nofollow" class="comment__reply-link btn btn--small btn--green color-white" onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ page.slug }}', '{{ include.uid }}')">Reply to {{ include.name }}</a>
+      <a rel="nofollow" class="comment__reply-link btn btn--small btn--green color-white" onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ page.slug }}', '{{ include.uid }}')">Reply to {{ include.name }}&nbsp;↓</a>
     </div>
 </article>
 
