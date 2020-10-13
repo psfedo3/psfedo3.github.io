@@ -1,7 +1,7 @@
 
     <!-- Header Start -->
     <div class="page-width">
-     {% if page.url == "{{ site.baseurl }}" %}
+     {% if page.title == home %}
          <section class="msg msg--alert text--center">
            <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;
            </span>
@@ -78,7 +78,7 @@
                             Home
                         </a>
                          </li>
-                    <li><a href="/about" class="mobile-nav__item mobile-nav__item--primary">
+                    <li><a href="{{ site.baseurl }}/posts/articles/2020-10-12-About-The-Pastors-Seed-Family.md" class="mobile-nav__item mobile-nav__item--primary">
                         About Us
                     </a></li>
                     <li><a href="/contact" class="mobile-nav__item mobile-nav__item--primary">
