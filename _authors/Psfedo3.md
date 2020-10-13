@@ -2,7 +2,7 @@
 name: Psfedo3
 layout: author
 position: Site Maintenance
-avatar: images/authors/psf.png
+avatar: images/authors/psf.jpg
 twitter: https://twitter.com/psfedo3
 facebook: https://facebook.com/psfedo3
 admin: true
