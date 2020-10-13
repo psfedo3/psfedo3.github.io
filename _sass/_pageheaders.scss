@@ -44,7 +44,7 @@
 }
 .event--heading {
 background-size: cover;
-background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url({{ site.baseurl }}/images/cover.jpg);
+background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url(/images/cover.jpg);
 background-repeat: no-repeat;
 background-position:center;
 }
