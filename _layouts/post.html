@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include breadcrumbs.html path=page.path title=page.title %}
+{% include breadcrumbs.html %}
 <section class="panel panel--tight">
 <article class="article-post grid">
   <div class="grid__item">
@@ -52,6 +52,22 @@ layout: default
 
   {% if page.comments == true %}
   {% include comments.html %}
+  {% else %}
+          <div class="v">
+        <div class="info">
+      <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/psf-coloured.png" class="partycat">
+           <div>
+     <p>
+      Please note <strong>Commenting</strong>
+         as being turned off for this post.
+         <br>Is there anything you want to share with us? Please
+                  <a href="{{site.baseurl }}/contact.html">
+                    contact us
+                  </a>
+                </p>
+              </div>
+            </div>
+  </div>
   {% endif %}
 
   </div>

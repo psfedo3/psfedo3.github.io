@@ -24,7 +24,7 @@ PSFites has been involved in several CSR activities across the nation. For over 
 To raise and build a generation of children of Levites whose goal is to:
 </p>
 <h3 class='h2 gotham'>Make Heaven</h3>
-<ul class='articles-items'>
+<ol class='articles-items'>
 <li>
 Take as many people along with us.
 Help youths and parents fulfill destiny and ministry and become a dominant positive influence in RCCG and the world at large
@@ -33,15 +33,15 @@ Help youths and parents fulfill destiny and ministry and become a dominant posit
 Be a model for youths in RCCG and all over the world to follow.
 Bridge the gap between the younger and older generation particularly between the youths/pastors seeds and the pastors thus stopping the max exodus of youths from the RCCG.
 </li>
-</ul>
+</ol>
 <h4 class='gotham h2'>Mission</h4>
-<ul class='article-items'>
+<ol class='article-items'>
 <li>
 Holiness will be our lifestyle
 We will organize impacting and life changing events and programmes in RCCG parishes, areas, zones, provinces and regions across the world.
 </li>
 <li>
-<ul class='article-items'>
+<ol class='article-items'>
 <p>
 Our programmes shall be interactive, captivating, motivating,inspiring, educative, informative, and interesting and life changing and shall cover but not be limited to the following core areas:
 </p>
@@ -60,7 +60,7 @@ Our programmes shall be interactive, captivating, motivating,inspiring, educativ
 <li>Health and Psychological Wellbeing</li>
 <li>Sexual Purity,</li>
 <li>Spiritual Growth</li>
-</ul>
+</ol>
 </li>
 <li>We shall encourage our members to enroll in the Believer’s Baptismal Class, Workers – in – Training and RCCG doctrinal teachings. </li>
 <li>We shall liaise and partner with the Christ the Redeemer’s Ministries through her daughter organizations such as the Christ the Redeemer’s School Movement, School of Disciples, Redeemed Christian Fellowships, Redeemed Christian Corpers’ Fellowships, etc </li>
@@ -68,3 +68,4 @@ Our programmes shall be interactive, captivating, motivating,inspiring, educativ
 <li>We shall liaise with pastors – in – charge of parishes, areas, zones, provinces, regions, countries to ensure our programs have widespread coverage. </li>
 <li>We shall engage professionals, seasoned and anointed teachers and preachers of the Word and performance coaches to impact, counsel, motivate and challenge members. </li>
 <li>Networking will be one of the main feature of our activities.</li>
+</ol>
