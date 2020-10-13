@@ -1693,6 +1693,7 @@ col-1,
   padding: 1em;
   font-size: 1rem;
   border: 0;
+  background: #104f78;
 }
 .breadcrumbs * + * {
   padding: .5em;
@@ -3784,7 +3785,7 @@ textarea {
 }
 
 .comment.child {
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 .comment__reply-link {
@@ -3882,7 +3883,7 @@ textarea {
   content: counter(listCounter,decimal-leading-zero);
   font-size: .7em;
   font-weight: 700;
-  color: #d33a2c;
+  color: #104f78;
   left: .8em;
   position: absolute;
   font-family: Gotham Rounded;
