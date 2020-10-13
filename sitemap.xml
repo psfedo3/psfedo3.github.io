@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://psfedo3.github.io/authors/Psfedo3</loc>
-<lastmod>2020-10-13T17:48:38+00:00</lastmod>
+<lastmod>2020-10-13T18:28:41+00:00</lastmod>
 </url>
 <url>
 <loc>https://psfedo3.github.io/authors/Spruce</loc>
-<lastmod>2020-10-13T17:48:38+00:00</lastmod>
+<lastmod>2020-10-13T18:28:41+00:00</lastmod>
 </url>
 <url>
 <loc>https://psfedo3.github.io/2014/03/Hello-World.html</loc>
@@ -39,16 +39,10 @@
 <loc>https://psfedo3.github.io/blog/</loc>
 </url>
 <url>
-<loc>https://psfedo3.github.io/blog/2/</loc>
-</url>
-<url>
 <loc>https://psfedo3.github.io/events/</loc>
 </url>
 <url>
 <loc>https://psfedo3.github.io/category/articles/</loc>
-</url>
-<url>
-<loc>https://psfedo3.github.io/category/articles/page/2/</loc>
 </url>
 <url>
 <loc>https://psfedo3.github.io/category/events/</loc>
@@ -57,15 +51,6 @@
 <loc>https://psfedo3.github.io/collections/with/tag/:tag/</loc>
 </url>
 <url>
-<loc>https://psfedo3.github.io/collections/with/tag/:tag/page/2/</loc>
-</url>
-<url>
-<loc>https://psfedo3.github.io/collections/with/tag/:tag/page/3/</loc>
-</url>
-<url>
 <loc>https://psfedo3.github.io/collections/with/tag/:tag/</loc>
-</url>
-<url>
-<loc>https://psfedo3.github.io/collections/with/tag/:tag/page/2/</loc>
 </url>
 </urlset>
