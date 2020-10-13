@@ -901,7 +901,6 @@ template {
 }
 
 .pagination ul li.pagination__current {
-  padding: .5em;
   background: #ddd;
   border-color: #ddd;
   word-break: keep-all;
@@ -1045,6 +1044,10 @@ template {
 
 .w-48 {
   width: 12rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .w-64 {
