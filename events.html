@@ -46,7 +46,7 @@ pagination:
                         </a>
                     </strong>
                     <br>
-  With {{ post.speaker }}. {{ post.date }}
+  With {{ post.speaker_name }}. {{ post.date | date_to_string }}
                 </li>
         {% endfor %}
             </ul>
@@ -60,7 +60,7 @@ pagination:
                     </a>
                   </strong>
                   <br>
-                  With {{ post.speaker }}. {{ post.date | date_to_string }}
+                  With {{ post.speaker_name }}. {{ post.date | date_to_string }}
                 </li>
         {% endfor %}
         </ul>
