@@ -2,6 +2,7 @@
 layout: event
 title: Fulfilling purpose
 type: Family meeting
+event: Upcoming
 event_date: "7 October, 2020"
 event_time: "11am"
 event_duration: "3 hours"

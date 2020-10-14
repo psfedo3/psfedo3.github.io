@@ -18,6 +18,11 @@
   border-left: solid 1px transparent;
   margin: 0 0 calc(1em + .5vw) 0;
 }
+.show-more-link {
+  display: inline-block;
+  color: $color-primary;
+  padding: .25em;
+}
 .author__related__list {
   list-style: disc;
   font-size: .85em;

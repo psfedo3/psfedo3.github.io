@@ -60,7 +60,7 @@ pagination:
                     </a>
                   </strong>
                   <br>
-                  With {{ post.speaker }}. {{ post.date }}
+                  With {{ post.speaker }}. {{ post.date | date_to_string }}
                 </li>
         {% endfor %}
         </ul>
@@ -93,7 +93,7 @@ pagination:
         </div>
         <div class="v">
             <div class="info">
-       <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/psf-coloured.png" class="partycat">
+       <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/PSF-12-LOGO-white.png" class="partycat">
                 <div>
                     <p>
                         Please note <strong>all events</strong> 

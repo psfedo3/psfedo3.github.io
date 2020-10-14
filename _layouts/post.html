@@ -13,8 +13,8 @@ layout: default
       <figure role="presentation" class="bio-image">
     
      <a href="{{ author.url }}" class="bio-image-link">
-     <div class="bio-image-wrapper">
-     <img class="bio-image-image" src="{{ site.baseurl }}/{{ author.avatar }}" loading="lazy" alt="{{ author.name }}"></div></a></figure></div><div class="l-author-bio-content author__desc" id="author__desc"><h3 class="author__desc__title">About The Author</h3><p> {{ author.bio }}
+     <div class="bio-image-wrapper post">
+     <img class="bio-image-image" src="{{ site.baseurl }}/{{ author.avatar }}" loading="lazy" alt="{{ author.name }}"></div></a></figure></div><div class="l-author-bio-content author__desc"><h3 class="author__desc__title">About The Author</h3><p> {{ author.bio }}
     <a href="{{ author.url }}" class="show-more-link">More about
          <span> {{ author.name }}
        </span>…</a></p></div></div></div>
@@ -36,7 +36,7 @@ layout: default
   </h1>
   </header>
   
-  <div class="article--meta">
+  <div class="article--meta section--offset">
    
     <ul class="meta-box meta-box--article">
     <li class="meta-box--item meta-box--published">
@@ -54,7 +54,9 @@ layout: default
 </ul></div>
 <hr />
 <div class="article-post__content">
-  {{ content }}
+  {% capture words %}
+  {{ content | number_of_words | minus: 180 }}
+  {% endcapture %}
 </div>
 <hr />
   {% if page.comments == true %}
@@ -62,8 +64,7 @@ layout: default
   {% else %}
           <div class="c">
         <div class="info">
-      <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/authors/psf.jpg
-      " class="partycat">
+      <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/PSF-12-LOGO-white.png" class="partycat">
            <div>
      <p>
       Please note <strong>Commenting</strong>

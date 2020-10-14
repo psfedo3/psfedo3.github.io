@@ -94,6 +94,9 @@
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-3 {
+  margin-bottom: .75em;
+}
 .h-64 {
   height: 16rem;
 }
@@ -172,6 +175,10 @@
   overflow:hidden;
   width:inherit;
   height:inherit
+ }
+ .bio-image-wrapper.post {
+   border: solid 8px;
+   color: $color-primary;
  }
  .bio-image-image {
   width:inherit;

@@ -91,18 +91,9 @@
   display:none
  }
  .article--post__stats ul li {
-  padding-left:1.5em;
+  padding-left:.5em;
   margin:.1em 0;
   color:#666;
-  background-repeat:no-repeat;
-  background-size:1em 1em;
-  background-position:left center
- }
- .article--post__stats ul li.article--post__reading-time {
-  background-image:url(../images/clock--alt.svg)
- }
- .article--post__stats ul li.article--post__comments-count {
-  background-image:url(../images/comments--alt.svg)
  }
  
  @media all and (max-width:980px) {
