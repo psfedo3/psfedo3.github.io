@@ -1698,6 +1698,9 @@ col-1,
 .breadcrumbs * + * {
   padding: .5em;
 }
+.breadcrumbs a {
+  color: #ffffff;
+}
 
 .event-header-top {
   border: 0;
@@ -3207,6 +3210,12 @@ label {
   margin: 0 0 calc(1em + .5vw) 0;
 }
 
+.show-more-link {
+  display: inline-block;
+  color: #104f78;
+  padding: .25em;
+}
+
 .author__related__list {
   list-style: disc;
   font-size: .85em;
@@ -3389,20 +3398,9 @@ label {
 }
 
 .article--post__stats ul li {
-  padding-left: 1.5em;
+  padding-left: .5em;
   margin: .1em 0;
   color: #666;
-  background-repeat: no-repeat;
-  background-size: 1em 1em;
-  background-position: left center;
-}
-
-.article--post__stats ul li.article--post__reading-time {
-  background-image: url(../images/clock--alt.svg);
-}
-
-.article--post__stats ul li.article--post__comments-count {
-  background-image: url(../images/comments--alt.svg);
 }
 
 @media all and (max-width: 980px) {
@@ -3523,6 +3521,10 @@ label {
   margin-bottom: 1.25rem;
 }
 
+.mb-3 {
+  margin-bottom: .75em;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -3608,6 +3610,11 @@ a.bio-image-link {
   overflow: hidden;
   width: inherit;
   height: inherit;
+}
+
+.bio-image-wrapper.post {
+  border: solid 8px;
+  color: #104f78;
 }
 
 .bio-image-image {
@@ -3790,7 +3797,7 @@ textarea {
 
 .comment__reply-link {
   color: #646e73;
-  font-size: .9em;
+  font-size: .7em;
   cursor: pointer;
 }
 
@@ -3910,4 +3917,8 @@ textarea {
 .article-post ol ol > li::before {
   content: counters(listCounter,".",decimal-leading-zero) " ";
   left: -1.5em;
+}
+
+.article-header--meta {
+  display: flex;
 }
