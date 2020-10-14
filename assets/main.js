@@ -8,7 +8,7 @@
 
 
     $("#comment-form-submit").html(
-      '<svg class="icon icon--small"><use xlink:href="#icon-loading"></use></svg> Sending...'
+      '<svg class="icon icon--small rotate-center"><use xlink:href="#icon-loading"></use></svg> Sending...'
     );
     $(form).addClass('disabled');
 
