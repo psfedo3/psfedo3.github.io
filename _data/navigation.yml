@@ -1,16 +1,16 @@
 - name: Home
-  link: /
+  link: {{ site.baseurl }}
   
 - name: About
-  link: /about
+  link: {{ site.baseurl }}/about
   
 - name: Gallery
-  link: /gallery
+  link: {{ site.baseurl }}/gallery
   
 - name: Events
-  link: /events 
+  link: {{ site.baseurl }}/events 
   
 - name: Contact
-  link: /contact
+  link: {{ site.baseurl }}/contact
   
   

@@ -23,9 +23,7 @@
        </div>
       </figure>
        </div>
-     <span>    {{- include.name | strip_html -}} - </span> wrote On {%- if include.date -%}
-               <a href="#{{ comment_id}}" title="Permalink to this comment">
-             {{- include.date | date:"%B %eth, %Y %H:%M" -}}
+     <span>    {{- include.name | strip_html -}} - </span> wrote On {%- if include.date -%}<a href="#{{ comment_id}}" title="Permalink to this comment"> {{- include.date | date:"%B %eth, %Y %H:%M" -}}
            </a>
            {%- endif -%}
      </header>
