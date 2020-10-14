@@ -55,6 +55,7 @@ layout: default
 </ul></div>
 <hr />
 <div class="article-post__content">
+  {{ content }}
   {% capture words %}
   {{ content | number_of_words | minus: 180 }}
   {% endcapture %}
