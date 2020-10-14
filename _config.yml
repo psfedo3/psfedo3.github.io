@@ -72,14 +72,22 @@ url: "https://psfedo3.github.io"
 staticman_url: "https://psfstaticman.herokuapp.com/v2/entry/psfedo3/psfedo3.github.io/source/comments"
 
 compress_images:
-  images_path: "images/authors/**/*.{gif,png,jpg,jpeg,svg}"
-  images_path: "images/speakers/**/*.{gif,png,jpg,jpeg,svg}"
   images_path: "images/gallery/**/*.{gif,png,jpg,jpeg,svg}"
   imageoptim:
     pngout: false
-    svgo: true
+    verbose: false
+    
+compress_images:
+  images_path: "images/authors/**/*.{gif,png,jpg,jpeg,svg}"
+  imageoptim:
+    pngout: false
     verbose: false
   
+compress_images:
+  images_path: "images/speakers/**/*.{gif,png,jpg,jpeg,svg}"
+  imageoptim:
+    pngout: false
+    verbose: false
   
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
