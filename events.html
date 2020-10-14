@@ -2,10 +2,6 @@
 layout: page
 title: Events
 permalink: /events/
-pagination:
-  enabled: true
-  category: events
-  permalink: /:num/
 ---
 
 
@@ -39,28 +35,28 @@ pagination:
         <div class="vs">
             <div class="v">
                 <ul id="all-events" style="scroll-padding-top: 2em;">
-    {% for post in paginator.posts %}
+    {% for event in site.events %}
          <li><strong>
          <a href="{{ post.url }}">
-       ({{ post.event }}) {{ post.title }}
+       ({{ event.event }}) {{ event.title }}
                         </a>
                     </strong>
                     <br>
-  With {{ post.speaker_name }}. {{ post.date | date_to_string }}
+  With {{ event.speaker_name }}. {{ event.date | date_to_string }}
                 </li>
         {% endfor %}
             </ul>
         </div>
         <div class="v">
             <ul>
-        {% for post in paginator.posts %}
+        {% for event in site.events %}
                 <li><strong>
-                    <a href="{{ post.url }}">
-                      ({{ post.event }}) {{ post.title }}
+          <a href="{{ post.url }}">
+         ({{ event.event }}) {{ event.title }}
                     </a>
                   </strong>
                   <br>
-                  With {{ post.speaker_name }}. {{ post.date | date_to_string }}
+                  With {{ event.speaker_name }}. {{ event.date | date_to_string }}
                 </li>
         {% endfor %}
         </ul>

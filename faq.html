@@ -1,0 +1,19 @@
+---
+layout: page
+title: Frequently Asked Questions
+permalink: /blog/
+pagination:
+  enabled: true
+  category: faq
+  permalink: /:num/
+---
+<ul>
+  
+{% for post in paginator.posts %}
+ <li>
+   <a href="{{ post.url }}">
+     {{ post.title }}
+   </a>
+ </li>
+ {% endfor %}
+ </ul>

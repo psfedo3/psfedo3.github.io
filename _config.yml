@@ -55,6 +55,8 @@ pagination:
 collections:
   authors:
     output: true
+  events:
+    output: true
       
 title: "Psfedo3"
 description: "RCCG Pastor seeds family of Edo province 3"
@@ -88,6 +90,12 @@ compress_images:
   imageoptim:
     pngout: false
     verbose: false
+    
+ compress_images:
+   images_path: "images/**/*.{gif,png,jpg,jpeg,svg}"
+   imageoptim:
+     pngout: false
+     verbose: false
   
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
