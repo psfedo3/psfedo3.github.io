@@ -58,7 +58,7 @@ compress_images:
     pngout: false
     verbose: false
     
- compress_images:
+compress_images:
    images_path: "images/**/*.{gif,png,jpg,jpeg,svg}"
    imageoptim:
      pngout: false
@@ -96,7 +96,6 @@ owner:
     ad-slot:
   bio:
   avatar: bio-photo.jpg # 160x160 px image for author byline
-  disqus-shortname:
 
 
 include:
