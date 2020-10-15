@@ -62,7 +62,7 @@ comments:
 seeds:
   allowedFields: ["firstname", "lastname", "parish", "number", "email", "level", "upload", "avatar"]
   branch: source
-  commitMessage: "New User Registration r from {fields.name} on {options.slug}"
+  commitMessage: "New User Registration from {fields.name} on {options.slug}"
   filename: "entry{@timestamp}"
   format: "yaml"
   generatedFields:
