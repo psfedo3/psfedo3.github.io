@@ -4,14 +4,18 @@ title: meet the family
 permalink: /family/
 ---
 
-<h1> meet the only member for now</h1>
-<figure>
-   <img src="{{ site.data.seeds[0].data.upload-file }}" alt="" />
-  <figcaption>{{ site.data.seeds[0].data.firstname }}</figcaption>
-</figure>
-
-{% for seed in site.data.seeds %}
-  hello {{ seed.data.firstname }}
-   {% endfor %}
-
-
+    <section class="panel section--primary">
+     <div class="grid grid--vertically-centered hero__wrapper">
+     <div class="grid__item text--center ">
+    <div class="panel-heading  hero__intro gutter-bottom--reset">
+     <p class="panel-heading__kicker h5 hero__kicker">Our Family</p>
+       <h1 class="panel-heading__heading h1 hero__heading hero__heading--reset gotham">
+                Meet our Family. Our impactful community.</h1>
+      <a class="hero__link h3 link-color--pink link--center link link--secondary" href="{{ site.fb }}">
+                Find Us Online&nbsp;<span class="link__arrow"><svg class="icon link__arrow-inner" aria-hidden="true" focusable="false">
+                    <use xlink:href="#modules-arrow-right"></use>
+                  </svg></span></a>
+            </div>
+          </div>
+        </div>
+      </section>

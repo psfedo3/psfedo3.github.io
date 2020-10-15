@@ -1,0 +1,194 @@
+    <form class="js-join-form form auth__modal__form" method="post" action="{{ site.staticman_join }}">
+       <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+  <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+  <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+  <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
+  
+                <fieldset>
+     <legend class="membership-checkout__hint membership-checkout__hint--personal">
+       Hey! we just need a few things from you...<br><small>Your names and the parish you attend under RCCG Edo province 3</small>   </legend>
+   <div class="form__row">
+       <label class="form__field blurred field--half form__field--floating field--half">
+       <label for="firstName" class="form__field__label">
+          Your first name
+ </label>
+      <div class="input-wrapper">
+      <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="fields[firstname]" value="" minlength="4" required>
+                            </div>
+                        </label>
+       <label class="form__field blurred field--half form__field--floating">
+        <label for="FamilyName" class="form__field__label">
+         Your family name
+              </label>
+  <div class="input-wrapper">
+       <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="fields[lastname]" value="" minlength="4" required>
+                            </div>
+                        </label>
+                    </div>  
+      <div class="form__row">
+                        <label class="form__field blurred  form__field--floating">
+                            <label for="parish" class="form__field__label">
+                                Your Parish (Under Edo Province 3) 
+                            </label>
+                            <div class="input-wrapper">
+          <input label="Your Parish (Under RCCG Edo Province 3) " id="parish" type="text" class="form__field__input" inputmode="text" name="fields[parish]" value="" min="3" required>
+        </div>
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="btn--lined btn--lined__membership">
+                    <a href="#contact-info" class="add-scrolling" tabindex="-1">
+                        <button type="button" class="btn btn--green btn--text-shadow btn--large">
+                            <span class="sr-only">
+                                Scroll to
+                            </span> 
+                            Set Your Contact Info&nbsp;↓
+                        </button>
+                    </a>
+                </div>
+                <fieldset id="contact-info">
+                    <legend class="title membership-checkout__hint">
+                        How do we contact you?<br><small>
+                            Help us get in touch with you, we just meed your email and phone number.
+                        </small>
+                    </legend>
+                    <div class="form__row">
+                        <label class="form__field blurred field--half form__field--floating field--half">
+                            <label for="email" class="form__field__label">
+                                Email
+                            </label>
+                            <div class="input-wrapper">
+    
+     <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="fields[email]" value="" required>
+   
+                            </div>
+                        </label>
+                        <label class="form__field blurred field--half form__field--floating field--half">
+                            <label for="number" class="form__field__label">
+                               Phone Number
+                            </label>
+                            <div class="input-wrapper">
+        <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="fields[number]" value="" min="11" required>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <div class="btn--lined btn--lined__membership">
+                    <a href="#enter-level" class="add-scrolling" tabindex="-1">
+                        <button type="button" class="btn btn--green btn--text-shadow btn--large">
+                            <span class="sr-only">
+                                Scroll to
+                            </span> 
+                                A Little More&nbsp;↓
+                        </button>
+                    </a>
+                </div>
+                <fieldset id="enter-level">
+                    <legend class="title">
+                        Level of involvement in PSF
+                    </legend>
+                   
+                    
+                    <div class="form__row">
+     <label class="form__field form__field--radio">
+                           <input class="form__field__input" type="radio" name="fields[level]" value="New Member" required>
+                           <span class="form__field__label">
+                             New Member
+                           </span>
+                         </label>
+                         <label class="form__field form__field--radio">
+                           <input class="form__field__input" type="radio" name="fields[level]" value="Seed" required>
+                           <span class="form__field__label">
+                             Already A Seed
+                           </span>
+                         </label>
+                         <label class="form__field form__field--radio">
+                           <input class="form__field__input" type="radio" name="fields[level]" value="Exco" required>
+                           <span class="form__field__label">
+                             Exco
+                           </span>
+                         </label>
+                         </div>
+                    <div class="level-more">
+                        <a href="#0">Ah, what is level of involvement?</a>
+
+                        <div class="level-info section--offset">
+                            <p>Your <em>level of involvement</em> is how far you have gone in the pastor seeds family. 
+                                <strong>Level of involvement</strong> or 
+                                <em>Position you occupy</em>.
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>One of the Excos</strong>: 
+                                    <em>you belong to the management team</em>
+                                    of the edo provine 3 pastor seeds family, Please select <b>Excos</b> 
+                                </li>
+                                <li>
+                                    <strong>Just a Seed</strong>:
+                                     a old <em>seed </em>
+                                      (not one of the excos). Please select <b>Member</b>
+                                    </li>
+                                    <li>
+                                        <strong>New to psf</strong>: 
+                                        <em>Joining the edo province 3 pastors seed family for the first time</em>, 
+                                        Please select <b>New Member</b> 
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </fieldset>
+                <div class="btn--lined btn--lined__membership">
+                    <a href="#upload-photo" class="add-scrolling" tabindex="-1">
+                        <button type="button" class="btn btn--green btn--text-shadow btn--large">
+                            <span class="sr-only">
+                                Scroll to
+                            </span> 
+                            Finish Registration&nbsp;↓
+                        </button>
+                    </a>
+                </div>
+                <fieldset id="upload-photo">
+                    <legend class="title membership-checkout__hint">
+                        Help Us Know You A Little<br><small>
+                            Upload a very loving photo of you, So we can eaily identify you.
+                        </small>
+                    </legend>
+                <div class="form__row">
+                    <label class="form__field blurred form__field  form__field">
+                        <label for="file" class="upload">
+                        Upload your photo
+                        </label>
+         <div class="form-img__wrapper">
+         <img src="" alt="upload a loving photo of you" class="form-img js-image-upload">
+                    </div>
+                        <div class="input-wrapper">
+   <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="fields[upload]" required>
+   <input type="hidden" name="fields[avatar]" class="js-upload" />
+                        </div>
+                    </label>
+                </div>
+            </fieldset>
+                <div class="btn--lined">
+        <button class="ladda-button btn btn--green btn--large" type="submit" id="js-form-submit">
+                        <span class="ladda-label">
+                            <span class="ladda-label">
+          Become a Member →
+                            </span>
+                        </span>
+                     </button>
+                    </div>
+    
+    </form> 
+
+<article class="modal mdl-card mdl-shadow--2dp">
+  <div>
+    <h3 class="modal-title js-modal-title"></h3>
+  </div>
+  <div class="mdl-card__supporting-text js-modal-text"></div>
+  <div class="mdl-card__actions mdl-card--border">
+    <button class="button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
+  </div>
+</article>
+
