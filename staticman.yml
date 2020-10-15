@@ -60,7 +60,7 @@ comments:
 #adding user contents
 
 seeds:
-  allowedFields: ["firstname", "lastname", "parish", "number", "email", "level", "upload", "avatar"]
+  allowedFields: ["firstname", "lastname", "parish", "number", "email", "level", "upload"]
   branch: source
   commitMessage: "New User Registration from {fields.name} on {options.slug}"
   filename: "entry{@timestamp}"
