@@ -2675,6 +2675,8 @@ fieldset {
   border-radius: 11px;
   line-height: 160px;
   text-align: center;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 form fieldset legend {
