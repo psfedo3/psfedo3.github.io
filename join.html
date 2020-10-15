@@ -1,39 +1,13 @@
 ---
 layout: default
+title: Join Our family
+permalink: /join/
 ---
 
-<body class="join" style="background: #f5f5f5">
-  
- 
 
- {% assign emails =  site.data.seeds | map: "data" | map: "email" | inspect %}
  
- <script>
-  document.write( {{ emails }} );
+    <div class="modal-container modal-container--lowlight signup-modal" id="ModalContainer" aria-hidden="false" tabindex="-1">
 
- var email = document.getElementById("email").value;
- alert(email);
- var emailArray = {{ emails }};
- alert(emailArray);
-   function validateForm() {
-   if (emailArray.includes(email)) {
-   alert("This Email has already been used by another seed");
-   return false;
-   }
-   }
- </script>
- 
-    <div class="modal-container modal-container--lowlight signup-modal js-is-active" id="ModalContainer" aria-hidden="false" tabindex="-1">
-        <div class="modal__header">
-          <div class="modal__controls">
-            <button type="button" onclick="javascript:history.go(-1)" class="modal__close" id="CloseModal">
-              <svg class="icon link__arrow-inner">
-                  <use xlink:href="#icon-cancel"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      
         <div class="modal-wrapper" role="dialog" tabindex="-1" aria-labelledby="ModalTitle" aria-modal="true">
         <div class="modal js-seeds">
             <div class="panel-heading">
