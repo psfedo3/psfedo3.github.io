@@ -8,7 +8,7 @@
        var form = this;
 
 
-       $("#js-form-submit").html(
+       $("#js-reg-submit").html(
          '<svg class="icon icon--small rotate-center"><use xlink:href="#icon-loading"></use></svg> Sending...'
        );
        $(form).addClass('disabled');
@@ -21,7 +21,7 @@
          success: function(data) {
            showModal('Comment submitted', 'Thanks! Your request to to join our family has been received and moderated.We would get back to you');
 
-           $("#js-form-submit")
+           $("#js-reg-submit")
              .html("Submit");
 
            $(form)[0].reset();
@@ -32,7 +32,7 @@
            console.log(err);
         var ecode = (err.responseJSON || {}).errorCode || "unknown";
            showModal('Error', 'Opps Something bad happened please review your submission.<br>[' + ecode + ']');
-           $("#js-form-submit").html("Submit")
+           $("#js-reg-submit").html("Submit")
          }
        });
        return false;

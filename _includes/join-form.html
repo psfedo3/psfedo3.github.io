@@ -12,15 +12,15 @@
           Your first name
  </label>
       <div class="input-wrapper">
-      <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="fields[firstname]" value="" minlength="4" required>
+ <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="fields[firstname]" value="" minlength="3" required>
                             </div>
                         </label>
        <label class="form__field blurred field--half form__field--floating">
-        <label for="FamilyName" class="form__field__label">
+     <label for="FamilyName" class="form__field__label">
          Your family name
               </label>
   <div class="input-wrapper">
-       <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="fields[lastname]" value="" minlength="4" required>
+  <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="fields[lastname]" value="" minlength="3" required>
                             </div>
                         </label>
                     </div>  
@@ -58,11 +58,11 @@
                             </label>
                             <div class="input-wrapper">
     
-     <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="fields[email]" required>
+  <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="fields[email]">
    
-                            </div>
-                        </label>
-                        <label class="form__field blurred field--half form__field--floating field--half">
+                   </div>
+       </label>
+   <label class="form__field blurred field--half form__field--floating field--half">
                             <label for="number" class="form__field__label">
                                Phone Number
                             </label>
@@ -170,7 +170,7 @@
       <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
 
                 <div class="btn--lined">
-        <button class="ladda-button btn btn--green btn--large" type="submit" id="js-form-submit">
+        <button class="ladda-button btn btn--green btn--large" type="submit" id="js-reg-submit">
                         <span class="ladda-label">
                             <span class="ladda-label">
           Become a Member →

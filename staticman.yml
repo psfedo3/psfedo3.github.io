@@ -62,7 +62,7 @@ comments:
 seeds:
   allowedFields: ["firstname", "lastname", "parish", "number", "email", "level", "upload"]
   branch: source
-  commitMessage: "New User Registration from {fields.name} on {options.slug}"
+  commitMessage: "New User Registration from {fields.firstname} on {options.slug}"
   filename: "entry{@timestamp}"
   format: "yaml"
   generatedFields:
@@ -76,7 +76,7 @@ seeds:
       
   # Names of required fields. If any of these isn't in the request or is empty,
   # an error will be thrown.
-  requiredFields: ["firstname", "lastname", "parish", "number", "upload"]
+  requiredFields: ["firstname", "lastname", "parish", "number"]
       
   
   transforms:
