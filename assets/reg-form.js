@@ -8,7 +8,7 @@
        var form = this;
 
 
-       $("#reg-form-submit").html(
+       $("#js-form-submit").html(
          '<svg class="icon icon--small rotate-center"><use xlink:href="#icon-loading"></use></svg> Sending...'
        );
        $(form).addClass('disabled');
