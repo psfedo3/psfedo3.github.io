@@ -9,3 +9,14 @@ navToggle.addEventListener("click", function () {
 navMobileBtn.addEventListener('click', function() {
   navWrapper.classList.remove('js-mobile-nav-open')
 })
+
+
+window.addEventListener("load", function() {
+  if (window.location.hash != "") {
+    var tagId = "tag-" + window.location.hash.slice(1);
+    var tagObject = document.getElementById(tagId);
+    var attribute = document.createAttribute("open");
+    attribute.value = "open";
+    tagObject.setAttributeNode(attribute);
+  }
+});

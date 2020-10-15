@@ -44,13 +44,14 @@ layout: default
       {% include reading-time.html %}
       </li>
     <li class="meta-box--item meta-box--tags">
-    
-        <a href="https://www.smashingmagazine.com/category/forms">
-       tags
-
-        </a>,
-<a href="https://www.smashingmagazine.com/category/react">React</a>,
-<a href="https://www.smashingmagazine.com/category/tools">Tools</a>
+    {% if page.tags %}
+<span class="tags">
+  <img src="/assets/images/icons/tag.svg" class="postIcon" />
+  {% for tag in page.tags %}
+  <em>{{ tag }}</em>
+  {% endfor %}
+</span>
+{% endif %}
 </li>
 </ul></div>
 <hr />
