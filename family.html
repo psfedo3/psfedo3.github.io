@@ -24,5 +24,6 @@ permalink: /family/
   
   second 
   
-  {{ site.data.seeds }}
+  {% for seed in site.data.seeds %}
+    {{ seed.firstname }} {{ seed.lastname }}
 </div>
