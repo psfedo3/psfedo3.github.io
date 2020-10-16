@@ -67,7 +67,7 @@
     reader.onload = function() {
       var outputImage = document.querySelector('.js-image-upload');
       outputImage.src = reader.result;
-      var avatar = document.querySelector('.js-image-avatar');
+      var avatar = document.querySelector('#js-image-avatar');
       avatar.value = reader.result
     }
     reader.readAsDataURL(event.target.files[0]);
