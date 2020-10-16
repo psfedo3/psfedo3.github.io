@@ -413,12 +413,10 @@ label {
   transition: all .3s ease-out;
   color: #aaa;
   font-size: calc(.8em + .1vw);
-  padding: 18px 0;
+  padding: 8px 0;
   z-index: 1;
 }
-.form__field--floating.is-active .form__field__label {
-  padding: 8px 0;
-}
+
 .form__field .input-wrapper {
   position: relative;
 }

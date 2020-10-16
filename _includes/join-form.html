@@ -3,71 +3,72 @@
   <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
   <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
   
-                <fieldset>
+     <fieldset>
      <legend class="membership-checkout__hint membership-checkout__hint--personal">
        Hey! we just need a few things from you...<br><small>Your names and the parish you attend under RCCG Edo province 3</small>   </legend>
    <div class="form__row">
        <label class="form__field blurred field--half form__field--floating field--half">
        <label for="firstName" class="form__field__label">
-          Your first name
+          Your first name(required)
  </label>
       <div class="input-wrapper">
- <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="fields[firstname]" value="" minlength="3" required>
+ <input label="Your first name(required)" class="form__field__input" type="text" id="firstName" inputmode="text" name="fields[firstname]" value="" minlength="3" required>
                             </div>
                         </label>
        <label class="form__field blurred field--half form__field--floating">
      <label for="FamilyName" class="form__field__label">
-         Your family name
+         Your family name(required)
               </label>
   <div class="input-wrapper">
-  <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="fields[lastname]" value="" minlength="3" required>
+  <input label="Your family name(required)" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="fields[lastname]" value="" minlength="3" required>
                             </div>
                         </label>
                     </div>  
       <div class="form__row">
                         <label class="form__field blurred  form__field--floating">
-                            <label for="parish" class="form__field__label">
-                                Your Parish (Under Edo Province 3) 
-                            </label>
-                            <div class="input-wrapper">
-          <input label="Your Parish (Under RCCG Edo Province 3) " id="parish" type="text" class="form__field__input" inputmode="text" name="fields[parish]" value="" min="3" required>
+        <label for="parish" class="form__field__label">
+     Your Parish (Required)
+              </label>
+     <div class="input-wrapper">
+    <input label="Your Parish (Required) " id="parish" type="text" class="form__field__input" inputmode="text" name="fields[parish]" value="" min="3" required>
         </div>
                         </label>
                     </div>
                 </fieldset>
-                <div class="btn--lined btn--lined__membership">
-                    <a href="#contact-info" class="add-scrolling" tabindex="-1">
-                        <button type="button" class="btn btn--green btn--text-shadow btn--large">
-                            <span class="sr-only">
+    <div class="btn--lined btn--lined__membership">
+   <a href="#contact-info" class="add-scrolling" tabindex="-1">
+      <button type="button" class="btn btn--green btn--text-shadow btn--large">
+          <span class="sr-only">
                                 Scroll to
-                            </span> 
-                            Set Your Contact Info&nbsp;↓
-                        </button>
+           </span> 
+    Set Your Contact Info&nbsp;↓
+          </button>
                     </a>
                 </div>
-                <fieldset id="contact-info">
-                    <legend class="title membership-checkout__hint">
-                        How do we contact you?<br><small>
-                            Help us get in touch with you, we just meed your email and phone number.
-                        </small>
+   <fieldset id="contact-info">
+ <legend class="title membership-checkout__hint">
+        Help us contact you.
+         <br><small>
+    we just need your Facebook username and phone number.
+   Note: Facebook username be separated by a period(.) and without space eg(john.doe)
+                        <small>
                     </legend>
                     <div class="form__row">
-                        <label class="form__field blurred field--half form__field--floating field--half">
-                            <label for="email" class="form__field__label">
-                                Email
-                            </label>
-                            <div class="input-wrapper">
-    
-  <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="fields[email]">
+     <label class="form__field blurred field--half form__field--floating field--half">
+      <label for="url" class="form__field__label">
+     Facebook link(optional)
+        </label>
+        <div class="input-wrapper">
+  <input label="url" type="text" class="form__field__input" id="url" name="fields[url]">
    
                    </div>
        </label>
    <label class="form__field blurred field--half form__field--floating field--half">
-                            <label for="number" class="form__field__label">
-                               Phone Number
-                            </label>
+        <label for="number" class="form__field__label">
+    Phone Number(Required)
+            </label>
                             <div class="input-wrapper">
-        <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="fields[number]" value="" min="11" required>
+   <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="fields[number]" value="" min="11" required>
                             </div>
                         </label>
                     </div>
@@ -85,25 +86,25 @@
                 </div>
                 <fieldset id="enter-level">
                     <legend class="title">
-                        Level of involvement in PSF
+   Level of involvement in PSF(Optional)
                     </legend>
                    
                     
                     <div class="form__row">
      <label class="form__field form__field--radio">
-                           <input class="form__field__input" type="radio" name="fields[level]" value="New Member" required>
+       <input class="form__field__input" type="radio" name="fields[level]" value="New Member">
                            <span class="form__field__label">
                              New Member
                            </span>
                          </label>
                          <label class="form__field form__field--radio">
-                           <input class="form__field__input" type="radio" name="fields[level]" value="Seed" required>
+                           <input class="form__field__input" type="radio" name="fields[level]" value="Seed">
                            <span class="form__field__label">
                              Already A Seed
                            </span>
                          </label>
                          <label class="form__field form__field--radio">
-                           <input class="form__field__input" type="radio" name="fields[level]" value="Exco" required>
+                           <input class="form__field__input" type="radio" name="fields[level]" value="Exco">
                            <span class="form__field__label">
                              Exco
                            </span>
@@ -155,13 +156,13 @@
                     </legend>
                 <div class="form__row">
                     <label class="form__field blurred form__field  form__field">
-                        <label for="file" class="upload">
-                        Upload your photo
-                        </label>
+          <label for="file" class="upload">
+          Upload your photo(Required)
+      </label>
          <div class="form-img__wrapper">
-    <img src="" alt="upload a loving photo of you" class="form-img js-image-upload">
+    <img src="{{ site.baseurl }}images/default.jpg" alt="upload a loving photo of you" class="form-img js-image-upload">
                     </div>
-                        <div class="input-wrapper">
+       <div class="input-wrapper">
    <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="fields[upload]" required>
                         </div>
    <input type="hidden" name="fields[avatar]" id="js-image-avatar" value="" />
@@ -173,10 +174,10 @@
                 <div class="btn--lined">
     <button class="ladda-button btn btn--green btn--large" type="submit" id="js-reg-submit">
          <span class="ladda-label">
-                            <span class="ladda-label">
-          Become a Member →
-                            </span>
-                        </span>
+        <span class="ladda-label">
+          Join The Family →
+              </span>
+          </span>
                      </button>
                     </div>
     
