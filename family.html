@@ -53,7 +53,7 @@ permalink: /family/
     
     third <br />
     <ul>
-   {% for seeds site.data.seeds %}  {% assign seed = seeds[1] %}
+   {% for seeds in site.data.seeds %}  {% assign seed = seeds[1] %}
     <li>
       {{ seed.firstname }}
       or
