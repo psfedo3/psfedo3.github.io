@@ -20,11 +20,7 @@ permalink: /family/
         </div>
       </section>
       <div class="panel panel--tight">
- {{ site.data.seeds[page.slug] }}
-  
-  second 
-  
-  {% for seed in site.data.seeds[0] %}
+ 
        <section class="c-section" id="a">
     <header class="c-section__header">
       <h2 class="c-section__title">
@@ -33,36 +29,21 @@ permalink: /family/
         </header>
         <div class="c-section__main">
      <ol class="c-listing c-listing--authors">
+     {% for seeds in site.data.seeds %}
+     {% assign seed = seeds[1] %}
          <li>
-  <a class="c-author  h-card u-url" href="{{ include.url }}">
+  <a class="c-author  h-card u-url" href="https://facebook.com/{{ seed.url }}">
           <picture>
-         <img class="c-author__image  u-photo" src="{{ include.upload }}" alt="{{ seed.firstname }} {{ include.lastname }}" width="160" height="160">
+         <img class="c-author__image  u-photo" src="{{ seed.avatar }}" alt="{{ seed.firstname }} {{ seed.lastname }}" width="160" height="160">
                         </picture>
          <span class="c-author__meta  p-name">
-     {{ include.firstname }} <span>{{ seed.lastname }} </span>
+     {{ seed.firstname }}, <span>{{ seed.level }} </span>
         </span></a>
     </li>
 
-               
+      {% endfor %}
+
             </ol>
         </div>
     </section>
-
-
-    {% endfor %}
-    
-    third <br />
-    <ul>
-   {% for seeds in site.data.seeds %}  {% assign seed = seeds[1] %}
-    <li>
-      {{ seed.firstname }}
-      or
-      {{ seed[0].firstname }}
-      or two 
-      {{ seed[1].lastname }}
-      or none worked
-    </li>
- {% endfor %}
-    </ul>
-    
 </div>
