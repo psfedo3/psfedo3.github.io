@@ -1,5 +1,6 @@
-{% assign seeds = site.data.seeds[page.slug] | sort %}
-{% for seed in seeds %}
+    {% assign seeds = site.data.seeds[page.slug] %}
+    {% assign seeds_sort = seeds | sort: 'firstname' | reverse %}
+{% for seed in seeds_sort %}
  {% assign upload = seed[1].upload %}
  {% assign email = seed[1].email %}
  {% assign firstname = seed[1].firstname %}
