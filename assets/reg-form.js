@@ -7,7 +7,7 @@
      $('.js-join-form').submit(function() {
        var form = this;
 
-
+  
        $("#js-reg-submit").html(
          '<svg class="icon icon--small rotate-center"><use xlink:href="#icon-loading"></use></svg> Sending...'
        );
@@ -42,7 +42,20 @@
      $('.js-close-modal').click(function() {
        $('body').removeClass('show-modal');
      });
-
+     
+    function previewFile(input) {
+      var file = $("#file").get(0).files[0];
+    
+      if (file) {
+        var reader = new FileReader();
+    
+        reader.onload = function() {
+          $("#previewImg").attr("src", reader.result);
+        }
+    
+        reader.readAsDataURL(file);
+      }
+    };
      function showModal(title, message) {
        $('.js-modal-title').text(title);
        $('.js-modal-text').html(message);
@@ -54,3 +67,4 @@
   // image preview
   
   
+      
