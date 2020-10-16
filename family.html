@@ -25,6 +25,33 @@ permalink: /family/
   second 
   
   {% for seed in site.data.seeds %}
-    {{ seed.firstname }} {{ seed.lastname }}
+       <section class="c-section" id="a">
+    <header class="c-section__header">
+      <h2 class="c-section__title">
+                a
+            </h2>
+        </header>
+        <div class="c-section__main">
+     <ol class="c-listing c-listing--authors">
+         <li>
+  <a class="c-author  h-card u-url" href="{{ include.url }}">
+          <picture>
+         <img class="c-author__image  u-photo" src="{{ include.upload }}" alt="{{ seed.firstname }} {{ include.lastname }}" width="160" height="160">
+                        </picture>
+         <span class="c-author__meta  p-name">
+     {{ include.firstname }} <span>{{ seed.lastname }} </span>
+        </span></a>
+    </li>
+
+               
+            </ol>
+        </div>
+    </section>
+
+
     {% endfor %}
+    
+    third <br />
+    
+    {{ site.data.seeds }}
 </div>
