@@ -19,7 +19,7 @@
          data: $(this).serialize(),
          contentType: 'application/x-www-form-urlencoded',
          success: function(data) {
-           showModal('Comment submitted', 'Thanks! Your request to to join our family has been received and moderated.We would get back to you');
+           showModal('Request submitted', 'Thanks! Your request to to join our family has been received and moderated.We would get back to you');
 
            $("#js-reg-submit")
              .html("Submit");
@@ -27,6 +27,7 @@
            $(form)[0].reset();
            $(form).removeClass('disabled');
            grecaptcha.reset();
+           $('#file').reset();
          },
          error: function(err) {
            console.log(err);
@@ -67,7 +68,7 @@
       var outputImage = document.querySelector('.js-image-upload');
       outputImage.src = reader.result;
       var avatar = document.querySelector('.js-image-avatar');
-      avatar.value = reader.result;
+      avatar.value = reader.result
     }
     reader.readAsDataURL(event.target.files[0]);
   }
