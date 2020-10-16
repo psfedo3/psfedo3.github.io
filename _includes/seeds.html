@@ -1,4 +1,4 @@
-    {% assign seeds = site.data.seeds[page.slug] %}
+{% assign seeds = site.data.seeds[page.slug] %}
     {% assign seeds_sort = seeds %}
 {% for seed in seeds_sort %}
  {% assign upload = seed[1].upload %}
@@ -12,3 +12,5 @@
   {% include seed.html index=forloop.index upload=upload email=email firstname=firstname lastname=lastname number=number parish=parish url=url %}
   
 {% endfor %}
+
+{{ site.data.seeds[page.slug] }}
