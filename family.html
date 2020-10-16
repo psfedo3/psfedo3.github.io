@@ -52,6 +52,17 @@ permalink: /family/
     {% endfor %}
     
     third <br />
+    <ul>
+   {% for seeds site.data.seeds %}  {% assign seed = seeds[1] %}
+    <li>
+      {{ seed.firstname }}
+      or
+      {{ seed[0].firstname }}
+      or two 
+      {{ seed[1].lastname }}
+      or none worked
+    </li>
+ {% endfor %}
+    </ul>
     
-    {{ site.data.seeds[0] }}
 </div>
