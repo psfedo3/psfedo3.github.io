@@ -65,6 +65,7 @@ file.addEventListener('change', update);
       var reader = new FileReader();
       reader.onload = function(e) {
         document.getElementById('previewImg').src = e.target.result;
+     document.getElementById('msg').innerText = 'Your Image have be selected, Now click the button below to upload';
       };
       reader.readAsDataURL(file);
     }
@@ -111,7 +112,8 @@ function ResizeImage() {
         dataurl = canvas.toDataURL(file.type);
 
      document.getElementById('js-avatar').value = dataurl;
-  document.getElementById('msg').innerText = 'Image Uploaded Sucessfully now click the button below to submit form';
+  document.getElementById('msg').innerText = 'Image Uploaded Sucessfully ✓';
+  
       }
       reader.readAsDataURL(file);
 
