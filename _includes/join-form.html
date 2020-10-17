@@ -166,11 +166,11 @@
    <input label="Upload your photo" class="form__field" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="fields[upload]" required>
                         </div>
     <p id="msg"></p>
-       <a class="btn btn--green btn--medium" onclick="ResizeImage()">
-        Click here to Upload
-         </a>
    <input type="hidden" name="fields[avatar]" id="js-avatar" value="" />
                     </label>
+           <a class="btn btn--green btn--medium" onclick="ResizeImage()">
+              Click here to Upload
+            </a>     
                 </div>
             </fieldset>
       <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
