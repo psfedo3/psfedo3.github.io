@@ -72,7 +72,7 @@ file.addEventListener('change', update);
 
 function ResizeImage() {
   if (window.File && window.FileReader && window.FileList && window.Blob) {
-    var filesToUploads = document.getElementById('imageFile').files;
+    var filesToUploads = document.getElementById('file').files;
     var file = filesToUploads[0];
     if (file) {
 
