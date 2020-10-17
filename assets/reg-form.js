@@ -52,53 +52,75 @@
    
    
   // image preview
-  function previewImage(evt) {
-    var filesToUploads = document.getElementById('file').files;
-        var file = filesToUploads[0];
-        if (file) {
+  
+var file = document.querySelector('#file');
+file.addEventListener('change', update);
 
-    var reader = new FileReader();
-    reader.onload = function(e) {
-      document.getElementById('previewImg').src = e.target.result;
-     var img = document.createElement("img");
-     img.src = e.target.result;
-     
-     var canvas = document.createElement("canvas");
-     var ctx = canvas.getContext("2d");
-     ctx.drawImage(img, 0, 0);
-     
-     var MAX_WIDTH = 400;
-     var MAX_HEIGHT = 400;
-     var width = img.width;
-     var height = img.height;
-     
-     if (width > height) {
-       if (width > MAX_WIDTH) {
-         height *= MAX_WIDTH / width;
-         width = MAX_WIDTH;
-       }
-     } else {
-       if (height > MAX_HEIGHT) {
-         width *= MAX_HEIGHT / height;
-         height = MAX_HEIGHT;
-       }
-     }
-     canvas.width = width;
-     canvas.height = height;
-     var ctx = canvas.getContext("2d");
-     ctx.drawImage(img, 0, 0, width, height);
-     
-     dataurl = canvas.toDataURL(file.type);
-     var avatar = document.querySelector('#js-image-avatar');
-      avatar.value = dataurl;
-     
-    };
-    reader.readAsDataURL(file);
-  }
-  
+  function update(evt) {
+
+    var files = evt.target.files;
+    var file = files[0];
+
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('previewImg').src = e.target.result;
+      };
+      reader.readAsDataURL(file);
     }
-  
- 
-  
-      
-  
+  };
+
+function ResizeImage() {
+  if (window.File && window.FileReader && window.FileList && window.Blob) {
+    var filesToUploads = document.getElementById('imageFile').files;
+    var file = filesToUploads[0];
+    if (file) {
+
+      var reader = new FileReader();
+      // Set the image once loaded into file reader
+      reader.onload = function(e) {
+
+        var img = document.createElement("img");
+        img.src = e.target.result;
+
+        var canvas = document.createElement("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+
+        var MAX_WIDTH = 200;
+        var MAX_HEIGHT = 200;
+        var width = img.width;
+        var height = img.height;
+
+        if (width > height) {
+          if (width > MAX_WIDTH) {
+            height *= MAX_WIDTH / width;
+            width = MAX_WIDTH;
+          }
+        } else {
+          if (height > MAX_HEIGHT) {
+            width *= MAX_HEIGHT / height;
+            height = MAX_HEIGHT;
+          }
+        }
+        canvas.width = width;
+        canvas.height = height;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, width, height);
+
+        dataurl = canvas.toDataURL(file.type);
+
+     document.getElementById('js-avatar').value = dataurl;
+  document.getElementById('msg').innerText = 'Image Uploaded Sucessfully now click the button below to submit form';
+      }
+      reader.readAsDataURL(file);
+
+    } else {
+      document.getElementById('msg').innerText = 'Oh you have to add a picture first';
+      }
+    
+
+  } 
+}
+
+

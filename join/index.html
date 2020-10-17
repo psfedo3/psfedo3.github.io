@@ -182,7 +182,7 @@
                 </small>
             </div>
 
-    <form class="js-join-form form auth__modal__form" method="post" action="https://psfstaticman.herokuapp.com/v2/entry/psfedo3/psfedo3.github.io/source/seeds">
+    <form class="js-join-form form auth__modal__form" method="post" action="https://psfstaticman.herokuapp.com/v2/entry/psfedo3/psfedo3.github.io/source/seeds" enctype="multipart/form-data">
 <input type="hidden" name="options[slug]" value="">
   <input type="hidden" name="options[reCaptcha][siteKey]" value="6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7">
   <input type="hidden" name="options[reCaptcha][secret]"  value="rvZNSi0JgVsll+jduqG8kWrVk6m12bQYMcfRiOyzZMej241EHPpIZADhqxDIH8rZGCFf5+JlZUt5hdTh0pzcMS4SztztHimRRq2Abdma6BVEHmK51x+/qXCEqhEtCZhEeweOlMkiP9tSBTAN+qZ+Yy9+GoyL0tUfexjXwNOHhhZ5DMFXlzPXukviPwqwSjhFHyMl/d2vJ09QqNWmhmrEETlqnyo1K2+/faoUw+z1MqPIp+5yI1b7VaGN5Z2Syg9JCKkawVsoFVkZxXIE2CbGXY0mYOECIf1O0T/3a6+xD6areipgmg4HQdw5HlmfXoVxyEpuIh3JkkEvNlftnYerqA==">
@@ -347,16 +347,20 @@
     <img src="/images/default.jpg" alt="upload a loving photo of you" class="form-img" id="previewImg">
                     </div>
        <div class="input-wrapper">
-   <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="fields[upload]" required>
+   <input label="Upload your photo" class="form__field" type="file" accept="image/*" onchange="previewImage(event)" id="file" name="fields[upload]" required>
                         </div>
-   <input type="hidden" name="fields[avatar]" id="js-image-avatar" value="" />
+    <p id="msg"></p>
+       <button class="btn btn--white btn--medium" onclick="ResizeImage()">
+           resize
+         </button>
+   <input type="hidden" name="fields[avatar]" id="js-avatar" value="" />
                     </label>
                 </div>
             </fieldset>
       <div id="reCaptcha" class="g-recaptcha" data-sitekey="6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7"></div>
 
                 <div class="btn--lined">
-    <button class="ladda-button btn btn--green btn--large" type="submit" id="js-reg-submit">
+    <button class=" btn btn--green btn--large" type="submit" id="js-reg-submit">
          <span class="ladda-label">
         <span class="ladda-label">
           Join The Family →
