@@ -1165,10 +1165,10 @@ col-1,
   }
 }
 #msg {
-  background-color: #104f78;
+  background-color: #646e73;
   color: #ffffff;
-  padding: 10px;
-  border-radius: 11px;
+  padding: 2px;
+  border-radius: 2px;
 }
 
 /* 
@@ -2736,7 +2736,7 @@ label {
 input[type="file"] {
   border: 1px solid #ededed;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .form__field--radio {
