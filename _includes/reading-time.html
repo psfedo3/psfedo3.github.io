@@ -1,9 +1,0 @@
-  <svg width="18px" height="18px" class="icon">
-    <use xlink:href="#icon-time"></use>
-     </svg>
-  <span class="small-caps">
-
-{% unless words contains '-' %}
-{{ words | plus: 150 | divided_by: 150 | append: ' minutes read' }}
-{% endunless %}
-    </span>
