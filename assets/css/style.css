@@ -539,7 +539,7 @@ h6:target {
   margin: 0 auto;
   padding: 2.5em 3.75em 1.25em;
   color: rgba(0, 0, 0, 0.7);
-  background: url("{{ site.baseurl }}/assets/img/see-500x500-removebg-preview.png") 95% 0% no-repeat;
+  background: url("/assets/img/see-500x500-removebg-preview.png") 95% 0% no-repeat;
   background-size: 30em;
 }
 .footer p {
@@ -733,7 +733,7 @@ h6:target {
 }
 
 .c-hero {
-  background: linear-gradient(to bottom right, #7f62e4 50%, transparent), url("{{ site.baseurl }}/assets/img/hero.png") no-repeat;
+  background: linear-gradient(to bottom right, #7f62e4 50%, transparent), url("/assets/img/hero.png") no-repeat;
   background-position: center, 100% 100%;
   background-size: cover, 70%;
   color: #ffffff;
