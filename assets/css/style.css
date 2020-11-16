@@ -1,64 +1,64 @@
 /* global css */
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url("fonts/GothamRounded-Bold.eot");
-  src: url("fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Bold.woff2") format("woff2"), url("fonts/GothamRounded-Bold.woff") format("woff"), url("/fonts/GothamRounded-Bold.ttf") format("truetype"), url("fonts/GothamRounded-Bold.svg#GothamRounded-Bold") format("svg");
+  src: url("/fonts/GothamRounded-Bold.eot");
+  src: url("/fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-Bold.woff2") format("woff2"), url("/fonts/GothamRounded-Bold.woff") format("woff"), url("/fonts/GothamRounded-Bold.ttf") format("truetype"), url("/fonts/GothamRounded-Bold.svg#GothamRounded-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url("fonts/GothamRounded-BoldItalic.eot");
-  src: url("fonts/GothamRounded-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-BoldItalic.woff2") format("woff2"), url("fonts/GothamRounded-BoldItalic.woff") format("woff"), url("fonts/GothamRounded-BoldItalic.ttf") format("truetype"), url("fonts/GothamRounded-BoldItalic.svg#GothamRounded-BoldItalic") format("svg");
+  src: url("/fonts/GothamRounded-BoldItalic.eot");
+  src: url("/fonts/GothamRounded-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-BoldItalic.woff2") format("woff2"), url("/fonts/GothamRounded-BoldItalic.woff") format("woff"), url("/fonts/GothamRounded-BoldItalic.ttf") format("truetype"), url("/fonts/GothamRounded-BoldItalic.svg#GothamRounded-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded Book';
-  src: url("fonts/GothamRounded-Book.eot");
-  src: url("fonts/GothamRounded-Book.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Book.woff2") format("woff2"), url("fonts/GothamRounded-Book.woff") format("woff"), url("fonts/GothamRounded-Book.ttf") format("truetype"), url("fonts/GothamRounded-Book.svg#GothamRounded-Book") format("svg");
+  src: url("/fonts/GothamRounded-Book.eot");
+  src: url("/fonts/GothamRounded-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-Book.woff2") format("woff2"), url("/fonts/GothamRounded-Book.woff") format("woff"), url("/fonts/GothamRounded-Book.ttf") format("truetype"), url("/fonts/GothamRounded-Book.svg#GothamRounded-Book") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded Book';
-  src: url("fonts/GothamRounded-BookItalic.eot");
-  src: url("fonts/GothamRounded-BookItalic.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-BookItalic.woff2") format("woff2"), url("fonts/GothamRounded-BookItalic.woff") format("woff"), url("fonts/GothamRounded-BookItalic.ttf") format("truetype"), url("fonts/GothamRounded-BookItalic.svg#GothamRounded-BookItalic") format("svg");
+  src: url("/fonts/GothamRounded-BookItalic.eot");
+  src: url("/fonts/GothamRounded-BookItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-BookItalic.woff2") format("woff2"), url("/fonts/GothamRounded-BookItalic.woff") format("woff"), url("/fonts/GothamRounded-BookItalic.ttf") format("truetype"), url("/fonts/GothamRounded-BookItalic.svg#GothamRounded-BookItalic") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url("fonts/GothamRounded-Light.eot");
-  src: url("fonts/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Light.woff2") format("woff2"), url("fonts/GothamRounded-Light.woff") format("woff"), url("fonts/GothamRounded-Light.ttf") format("truetype"), url("fonts/GothamRounded-Light.svg#GothamRounded-Light") format("svg");
+  src: url("/fonts/GothamRounded-Light.eot");
+  src: url("/fonts/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-Light.woff2") format("woff2"), url("/fonts/GothamRounded-Light.woff") format("woff"), url("/fonts/GothamRounded-Light.ttf") format("truetype"), url("/fonts/GothamRounded-Light.svg#GothamRounded-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url("fonts/GothamRounded-LightItalic.eot");
-  src: url("fonts/GothamRounded-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-LightItalic.woff2") format("woff2"), url("fonts/GothamRounded-LightItalic.woff") format("woff"), url("fonts/GothamRounded-LightItalic.ttf") format("truetype"), url("fonts/GothamRounded-LightItalic.svg#GothamRounded-LightItalic") format("svg");
+  src: url("/fonts/GothamRounded-LightItalic.eot");
+  src: url("/fonts/GothamRounded-LightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-LightItalic.woff2") format("woff2"), url("/fonts/GothamRounded-LightItalic.woff") format("woff"), url("/fonts/GothamRounded-LightItalic.ttf") format("truetype"), url("/fonts/GothamRounded-LightItalic.svg#GothamRounded-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url("fonts/GothamRounded-Medium.eot");
-  src: url("fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Medium.woff2") format("woff2"), url("fonts/GothamRounded-Medium.woff") format("woff"), url("fonts/GothamRounded-Medium.ttf") format("truetype"), url("fonts/GothamRounded-Medium.svg#GothamRounded-Medium") format("svg");
+  src: url("/fonts/GothamRounded-Medium.eot");
+  src: url("/fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-Medium.woff2") format("woff2"), url("/fonts/GothamRounded-Medium.woff") format("woff"), url("/fonts/GothamRounded-Medium.ttf") format("truetype"), url("/fonts/GothamRounded-Medium.svg#GothamRounded-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url("fonts/GothamRounded-MediumItalic.eot");
-  src: url("fonts/GothamRounded-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-MediumItalic.woff2") format("woff2"), url("fonts/GothamRounded-MediumItalic.woff") format("woff"), url("fonts/GothamRounded-MediumItalic.ttf") format("truetype"), url("fonts/GothamRounded-MediumItalic.svg#GothamRounded-MediumItalic") format("svg");
+  src: url("/fonts/GothamRounded-MediumItalic.eot");
+  src: url("/fonts/GothamRounded-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamRounded-MediumItalic.woff2") format("woff2"), url("/fonts/GothamRounded-MediumItalic.woff") format("woff"), url("/fonts/GothamRounded-MediumItalic.ttf") format("truetype"), url("/fonts/GothamRounded-MediumItalic.svg#GothamRounded-MediumItalic") format("svg");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -539,7 +539,7 @@ h6:target {
   margin: 0 auto;
   padding: 2.5em 3.75em 1.25em;
   color: rgba(0, 0, 0, 0.7);
-  background: url(../assets/img/see-500x500-removebg-preview.png) 95% 0% no-repeat;
+  background: url("{{ site.baseurl }}/assets/img/see-500x500-removebg-preview.png") 95% 0% no-repeat;
   background-size: 30em;
 }
 .footer p {
@@ -733,7 +733,7 @@ h6:target {
 }
 
 .c-hero {
-  background: linear-gradient(to bottom right, #7f62e4 50%, transparent), url("../assets/img/hero.png") no-repeat;
+  background: linear-gradient(to bottom right, #7f62e4 50%, transparent), url("{{ site.baseurl }}/assets/img/hero.png") no-repeat;
   background-position: center, 100% 100%;
   background-size: cover, 70%;
   color: #ffffff;
