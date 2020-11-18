@@ -1104,7 +1104,7 @@ h6:target {
   margin-bottom: 0.5em;
 }
 
-.p-article__lead:first-child {
+.p-article__lead::first-letter {
   font-size: 2em;
   font-family: Gotham Rounded;
   text-transform: capitalize;
