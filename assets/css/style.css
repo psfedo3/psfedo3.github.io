@@ -461,6 +461,13 @@ h6:target {
   padding: .9em 0;
 }
 
+.article-page .c-banner {
+  background-color: #ffffff;
+}
+.article-page .c-banner .c-banner__logo, .article-page .c-banner .c-nav__label, .article-page .c-banner .c-nav__button {
+  color: #373a3c;
+}
+
 .c-banner__wrapper, .c-nav, .c-nav__items {
   display: flex;
   align-items: center;
