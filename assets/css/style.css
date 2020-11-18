@@ -511,6 +511,7 @@ h6:target {
   .c-nav__label {
     font-size: 2em;
     font-family: Gotham Rounded;
+    color: #ffffff !important;
   }
 
   .c-nav__items.active {
@@ -697,13 +698,13 @@ h6:target {
 }
 
 .btn--primary {
-  background: linear-gradient(60deg, #463883 0%, #ededed 100%);
+  background: #7f62e4;
   color: #ffffff;
 }
 .btn--primary:hover, .btn--primary:focus {
-  background: #7f62e4;
-  color: #fff;
-  border-color: #7f62e4;
+  background: #ffffff;
+  color: #7f62e4;
+  border: 1px solid #7f62e4;
 }
 
 .btn--half {
