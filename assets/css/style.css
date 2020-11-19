@@ -1052,7 +1052,6 @@ h6:target {
 .p-article {
   font-size: calc(1rem + .5vw);
   padding: .7em .5em;
-  border-bottom: 1px solid #eceeef;
 }
 .p-article a {
   color: #7f62e4;
@@ -1172,4 +1171,8 @@ h6:target {
     border: 1px solid #e9e9e9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
   }
+}
+.c-webmentions {
+  padding: 1em 0;
+  border-bottom: 1px solid #eceeef;
 }
