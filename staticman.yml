@@ -4,7 +4,7 @@
 # another one to handle posts.
 comments:
 # (*) REQUIRED
-  allowedFields: ["name", "email", "url", "message", "replying_to_uid"]
+  allowedFields: ["name", "message", "replying_to_uid"]
   branch: source
   commitMessage: "Comment from {fields.name} on {options.slug}"
   filename: "entry{@timestamp}"
@@ -49,11 +49,11 @@ comments:
     
       
   # note that reCaptcha is nested under comments
-  reCaptcha:
-    enabled: true
-    # the siteKey is used as-is (no encryption)
-    siteKey: "6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7" 
+  #reCaptcha:
+  #  enabled: true
+  #  # the siteKey is used as-is (no encryption)
+   # siteKey: "6LdvQtYZAAAAAGxXtd7YyTMyxorhY-CIskjjyiQ7" 
     # the secret is the encrypted blob you got back from the encrypt call
-    secret: "rvZNSi0JgVsll+jduqG8kWrVk6m12bQYMcfRiOyzZMej241EHPpIZADhqxDIH8rZGCFf5+JlZUt5hdTh0pzcMS4SztztHimRRq2Abdma6BVEHmK51x+/qXCEqhEtCZhEeweOlMkiP9tSBTAN+qZ+Yy9+GoyL0tUfexjXwNOHhhZ5DMFXlzPXukviPwqwSjhFHyMl/d2vJ09QqNWmhmrEETlqnyo1K2+/faoUw+z1MqPIp+5yI1b7VaGN5Z2Syg9JCKkawVsoFVkZxXIE2CbGXY0mYOECIf1O0T/3a6+xD6areipgmg4HQdw5HlmfXoVxyEpuIh3JkkEvNlftnYerqA=="
+   # secret: "rvZNSi0JgVsll+jduqG8kWrVk6m12bQYMcfRiOyzZMej241EHPpIZADhqxDIH8rZGCFf5+JlZUt5hdTh0pzcMS4SztztHimRRq2Abdma6BVEHmK51x+/qXCEqhEtCZhEeweOlMkiP9tSBTAN+qZ+Yy9+GoyL0tUfexjXwNOHhhZ5DMFXlzPXukviPwqwSjhFHyMl/d2vJ09QqNWmhmrEETlqnyo1K2+/faoUw+z1MqPIp+5yI1b7VaGN5Z2Syg9JCKkawVsoFVkZxXIE2CbGXY0mYOECIf1O0T/3a6+xD6areipgmg4HQdw5HlmfXoVxyEpuIh3JkkEvNlftnYerqA=="
     
 

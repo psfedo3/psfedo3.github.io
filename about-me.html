@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Aboue Me (Spruce)  – Spruce is a web developer and designer fron Nigeria</title>
+    <title>Aboue Me (Spruce)  – Web developer and designer fron Nigeria</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -34,7 +34,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="alternate" type="application/rss+xml" title=" - Spruce is a web developer and designer fron Nigeria" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title=" - Web developer and designer fron Nigeria" href="/feed.xml" />
 
 
 
@@ -200,42 +200,59 @@ Web design, etc..
         
           <p>Cannot generate webmentions at the moment</p>
         
-      </div>
-    </article>
-    
-    
-  </div>
-
-</div>
-<section class="section section--tight">
-  <div class="page-intro">
-    <span class="page-intro__inner">
-      <span class="page-intro__inner-text">
-      Related articles
-      </span>
-    </span>
-  </div>
-  <ol class="c-listing--summaries">
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </ol>
+      </div><section class="" id="comments-section">
   
+  
+
+  <!-- New comment form -->
+  <div id="respond" class="comment__new">
+    <form class="js-form c-comment__form" method="post" action="https://sprucestaticman.herokuapp.com/v2/entry/iamspruce/iamspruce.github.io/source/comments">
+  <input type="hidden" name="options[origin]" value="https://iamspruce.github.io/about-me.html">
+  <input type="hidden" name="options[parent]" value="https://iamspruce.github.io/about-me.html">
+  <input type="hidden" id="comment-replying-to-uid" name="fields[replying_to_uid]" value="">
+  <input type="hidden" name="options[slug]" value="about-me">
+              <div class="c-comment--input__wrapper">
+                <label for="c-form--name" class="sr-only">
+                  Enter your twitter name, eg @Spruce
+                </label>
+                <input type="text" name="c-form--name" id="c-form--name" placeholder="Your twitter ( eg @Spruce )">
+              </div>
+              <div class="c-comment--input__wrapper">
+              <label for="c-form--comment" class="sr-only">
+                Type your comment here
+              </label>
+              <textarea label="Type your comment here..." type="textarea" class="" id="c-form--comment" inputmode="text" name="message" placeholder="Type your comment here...">
+              </textarea>
+            </div>
+            <div class="c-comment--button__wrapper">
+              <a rel="nofollow" id="cancel-comment-reply-link" href="https://iamspruce.github.io/about-me.html#respond" class="btn btn--medium btn--white" hidden>
+                Cancel reply
+              </a>
+              <button type="submit" class="btn btn--medium btn--blue" id="comment-form-submit">
+                Add comment
+              </button>
+            </form>
+
+
+  </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</article>
+  </div>
+  <nav class="c-article-nav" aria-label="Article">
+    <a class="c-article-nav__item" rel="prev" href="#0" aria-label="Previous: Flexible Captioned Slanted Images">
+      <svg class="c-article-nav__icon" width="20" height="20" viewBox="0 0 200 200" focusable="false" aria-hidden="true">
+    <path d="M50 100l85 85 7-7-78-78 78-78-7-7"></path>
+  </svg>
+  </a><a class="c-article-nav__item" rel="next" href="#0" aria-label="Next: Four Ways Design Systems Can Promote Accessibility – and What They Can’t Do">
+    <svg class="c-article-nav__icon" width="20" height="20" viewBox="0 0 200 200" focusable="false" aria-hidden="true">
+    <path d="M150 100l-85 85-7-7 78-78-78-78 7-7"></path>
+  </svg>
+  </a></nav>
+</div>
 </body>
     </main>
 
