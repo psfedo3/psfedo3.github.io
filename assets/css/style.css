@@ -566,7 +566,7 @@ h6:target {
   font-weight: 700;
 }
 
-.c-nav__label--active::after {
+.c-nav__label.c-nav__label--active::after {
   content: '';
   display: block;
   height: 5px;
