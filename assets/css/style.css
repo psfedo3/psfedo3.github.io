@@ -470,9 +470,17 @@ h6:target {
 /* modules */
 .c-banner {
   background-color: #7f62e4;
-  padding: .9em .7em;
+  padding-right: calc(1rem + .85vw);
+  padding-left: calc(1rem + .85vw);
+  padding-top: .9em;
+  padding-bottom: .9em;
 }
 
+@media (max-width: 566px) {
+  .c-banner {
+    padding: 0.9em 0.7em !important;
+  }
+}
 .article-page .c-banner {
   background-color: #ffffff;
 }
