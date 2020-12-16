@@ -470,7 +470,7 @@ h6:target {
 /* modules */
 .c-banner {
   background-color: #7f62e4;
-  padding: .9em 0;
+  padding: .9em .7em;
 }
 
 .article-page .c-banner {
@@ -1372,4 +1372,127 @@ h6:target {
 .c-article-nav__icon {
   height: 2.5rem;
   width: 2.5rem;
+}
+
+.page__header,
+.post__header {
+  padding: 2rem 0;
+}
+
+.page__content {
+  width: 100%;
+  max-width: 41rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+}
+
+.page__content--fullwidth {
+  max-width: none;
+}
+
+.about__photo .responsive-image {
+  -o-object-position: 0 100%;
+  object-position: 0 100%;
+  background-position: left center;
+  width: 100%;
+}
+
+@media (min-width: 670px) {
+  .page__header,
+  .post__header {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page__title,
+  .post__title {
+    font-size: 5rem;
+    letter-spacing: -2px;
+  }
+
+  .page__content {
+    padding-bottom: 4rem;
+  }
+}
+@media (min-width: 940px) {
+  .page__header,
+  .post__header {
+    padding: 5rem 0;
+  }
+
+  .page__title,
+  .post__title {
+    font-size: 7rem;
+  }
+}
+.about__header {
+  margin-bottom: 2rem;
+}
+
+.about__photo {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.about__photo .responsive-image {
+  -o-object-position: 0 50%;
+  object-position: 0 50%;
+  background-position: left center;
+}
+
+.about__intro {
+  max-width: 54rem;
+}
+
+.about__intro p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about__social {
+  list-style-type: none !important;
+}
+
+.about__social .icon {
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.about__content p {
+  font-size: 1.375rem;
+}
+.about__content a {
+  font-size: 1.375rem;
+  color: #7f62e4;
+}
+
+@media (min-width: 940px) {
+  .about__header {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0 calc(50% - 50vw) 3rem;
+  }
+
+  .about__photo {
+    width: 40%;
+    padding-bottom: 150px;
+    margin: 0;
+  }
+
+  .about__intro {
+    -webkit-box-flex: 1;
+    flex: 1 1 60%;
+    padding: 2rem 3rem;
+  }
+
+  .about__content {
+    width: 100%;
+    max-width: 41rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
