@@ -1205,34 +1205,6 @@ h6:target {
   margin-bottom: 0;
 }
 
-/* article share */
-.c-article__share {
-  display: none;
-}
-
-@media (min-width: 950px) {
-  .c-article__share {
-    display: block;
-    position: fixed;
-    z-index: 10;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .c-share__label {
-    margin-top: 8px;
-    display: inline-block;
-    padding: .6em;
-    background-color: #ffffff;
-    border-radius: 6px;
-    text-align: center;
-    transition: 0.3s;
-    position: relative;
-    border: 1px solid #e9e9e9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
-  }
-}
 /* articles list */
 .c-articles {
   transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
