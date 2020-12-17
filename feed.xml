@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spruce Blog</title>
+    <description>Web developer and designer from Nigeria</description>
+    <link>https://iamspruce.github.io/</link>
+    <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Dec 2020 17:02:12 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2020 17:02:12 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Welcome to my personal blog and online journal</title>
+        <description>&lt;p class=&quot;p-article__lead&quot;&gt;
+Hey there welcome to my personal blog where i write about my learning process as a supposed web designer.
+&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/hero.png&quot; alt=&quot;website cover image&quot; /&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+This site (My personal blog) Which was &lt;strong&gt;lunched&lt;/strong&gt; on the &lt;b&gt; 18th of November &lt;/b&gt; is my own personal online journal where i blog about everything web design.
+&lt;/p&gt;
+&lt;p&gt;
+  This site is built with Jekyll and hosted on Github. And as u might have guessed this site was built and designed be &lt;a href=&quot;https://facebook.com/spruce.emma&quot;&gt;Me (Spruce) &lt;/a&gt;
+  &lt;/p&gt;
+&lt;h2 class=&quot;p-article__heading&quot;&gt;What i blog about&lt;/h2&gt;
+&lt;p&gt;
+Ehn things i blog about are just a view minimal things:
+&lt;/p&gt;
+
+&lt;ol class=&quot;p-article__items&quot;&gt;
+&lt;li&gt;
+HTML
+&lt;/li&gt;
+&lt;li&gt;
+CSS
+&lt;/li&gt;
+&lt;li&gt;
+JAVASCRIPT
+&lt;/li&gt;
+&lt;li&gt;
+JEKYLL
+&lt;/li&gt;
+&lt;li&gt;
+and some DESIGN TIPS
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once again welcome aboard... &lt;/p&gt;
+
+&lt;p&gt;&lt;code data-lang=&quot;css&quot;&gt;
+  #hey {
+    welcome: dear reader;
+  }
+&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+        <link>https://iamspruce.github.io/Welcome-to-my-personal-blog.html</link>
+        <guid isPermaLink="true">https://iamspruce.github.io/Welcome-to-my-personal-blog.html</guid>
+        
+        <category>About</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
