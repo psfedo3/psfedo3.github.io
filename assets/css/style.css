@@ -579,7 +579,7 @@ h6:target {
 }
 
 @media (max-width: 566px) {
-  .c-banner {
+  .article-page .c-banner {
     padding: 0.9em 0.7em !important;
   }
 }
