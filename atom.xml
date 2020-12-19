@@ -1,4 +1,262 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-17T17:02:12+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Welcome to my personal blog and online journal</title><link href="https://iamspruce.github.io/Welcome-to-my-personal-blog.html" rel="alternate" type="text/html" title="Welcome to my personal blog and online journal" /><published>2020-11-18T00:00:00+00:00</published><updated>2020-11-18T00:00:00+00:00</updated><id>https://iamspruce.github.io/Welcome-to-my-personal-blog</id><content type="html" xml:base="https://iamspruce.github.io/Welcome-to-my-personal-blog.html">&lt;p class=&quot;p-article__lead&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-19T18:50:13+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">How To Create A Blog On Mobile With Jekyll On Github</title><link href="https://iamspruce.github.io/How-To-Create-A-Blog-On-Mobile-With-Jekyll-On-Github.html" rel="alternate" type="text/html" title="How To Create A Blog On Mobile With Jekyll On Github" /><published>2020-12-18T00:00:00+00:00</published><updated>2020-12-18T00:00:00+00:00</updated><id>https://iamspruce.github.io/How-To-Create-A-Blog-On-Mobile-With-Jekyll-On-Github</id><content type="html" xml:base="https://iamspruce.github.io/How-To-Create-A-Blog-On-Mobile-With-Jekyll-On-Github.html">&lt;p class=&quot;p-article__lead&quot;&gt;
+Hey welcome to the series &lt;b&gt;&quot;How to create a blog on your mobile phone with Jekyll on Github&quot;&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Yep i said it... You can create a free blog from your mobile phone, so get ready to start your journey as a blogger...  
+&lt;/p&gt;
+&lt;p&gt;
+Alot of people do ask:
+&lt;ol class=&quot;p-article__items&quot;&gt;
+&lt;li&gt;
+How can i create a website with my phone?
+&lt;/li&gt;
+&lt;li&gt;
+Can we blog from mobile?
+&lt;/li&gt;
+&lt;li&gt;
+what is the best phone for blogging?
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Yes, Yes and Yes you can create a website with your phone, you can blog from your mobile phone and you dont need a special phone for  blogging. 
+&lt;/p&gt;
+
+&lt;h1&gt;
+Previews
+&lt;/h1&gt;
+&lt;h6&gt;
+What is moblie bloging?
+&lt;/h6&gt;
+&lt;p&gt;
+Mobile blogging is a method of &lt;b&gt;publishing to a website or blog from a mobile phone or other handheld device.&lt;/b&gt; A mobile blogs help habitual bloggers to post write-ups directly from their phones even when on the move.
+&lt;/p&gt;
+&lt;p&gt;
+Well i hope from the defination you understand what a mobile blog is and what we are trying to do here...
+well as you might have guessed we are trying to create a free website or blog which you can update, design and post to directly from your mobile phone. 
+&lt;/p&gt;
+
+&lt;h2&gt;
+Requirements:
+&lt;/h2&gt;
+&lt;ol class=&quot;p-article__items&quot;&gt;
+&lt;li&gt;
+HTML
+&lt;/li&gt;
+&lt;li&gt;
+CSS
+&lt;/li&gt;
+&lt;li&gt;
+JAVASCRIPT (optional)
+&lt;/li&gt;
+&lt;li&gt;
+Github account
+&lt;/li&gt;
+&lt;li&gt;
+SPCK Editor
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Before you beging this series with me, it is required you just have a basic knowledge of Html, Css and javascript is optional for now, well if you dont have a basic knowledge and you are just hearing about all this for the first time, dont worry this articles &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web&quot;&gt; Getting Started With The Web &lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/HTML&quot;&gt;Structuring the web with HTML &lt;/a&gt;. Now this two great articles should basically get you started 
+&lt;/p&gt;
+
+&lt;p&gt;
+Other requirements are the github account: Github is a subsidiary of Microsoft which provides hosting for software development and version control using Git. &lt;br /&gt;
+Now dont worry about the defination, you probably will never need it anyway. All you need is to Create an Account(which is totally free), head over to &lt;a href=&quot;https://github.com&quot;&gt;Github.com&lt;/a&gt; and create an account. 
+&lt;/p&gt;
+&lt;p&gt;
+Then &lt;a href=&quot;https://spck.io&quot;&gt;Spck Editor&lt;/a&gt;, this is just a really cool code editor and js sandbox, this is the closest thing to vscode on a mobile phone. &lt;br /&gt;
+Head over to play store search for &quot;Spck editor&quot; and install it. This editor is what we'll use to write to our blog...
+&lt;/p&gt;
+
+&lt;div class=&quot;info info--warning&quot;&gt;
+   &lt;div class=&quot;info__content&quot;&gt;
+       &lt;strong&gt;Note:&lt;/strong&gt; It is required that you create a github account and have downloaded and installed the app before you continue &lt;br /&gt;
+       Please don't use Opera Mini, use a modern browser like Chrome of Firefox
+                &lt;/div&gt;
+          &lt;/div&gt;
+
+&lt;h3&gt;
+Getting Started
+&lt;/h3&gt;
+&lt;p&gt;
+Now make sure you have created your Github account by signing up &lt;br /&gt;
+Now Click below link (Open in a different tab) &lt;br /&gt;
+&lt;a href=&quot;https://github.com/mmistakes/mm-github-pages-starter&quot;&gt;Minimal mistakes starter theme
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/jekyll-theme.png&quot; alt=&quot;minimal mistakes starter theme&quot; /&gt;
+
+  &lt;figcaption&gt;
+    You should see a page that looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+  Now its time to &lt;b&gt;Fork&lt;/b&gt; the starter theme &lt;br /&gt;
+  click on the &lt;b&gt;Forks icon&lt;/b&gt; 
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/click-forks.png&quot; alt=&quot;minimal mistakes fork icon&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Click on the forks icon
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+The page would reload and you would see a desktop view of, just look at the right side of the page at the header (top of the webpage) and click on &lt;b&gt;fork&lt;/b&gt;
+&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/fork-theme.png&quot; alt=&quot;minimal mistakes starter theme&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Click the fork icon there
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;
+After doing that the next page you are going to see would ask you to change your &lt;b&gt;Forked theme name&lt;/b&gt; &lt;br /&gt;
+Now change the name of the website to your &quot;github-username.github.io&quot;
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/rename-theme.png&quot; alt=&quot;minimal mistakes starter theme&quot; /&gt;
+
+  &lt;figcaption&gt;
+   Old one looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/rename-theme-me.png&quot; alt=&quot;rename minimal mistakes starter theme&quot; /&gt;
+
+  &lt;figcaption&gt;
+   Change it to something like this &quot;with your own github username&quot;
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;
+Now its time to create a github token for the spck editor app you downloaded earlier... &lt;br /&gt;
+click on the dropdown menu at the top of the page
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/click-settings.png&quot; alt=&quot;Click on settings&quot; /&gt;
+
+  &lt;figcaption&gt;
+  Dropdown menu
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+from the dropdown: &lt;br /&gt;
+Click on settings &lt;br /&gt;
+developer settings &lt;br /&gt;
+personal access tokens &lt;br /&gt;
+Generate New Token &lt;br /&gt;
+You may be asked for password, just enter your github password and continue
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/spck-token.png&quot; alt=&quot;Set up github personal token&quot; /&gt;
+
+  &lt;figcaption&gt;
+ Select the repo box
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+Give it a note: Spck editor &lt;br /&gt;
+click on the repo box (select everything under it) &lt;br /&gt;
+Scroll select &lt;b&gt;write:packages&lt;/b&gt; and &lt;b&gt; admin:org&lt;/b&gt; &lt;br /&gt;
+Click &quot;Generate Token&quot;
+ &lt;/p&gt;
+&lt;p&gt;
+After you have generated your token ensure you copy it to your phone clipboard because you wont see again unless you re-generate it.
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/spck-token-sucess.png&quot; alt=&quot;copy the github personal token&quot; /&gt;
+
+  &lt;figcaption&gt;
+ Ensure you copy the token
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;
+If you have follows this guide perfectly, you are just a few steps away from your newly phone managed blog or website.
+ &lt;/p&gt;
+
+&lt;p&gt;
+Moving on, Do you remember the &quot;Spck editor&quot; you downloaded earlier? Yep i guess you do &lt;br /&gt;
+Now open it up &lt;br /&gt;
+And you should see something that looks like this image below
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/spck-editor.png&quot; alt=&quot;Open Spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+ Yep. Click on the first tab and you should see this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+Next step is to look at the &lt;b&gt;PROJECTS&lt;/b&gt; tab &lt;br /&gt;
+Click on the third icon (The fork icon)
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/spck-editor-fork.png&quot; alt=&quot;Open Spck editor fork icon&quot; /&gt;
+
+  &lt;figcaption&gt;
+ On the projects tab, click the fork icon (the third icon)
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+When you click on fork icon &lt;br /&gt;
+Select credentials &lt;br /&gt; 
+Set up your Credentials as follows: 
+name: Github username
+password/token: The token you Generated earlier (The one you copied)
+email: for email (The one used in opening your github account) &lt;br /&gt;
+Then just Click on &quot;OK&quot;
+ &lt;/p&gt;
+&lt;p&gt;
+Now its time to clone your website to your mobike phone &lt;br /&gt;
+Click on the Fork icon again &lt;br /&gt;
+Just enter your Url like this &lt;br /&gt;
+&quot;https://github.com/github-username/github-username.github.io&quot; &lt;br /&gt;
+for my case (The example we are using in this series) i have &lt;br /&gt;
+&quot;https://github.com/sprucestatic/sprucestatic.github.io&quot; &lt;br /&gt;
+then just Click on &quot;OK&quot; &lt;br /&gt;
+and wait for your website to clone (Speed depends on your internet connection, mine took a few seconds)
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/spck-editor-success.png&quot; alt=&quot;Successfully clone website on Spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+ After you have finished cloning you should see something like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+Yep, You guessed it, that's all. If you followed the steps correctly then i congratulate you(yeah you can feel proud). You have created a free website, and you can now manage, edit and design it on your mob ile phone.   
+ &lt;/p&gt;
+
+&lt;p&gt;
+To view your website &lt;br /&gt;
+go to your browser &lt;br /&gt;
+type in your website url &lt;br /&gt;
+&quot;github-username.github.io&quot; &lt;br /&gt;
+in my case &quot;sprucestatic.github.io&quot;
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/theme-preview.jpg&quot; alt=&quot;Free website created with jekyll on github&quot; /&gt;
+
+  &lt;figcaption&gt;
+Your new site should look like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+Honestly you should be proud now. Welcome to the bloggers and website owners association of the world. &lt;br /&gt;
+Now you can go and tell your family members, friends, share it on facebook and twitter, about your new website...  
+ &lt;/p&gt;
+
+&lt;p&gt;
+  Next step is Customizing your new website, and introducing you to &lt;b&gt;GIT&lt;/b&gt; on your mobile phone... Thanks for reading.
+ &lt;/p&gt;</content><author><name>Spruce</name></author><category term="About" /><summary type="html">Hey welcome to the series &quot;How to create a blog on your mobile phone with Jekyll on Github&quot;</summary></entry><entry><title type="html">Welcome to my personal blog and online journal</title><link href="https://iamspruce.github.io/Welcome-to-my-personal-blog.html" rel="alternate" type="text/html" title="Welcome to my personal blog and online journal" /><published>2020-11-18T00:00:00+00:00</published><updated>2020-11-18T00:00:00+00:00</updated><id>https://iamspruce.github.io/Welcome-to-my-personal-blog</id><content type="html" xml:base="https://iamspruce.github.io/Welcome-to-my-personal-blog.html">&lt;p class=&quot;p-article__lead&quot;&gt;
 Hey there welcome to my personal blog where i write about my learning process as a supposed web designer.
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
