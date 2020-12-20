@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Dec 2020 14:11:32 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2020 14:11:32 +0000</lastBuildDate>
+    <pubDate>Sun, 20 Dec 2020 14:58:14 +0000</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2020 14:58:14 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -93,7 +93,7 @@ Getting Started
 &lt;p&gt;
 Now make sure you have created your Github account by signing up &lt;br /&gt;
 Now Click below link (Open in a different tab) &lt;br /&gt;
-&lt;a href=&quot;https://github.com/mmistakes/jekyll-now&quot;&gt;Jekyyl now starter theme
+&lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyyl now starter theme
 &lt;/a&gt;
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
@@ -164,15 +164,13 @@ click on the dropdown menu at the top of the page
 &lt;li&gt; personal access tokens &lt;/li&gt;
 &lt;li&gt; Generate New Token &lt;/li&gt;
 &lt;li&gt; You may be asked for password, just enter your github password and continue &lt;/li&gt; 
-&lt;/ol&gt;
- &lt;/p&gt;
 
-&lt;p&gt;
  &lt;ol&gt;
 &lt;li&gt; Give it a note: Spck editor &lt;/li&gt;
 &lt;li&gt;click on the repo box (select everything under it) &lt;/li&gt;
 &lt;li&gt;Scroll select &lt;b&gt;write:packages&lt;/b&gt; and &lt;b&gt; admin:org&lt;/b&gt; &lt;/li&gt;
 &lt;li&gt;Click &quot;Generate Token&quot;&lt;/li&gt;
+ &lt;/ol&gt;
  &lt;/ol&gt;
  &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
@@ -223,14 +221,13 @@ Click on the third icon (The fork icon)
 &lt;p&gt;
 When you click on fork icon &lt;br /&gt;
 Select credentials &lt;br /&gt; 
-Set up your Credentials as follows: 
-name: Github username
-password/token: The token you Generated earlier (The one you copied)
+Set up your Credentials as follows: &lt;br /&gt; 
+name: Github username &lt;br /&gt; 
+password/token: The token you Generated earlier (The one you copied) &lt;br /&gt; 
 email: for email (The one used in opening your github account) &lt;br /&gt;
 Then just Click on &quot;OK&quot;
  &lt;/p&gt;
 &lt;p&gt;
- 
 Now its time to clone your website to your mobike phone &lt;br /&gt;
 Click on the Fork icon again &lt;br /&gt;
 Just enter your Url like this &lt;/p&gt;
@@ -242,6 +239,8 @@ Just enter your Url like this &lt;/p&gt;
   &lt;/figcaption&gt;
  &lt;/figure&gt;
 &lt;p&gt;
+ url: https://github.com/github-username/github-username.github.io 
+ &lt;br /&gt;
 just change &quot;sprucestatic&quot; to your own github username &lt;br /&gt;
 then just Click on &quot;OK&quot; &lt;br /&gt;
 and wait for your website to clone (Speed depends on your internet connection, mine took a few seconds)
