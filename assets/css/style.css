@@ -1260,13 +1260,7 @@ h6:target {
   color: #59a8f0;
   left: .8em;
   position: absolute;
-  font-family: Calibri Bold, AvenirNext, Avenir, -apple-system, BlinkMacSystemFont, Roboto Slab, Droid Serif, Segoe UI, Oxygen-Sans, Ubuntu, Cantarell, Georgia, serif;
-}
-.p-article .wf-loaded-stage1 ol > li::before {
-  font-family: MijaInitial;
-}
-.p-article .wf-loaded-stage2 ol > li::before {
-  font-family: Mija;
+  font-family: Product Sans, AvenirNext, Avenir, -apple-system, BlinkMacSystemFont, Roboto Slab, Droid Serif, Segoe UI, Oxygen-Sans, Ubuntu, Cantarell, Georgia, serif;
 }
 .p-article ol ol > li {
   padding-left: 2.25em;
@@ -1293,7 +1287,8 @@ h6:target {
 }
 .p-article h2, .p-article h3, .p-article h4, .p-article h5, .p-article h6 {
   margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
+  font-family: Product Sans;
 }
 .p-article img {
   max-width: 100%;
@@ -1343,6 +1338,10 @@ h6:target {
 
 .info--warning {
   --color-info: red;
+}
+
+.info--note {
+  --color-info: blue;
 }
 
 .info__content {
