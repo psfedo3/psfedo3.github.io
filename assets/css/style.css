@@ -1236,21 +1236,60 @@ h6:target {
   font-size: calc(1rem + .5vw);
   padding: .5em;
 }
-.p-article p:first-of-type::first-letter {
-  font-size: 2em;
-  font-family: Gotham Rounded;
-  text-transform: capitalize;
-  padding-right: .1em;
-  float: left;
+.p-article ol,
+.p-article ul {
+  padding: 0;
+  margin: 1em 0;
+  max-width: 100%;
 }
-.p-article code {
-  background-color: #818a91;
-  display: block;
-  color: #ffffff;
+.p-article ol {
+  list-style: none;
+  counter-reset: listCounter;
+}
+.p-article ol > li {
+  padding-left: 1.75em;
+  padding-left: calc(1.65em + .7vw);
+  position: relative;
+  counter-increment: listCounter;
   margin-bottom: 1em;
-  padding: 2em;
-  padding-left: 7;
-  margin-left: -10%;
+}
+.p-article ol > li::before {
+  content: counter(listCounter,decimal-leading-zero);
+  font-size: .7em;
+  font-weight: 700;
+  color: #59a8f0;
+  left: .8em;
+  position: absolute;
+  font-family: Calibri Bold, AvenirNext, Avenir, -apple-system, BlinkMacSystemFont, Roboto Slab, Droid Serif, Segoe UI, Oxygen-Sans, Ubuntu, Cantarell, Georgia, serif;
+}
+.p-article .wf-loaded-stage1 ol > li::before {
+  font-family: MijaInitial;
+}
+.p-article .wf-loaded-stage2 ol > li::before {
+  font-family: Mija;
+}
+.p-article ol ol > li {
+  padding-left: 2.25em;
+  padding-left: calc(1.35em + .7vw);
+}
+.p-article ol ol ol > li {
+  padding-left: 3em;
+  padding-left: calc(2.4em + 1.4vw);
+}
+.p-article ol[start='0'] {
+  counter-reset: listCounter -1;
+}
+.p-article ol ul li:before {
+  content: "";
+}
+.p-article ol ol {
+  margin-left: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.p-article ol ol > li::before {
+  content: counters(listCounter,".",decimal-leading-zero) " ";
+  left: -1.5em;
 }
 .p-article h2, .p-article h3, .p-article h4, .p-article h5, .p-article h6 {
   margin-top: 1.5em;
