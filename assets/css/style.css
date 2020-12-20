@@ -1236,6 +1236,9 @@ h6:target {
   font-size: calc(1rem + .5vw);
   padding: .5em;
 }
+.p-article a {
+  color: #59a8f0;
+}
 .p-article ol,
 .p-article ul {
   padding: 0;
