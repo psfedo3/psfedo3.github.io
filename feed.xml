@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Dec 2020 15:50:08 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2020 15:50:08 +0000</lastBuildDate>
+    <pubDate>Sun, 20 Dec 2020 20:28:02 +0000</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2020 20:28:02 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -68,7 +68,7 @@ SPCK Editor
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
-Before you beging this series with me, it is required you just have a basic knowledge of Html, Css and javascript is optional for now, well if you dont have a basic knowledge and you are just hearing about all this for the first time, dont worry this articles &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web&quot;&gt; Getting Started With The Web &lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/HTML&quot;&gt;Structuring the web with HTML &lt;/a&gt; should basically get you started. 
+Before you beging this series with me, it is required you just have a basic knowledge of Html, Css, and javascript is optional for now, well if you dont have a basic knowledge and you are just hearing about all this for the first time, dont worry this articles &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web&quot;&gt; Getting Started With The Web &lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/HTML&quot;&gt;Structuring the web with HTML &lt;/a&gt; should basically get you started. 
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -76,13 +76,13 @@ Other requirements are the github account: Github is a subsidiary of Microsoft w
 Now dont worry about the defination, you probably will never need it anyway. All you need is to Create an Account(which is totally free), head over to &lt;a href=&quot;https://github.com&quot;&gt;Github.com&lt;/a&gt; and create an account. 
 &lt;/p&gt;
 &lt;p&gt;
-Then &lt;a href=&quot;https://spck.io&quot;&gt;Spck Editor&lt;/a&gt;, this is just a really cool code editor and js sandbox, this is the closest thing to vscode on a mobile phone. &lt;br /&gt;
+Then &lt;a href=&quot;https://spck.io&quot;&gt;Spck Editor&lt;/a&gt;, this is just a really cool code editor and js sandbox, this is the closest thing that is close to vscode on a mobile phone. &lt;br /&gt;
 Head over to play store search for &quot;Spck editor&quot; and install it. This editor is what we'll use to write to our blog...
 &lt;/p&gt;
 
 &lt;div class=&quot;info info--note&quot;&gt;
    &lt;div class=&quot;info__content&quot;&gt;
-       &lt;strong&gt;Note:&lt;/strong&gt; It is required that you create a github account and have downloaded and installed the app before you continue &lt;br /&gt;
+       &lt;strong&gt;Note:&lt;/strong&gt; It is required that you create a github account, and have downloaded and installed the app before you continue. &lt;br /&gt;
        Please don't use Opera Mini, use a modern browser like Chrome or Firefox
                 &lt;/div&gt;
           &lt;/div&gt;
@@ -93,7 +93,7 @@ Getting Started
 &lt;p&gt;
 Now make sure you have created your Github account by signing up &lt;br /&gt;
 Now Click below link (Open in a different tab) &lt;br /&gt;
-&lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyyl now starter theme
+&lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll now starter theme
 &lt;/a&gt;
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
@@ -158,7 +158,8 @@ click on the dropdown menu at the top of the page
  &lt;/figure&gt;
 &lt;p&gt;
  &lt;ol&gt;
- from the dropdown:
+ from the dropdown: 
+ &lt;br /&gt;
 &lt;li&gt; Click on settings &lt;/li&gt;
 &lt;li&gt; developer settings &lt;/li&gt;
 &lt;li&gt; personal access tokens &lt;/li&gt;
@@ -241,7 +242,7 @@ Just enter your Url like this &lt;/p&gt;
 &lt;p&gt;
  url: https://github.com/github-username/github-username.github.io 
  &lt;br /&gt;
-just change &quot;sprucestatic&quot; to your own github username &lt;br /&gt;
+just change &quot;github-username&quot; to your own github username &lt;br /&gt;
 then just Click on &quot;OK&quot; &lt;br /&gt;
 and wait for your website to clone (Speed depends on your internet connection, mine took a few seconds)
  &lt;/p&gt;
@@ -275,7 +276,7 @@ Honestly you should be proud now. Welcome to the bloggers and website owners ass
 Now you can go and tell your family members, friends, share it on facebook and twitter, about your new website...  
  &lt;/p&gt;
 &lt;p&gt;
-Though not really much now, Before the end of this series you will learn how to create and design a fully functional blog...
+Though not really much now, Before the end of this series you will learn how to create and update a fully functional blog from your mobile phone...
 &lt;/p&gt;
 &lt;p&gt;
   Next step is Customizing your new website, and introducing you to &lt;b&gt;GIT&lt;/b&gt; on your mobile phone... Thanks for reading.
