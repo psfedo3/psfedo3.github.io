@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Dec 2020 08:15:42 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 08:15:42 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2020 08:23:09 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 08:23:09 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -125,7 +125,7 @@ A lot of terminologies used here, dont worry about that, you will soon see them 
 &lt;/ol&gt;
 &lt;h6&gt;
 Conncecting the dots...
-&lt;h6&gt;
+&lt;/h6&gt;
 &lt;p&gt;
 You may be wondering, how does this have to do with blogging from mobile phone... &lt;br /&gt;
 well from the explanations above, you only need two things
@@ -360,7 +360,7 @@ Previous parts of this series
  &lt;p&gt;
 &lt;a href=&quot;/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;
  &lt;/p&gt;
-&lt;/h6&gt;&lt;/h6&gt;&lt;/h6&gt;&lt;/h6&gt;
+&lt;/h6&gt;&lt;/h6&gt;
 </description>
         <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
         <link>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html</link>
