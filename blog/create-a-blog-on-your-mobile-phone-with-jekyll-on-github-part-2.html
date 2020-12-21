@@ -372,7 +372,7 @@ you already have a remote repo, so you shouldn't worry about that, what i will i
 </p>
 <h6>
 I guess we are done talking...
-<h6>
+</h6>
 <p>
 Too much talk and explanations (I really hope you get the idea), now lets stop talking and start showing how things work
 </p>
@@ -386,52 +386,52 @@ Go ahead and lunch your spck editor, <a href="/blog/create-a-blog-on-your-mobile
     Your cloned project should look like this
   </figcaption>
  </figure>
- <p>
+<p>
 Now its time to upload your own contents <br /> <br />
 Scroll down to the images folder and select it
  </p>
- <figure class="p-article__img">
+<figure class="p-article__img">
   <img src="/assets/img/posts/mobile-blog-2/project-img.png" alt="Jekyll image folder in spck editor" />
 
   <figcaption>
    Image folder looks like this
   </figcaption>
  </figure>
- <p>
+<p>
 Click on the three dots(menu of the image folder),and click on Upload File
  </p>
- <figure class="p-article__img">
+<figure class="p-article__img">
   <img src="/assets/img/posts/mobile-blog-2/project-img-upload.png" alt="Jekyll upload image in Spck editor" />
 
   <figcaption>
     Click on upload file
   </figcaption>
  </figure>
- <p>
+<p>
 Now upload a loving photo of your self, or your website logo.. <br />
 Now its time to edit the config file and customize the site to display your own info
  </p>
 
- <p>
+<p>
 Now close your image folder and look for and open the file called <br />
 <b>_config.yml</b> <br />
 when you open it, you should see something like this below
  </p>
- <figure class="p-article__img">
+<figure class="p-article__img">
   <img src="/assets/img/posts/mobile-blog-2/project-config.png" alt="Jekyll Config file in spck editor" />
 
   <figcaption>
     Your config file looks like this
   </figcaption>
  </figure>
- <p>
+<p>
 basically anything you edit here affects your site drastically, so be careful of what you touch in here
  </p>
- <p>
+<p>
 First thing you should change is name, in your config file change your name
  </p>
 
- <pre class="language-yml">
+<pre class="language-yml">
 <code class="language-yml">
 name: your name
 #Change it to the name you want to use
@@ -439,11 +439,11 @@ name: your name
 </code>
  </pre>
 
- <p>
+<p>
 Change the description too
  </p>
 
- <pre class="language-yml">
+<pre class="language-yml">
 <code class="language-yml">
 description: web developer from somewhere
 #Change it to anything you want, just dont make it too look (seo issues)
@@ -454,7 +454,7 @@ description: web developer from somewhere
 Do you remember the image you uploaded? yep you do, its time to use it. From the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"> Getting Started With The Web </a> you read in the first part of this series i assume you now know how the web work...
  </p>
 
- <pre class="language-yml">
+<pre class="language-yml">
 <code class="language-yml">
 avatar: https://....
 #Change it to the file you uploaded earlier
@@ -462,11 +462,11 @@ avatar: /images/spruce.jpg #in my case
 </code>
  </pre>
 
- <p>
+<p>
 Edit your footer links, add your social media liks to the footer links
  </p>
 
- <pre class="language-yml">
+<pre class="language-yml">
 <code class="language-yml">
 footer-links:
   dribble: dribble username
@@ -476,11 +476,11 @@ footer-links:
 </code>
  </pre>
 
- <p>
+<p>
 Change your url to your site url
  </p>
 
- <pre class="language-yml">
+<pre class="language-yml">
 <code class="language-yml">
 url: github-username.github.io
 #where github username is changed to your username
@@ -488,7 +488,7 @@ url: sprucestatic.github.io #in my case
 </code>
  </pre>
 
- <div class="info info--note">
+<div class="info info--note">
    <div class="info__content">
        <strong>Note:</strong> Leave the baseurl feed empty if your site is "github-username.github.io", but if your site is "github-username/static-site-name" add "/static-site-name" to the baseurl <br />
        but if you have followed this series from the begining please leave baseurl empty...
@@ -506,21 +506,21 @@ Click on the last fork icon at the bottom of the editor
     Click on the last fork icon to your right
   </figcaption>
  </figure>
- <p>
+<p>
 Once you have click on the fork icon, you should see something that looks like the one below 
  </p>
 
- <figure class="p-article__img">
+<figure class="p-article__img">
   <img src="/assets/img/posts/mobile-blog-2/project-commit.png" alt="Spck editor commit" />
 
   <figcaption>
     Click on the commit all
   </figcaption>
  </figure>
- <p>
+<p>
 the next steps are easy
  </p>
- <ol>
+<ol>
 <li>
 Click on Commit All
 </li>
@@ -531,13 +531,13 @@ Enter commit Message
 You can enter anything in your commit message, but that dosen't mean you should just write a bunch of anything you think of, a commit message should breifly explain the changes you made to your project.
 </p>
  </ol>
- <p>
+<p>
 Remember from our defination of commit, it just save the changes to your local computer, in our case your mobile phone, that is the changes wont reflect on the web just yet, Now that is where <b>GIT PUSH</b> comes in the picture... Push as the name implies pushes your saved commit to your remote repo (the one hosted on github) so that people can view it on the web. 
  </p>
- <p>
+<p>
 As you might have noticed, editing, uploading and commiting to your cloned project dosen't require any data Connection. But when pushing your changes, you need a data connection, So go ahead and switch on your data connection and follow the below steps
  </p>
- <ol>
+<ol>
 To push your changes follow this steps: <br /><br />
 <li>
 Click on the last fork icon again
@@ -549,29 +549,29 @@ Click on push
 Click Ok
 </li>
  </ol>
- <figure class="p-article__img">
-  <img src="/assets/img/posts/mobile-blog-2/project-pshing.png" alt="Spck editor Git push on mobile" />
+<figure class="p-article__img">
+  <img src="/assets/img/posts/mobile-blog-2/project-pushing.png" alt="Spck editor Git push on mobile" />
 
   <figcaption>
    Wait for it to push your changes
   </figcaption>
  </figure>
 
- <p>
+<p>
 Boom and there you go, your websites should be live with your changes on the web in a minute... <br />
 Go ahead and preview your website
  </p>
 
- <figure class="p-article__img">
+<figure class="p-article__img">
   <img src="/assets/img/posts/mobile-blog-2/preview-mobile.png" alt="Mobile Preview of your free website" />
 
   <figcaption>
     On mobile phone your site looks like this
   </figcaption>
  </figure>
- <p>
+<p>
  </p>
- <figure class="p-article__img">
+<figure class="p-article__img">
   <img src="/assets/img/posts/mobile-blog-2/preview-web.png" alt="Web Preview of your free website" />
 
   <figcaption>
@@ -579,17 +579,16 @@ Go ahead and preview your website
   </figcaption>
  </figure>
 
- <p>
+<p>
 Well thats the end of this part of the series... Next stop is <b>Blogging</b>, Thanks for reading...
  </p>
 
- <h6>
+<h6>
 Previous parts of this series
  </h6>
- <p>
+<p>
 <a href="/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html">Create a blog on your mobile phone part 1</a>
  </p>
-</h6></h6>
 
         </div>
       </footer>
