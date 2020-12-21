@@ -5,9 +5,187 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Dec 2020 09:19:05 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 09:19:05 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2020 20:57:41 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 20:57:41 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Create A Blog On Your Mobile Phone Part 3</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;
+Sad to announce the end of this &quot;how to create a blog on your mobile phone series&quot;, well i know we have learned a lot of new things in this web series
+&lt;/p&gt;
+&lt;h6&gt;
+Some things we have learned so far
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+what mobile blogging is
+&lt;/li&gt;
+&lt;li&gt;
+how to create a free website on github with jekyll
+&lt;/li&gt;
+&lt;li&gt;
+how to clone your website to your mobile phone
+&lt;/li&gt;
+&lt;li&gt;
+how to run some basic Git Commands in your mobile phone
+&lt;/li&gt;
+&lt;li&gt;
+and so many other things
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+incase you missed the other series, don't worry you can always go back and read them up
+&lt;/p&gt;
+&lt;h6&gt;
+Link to previous series
+&lt;/h6&gt;
+&lt;p&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;
+ &lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html&quot;&gt;Create a blog on your mobile phone part 2&lt;/a&gt;
+ &lt;/p&gt;
+&lt;p&gt;
+Now lets go back to what we are really here for, blogging from your mobile phone
+ &lt;/p&gt;
+
+&lt;h1&gt;
+What is blogging
+ &lt;/h1&gt;
+&lt;p&gt;
+ &lt;b&gt;Blogging&lt;/b&gt; refers to writing, photography, and other media that is self-published online.
+ &lt;/p&gt;
+
+&lt;p&gt;
+So basically you know what blogging is all about, its a way for a lot of people to express their feelings and share there ideas online.
+ &lt;/p&gt;
+
+&lt;h2&gt;
+Blogging with jekyll
+ &lt;/h2&gt;
+&lt;p&gt;
+your blog posts live in a directory called &lt;b&gt;_posts&lt;/b&gt; in the root of your site, so basically thats where you will add all your blog posts
+ &lt;/p&gt;
+
+&lt;p&gt;
+Your blog file names begin with &quot;year-month-date-your-title.md&quot; &lt;br /&gt;
+so when creating your post, always follow the order &lt;b&gt;Year&lt;/b&gt;-&lt;b&gt;month&lt;/b&gt;-&lt;b&gt;date&lt;/b&gt;-&lt;b&gt;title&lt;/b&gt;.md 
+ &lt;/p&gt;
+&lt;p&gt;
+for a detailed on how to write blog posts on jekyll please refer to this jekyll guide below &lt;br /&gt; &lt;br /&gt;
+&lt;a href=&quot;https://jekyllrb.com/docs/posts&quot;&gt;Learn more about jekyll post&lt;/a&gt;
+ &lt;/p&gt;
+&lt;h3&gt;
+Publishing your first post
+ &lt;/h3&gt;
+&lt;p&gt;&amp;lt;/p&amp;gt;
+The first step is to open your spck editor, &lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html&quot;&gt;The editor you downloaded in the first part of this series&lt;/a&gt;, open it and navigate to your _posts folder
+ &amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-3/spck-preview.png&quot; alt=&quot;Jekyll  _posts folder in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+   _Posts folder looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+Go ahead and delete the post found there and create another one with &lt;br /&gt; &lt;br /&gt;
+YEAR-MONTH-DAY-TITLE.md format
+ &lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-3/spck-post.png&quot; alt=&quot;new post in jekyll spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+  Add new file
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+After you created the post &lt;br /&gt;
+add your layout and title like this
+ &lt;/p&gt;
+
+&lt;pre class=&quot;language-yml&quot;&gt;
+&lt;code class=&quot;language-yml&quot;&gt;
+---
+layout: post
+title: welcome to my blog
+---
+&lt;/code&gt;
+ &lt;/pre&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-3/spck-edited.png&quot; alt=&quot;Edit jekyll config file in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+  Modify jekyll site on spck editor
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;
+Now you can add anything to your blog post, after all you are now a blogger, after you are done with writting your post, just go ahead and commit your changes and then push them online like we learned in our &lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html&quot;&gt;previous post&lt;/a&gt;
+ &lt;/p&gt;
+
+&lt;p&gt;
+and there you have it, you just created your first post, go ahead and preview your new post online
+ &lt;/p&gt;
+
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-3/preview-mobile.png&quot; alt=&quot;Jekyll image folder in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+  this is what your new website look like in a mobile view
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-3/preview-web.png&quot; alt=&quot;Jekyll image folder in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+  this is what your new website look like in a pc view
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+&lt;h4&gt;
+ Previous posts from this series
+ &lt;/h4&gt;
+&lt;p&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;
+ &lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html&quot;&gt;Create a blog on your mobile phone part 2&lt;/a&gt;
+ &lt;/p&gt;
+
+&lt;h5&gt;
+Other resources to learn from
+ &lt;/h5&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web&quot;&gt; Getting Started With The Web &lt;/a&gt;
+ &lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://jekyllrb.com/tutorials/home/&quot;&gt;Jekyll tutorials home&lt;/a&gt;
+ &lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://jekyllrb.com/docs/blogging&quot;&gt;Blogging in jekyll&lt;/a&gt;
+ &lt;/p&gt;
+
+&lt;p&gt;
+thanks for reading.... 
+ &lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+        <link>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-3.html</link>
+        <guid isPermaLink="true">https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-3.html</guid>
+        
+        <category>Mobile</category>
+        
+        <category>Blog</category>
+        
+        <category>Design</category>
+        
+        
+      </item>
     
       <item>
         <title>Create A Blog On Your Mobile Phone Part 2</title>
