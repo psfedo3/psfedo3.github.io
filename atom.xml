@@ -1,4 +1,353 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-20T20:28:02+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Create A Blog On Your Mobile Phone With Jekyll On Github</title><link href="https://iamspruce.github.io/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html" rel="alternate" type="text/html" title="Create A Blog On Your Mobile Phone With Jekyll On Github" /><published>2020-12-20T00:00:00+00:00</published><updated>2020-12-20T00:00:00+00:00</updated><id>https://iamspruce.github.io/create-a-blog-on-your-mobile-phone-with-jekyll-on-github</id><content type="html" xml:base="https://iamspruce.github.io/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html">&lt;p class=&quot;p-article__lead&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-21T08:01:39+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Create A Blog On Your Mobile Phone Part 2</title><link href="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html" rel="alternate" type="text/html" title="Create A Blog On Your Mobile Phone Part 2" /><published>2020-12-21T00:00:00+00:00</published><updated>2020-12-21T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2</id><content type="html" xml:base="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html">&lt;p&gt;
+Hello dear reader and welcome to the second part of this web series on how to create a website or blog right from your mobile phone.  
+&lt;/p&gt;
+&lt;h1&gt;
+Quick Recap
+&lt;/h1&gt;
+&lt;p&gt;
+Like i said this is the second part of this series, incase you missed the first part you can always go back and read it here: &lt;br /&gt; &lt;br /&gt;
+[Create a blog on your mobile phone part 1](/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html). &lt;br /&gt;
+Talking about readind the other article, You should really read that article up as this one is just building on what we learned in the orther article &lt;br /&gt;
+&lt;ol&gt;
+We learn't a few and very essentials things though:
+&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;
+concept of mobile blogging
+&lt;/li&gt;
+&lt;li&gt;
+how to create a free website/blog
+&lt;/li&gt;
+&lt;li&gt;
+how to clone your website/blog to your mobile phone
+&lt;/li&gt;
+&lt;li&gt;
+and quit a all lot of other things
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br /&gt;
+Don't just take my word for it, you should read it up yourself.
+&lt;/p&gt;
+&lt;h2&gt;
+Requirements
+&lt;/h2&gt;
+&lt;p&gt;
+Before you continue on this tutorial you should have at least a basic knowledge of the things listed below
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+HTML
+&lt;/li&gt;
+&lt;li&gt;
+How the web works (refer to part 1)
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Yep thats all you will be needing for this part of the series...
+&lt;/p&gt;
+
+&lt;h3&gt;
+Welcome to jekyll
+&lt;/h3&gt;
+&lt;p&gt;
+If you are the curious type like me, you would have asked yourself, what is &lt;b&gt;JEKYLL&lt;/b&gt;
+&lt;/p&gt;
+&lt;h4&gt;
+What really is Jekyll?
+&lt;/h4&gt;
+&lt;blockqoute&gt;
+&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is a static site generator. it takes text written in your favorite markup language and uses layouts to create a static website. You can &lt;b&gt;tweak the sites's look and feel&lt;/b&gt;, URLs, the data displayed on the page and more 
+&lt;/blockqoute&gt;
+
+&lt;p&gt;
+From the defination you get the idea... Jekyll is just plain html text that are converted to static website's. &lt;br /&gt;
+Well &lt;b&gt;static&lt;/b&gt; is the opposite of &lt;b&gt;Dynamic&lt;/b&gt;, think of jekyll as the opposite of Dynamic websites built on WordPress and other dynamic websites... &lt;br /&gt;
+of course being static is one of the features i like about jekyll, being static means your pages load super fast, no third party content(You own your contents and codes), and easy set up and customization, like you create a website with just Html, Css and js, Jeez how super fast is that...
+&lt;/p&gt;
+&lt;p&gt;
+In addition to all its other cools features and plugins, it also uses the &lt;b&gt;Shopify Liquid:&lt;/b&gt; &lt;br /&gt;
+&lt;b&gt;Lquid&lt;/b&gt; is an open-source template language created by shopify and written in Ruby. &lt;br /&gt;&lt;br /&gt;
+Did i also mention that jekyll and github are completely free? &lt;br /&gt;
+Yep they sure are.
+
+&lt;/p&gt;
+&lt;h5&gt;
+Resources to learn jekyll
+&lt;/h5&gt;
+&lt;p&gt;
+you can learn all about jekyll and liquid from the below links
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;jekyll official documentation&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://shopify.github.io/liquid/basics/introduction/&quot;&gt;liquid official documentation&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h6&gt;
+Intro to git 
+&lt;/h6&gt;
+&lt;p&gt;
+What is git? &lt;br /&gt;&lt;br /&gt;
+Git is a distributed version-control system for tracking changes in any set of files... and so on 
+&lt;/p&gt;
+&lt;p&gt;
+Basically git is just meant and used to &lt;b&gt;commit&lt;/b&gt;, pull and &lt;b&gt;push&lt;/b&gt; changes to your &lt;b&gt;remote repository&amp;lt;/pull&amp;gt;
+&amp;lt;/p&amp;gt;
+&lt;p&gt;
+a
+A lot of terminologies used here, dont worry about that, you will soon see them in action very soon, but before then let me introduce you to what they are and how they are connected to creating a site on your mobile phone
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;strong&gt;COMMIT:&lt;/strong&gt; this command is used to save your changes to your local repository (the site you cloned to your mobile phone in the part 1 of this series)
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;PUSH:&lt;/strong&gt; this command is used to push(as the name implies) all the files you have commited to your remote repository
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;REMOTE REPO:&lt;/strong&gt; This is a common repository that all team members use to exchange their changes. This repository is stored on a code hosting service like Github(That's where github comes in)
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6&gt;
+Conncecting the dots...
+&lt;h6&gt;
+&lt;p&gt;
+You may be wondering, how does this have to do with blogging from mobile phone... &lt;br /&gt;
+well from the explanations above, you only need two things
+&lt;ol&gt;
+&lt;li&gt;
+Remote Repository
+&lt;/li&gt;
+&lt;li&gt;
+A place to run Git commands from
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;p&gt;
+you already have a remote repo, so you shouldn't worry about that, what i will introduce to you is &lt;b&gt;how you can execute git commands on your mobile phone&lt;/b&gt;
+&lt;/p&gt;
+&lt;h6&gt;
+I guess we are done talking...
+&lt;h6&gt;
+&lt;p&gt;
+Too much talk and explanations (I really hope you get the idea), now lets stop talking and start showing how things work
+&lt;/p&gt;
+&lt;p&gt;
+Go ahead and lunch your spck editor, [The one you downloaded on the previous post](/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html)
+&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-preview.png&quot; alt=&quot;Jekyll project on spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Your cloned project should look like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+Now its time to upload your own contents &lt;br /&gt; &lt;br /&gt;
+Scroll down to the images folder and select it
+ &lt;/p&gt;
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-img.png&quot; alt=&quot;Jekyll image folder in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+   Image folder looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+Click on the three dots(menu of the image folder),and click on Upload File
+ &lt;/p&gt;
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-img-upload.png&quot; alt=&quot;Jekyll upload image in Spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Click on upload file
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+Now upload a loving photo of your self, or your website logo.. &lt;br /&gt;
+Now its time to edit the config file and customize the site to display your own info
+ &lt;/p&gt;
+
+ &lt;p&gt;
+Now close your image folder and look for and open the file called &lt;br /&gt;
+&lt;b&gt;_config.yml&lt;/b&gt; &lt;br /&gt;
+when you open it, you should see something like this below
+ &lt;/p&gt;
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-config.png&quot; alt=&quot;Jekyll Config file in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Your config file looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+basically anything you edit here affects your site drastically, so be careful of what you touch in here
+ &lt;/p&gt;
+ &lt;p&gt;
+First thing you should change is name, in your config file change your name
+ &lt;/p&gt;
+
+ &lt;pre class=&quot;language-yml&quot;&gt;
+&lt;code class=&quot;language-yml&quot;&gt;
+name: your name
+#Change it to the name you want to use
+#name: Spruce
+&lt;/code&gt;
+ &lt;/pre&gt;
+
+ &lt;p&gt;
+Change the description too
+ &lt;/p&gt;
+
+ &lt;pre class=&quot;language-yml&quot;&gt;
+&lt;code class=&quot;language-yml&quot;&gt;
+description: web developer from somewhere
+#Change it to anything you want, just dont make it too look (seo issues)
+#description: web developer based in Edo, Nigeria
+&lt;/code&gt;
+ &lt;/pre&gt;
+&lt;p&gt;
+Do you remember the image you uploaded? yep you do, its time to use it. From the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web&quot;&gt; Getting Started With The Web &lt;/a&gt; you read in the first part of this series i assume you now know how the web work...
+ &lt;/p&gt;
+
+ &lt;pre class=&quot;language-yml&quot;&gt;
+&lt;code class=&quot;language-yml&quot;&gt;
+avatar: https://....
+#Change it to the file you uploaded earlier
+avatar: /images/spruce.jpg #in my case
+&lt;/code&gt;
+ &lt;/pre&gt;
+
+ &lt;p&gt;
+Edit your footer links, add your social media liks to the footer links
+ &lt;/p&gt;
+
+ &lt;pre class=&quot;language-yml&quot;&gt;
+&lt;code class=&quot;language-yml&quot;&gt;
+footer-links:
+  dribble: dribble username
+  email:
+  facebook:
+  ..... etc
+&lt;/code&gt;
+ &lt;/pre&gt;
+
+ &lt;p&gt;
+Change your url to your site url
+ &lt;/p&gt;
+
+ &lt;pre class=&quot;language-yml&quot;&gt;
+&lt;code class=&quot;language-yml&quot;&gt;
+url: github-username.github.io
+#where github username is changed to your username
+url: sprucestatic.github.io #in my case 
+&lt;/code&gt;
+ &lt;/pre&gt;
+
+ &lt;div class=&quot;info info--note&quot;&gt;
+   &lt;div class=&quot;info__content&quot;&gt;
+       &lt;strong&gt;Note:&lt;/strong&gt; Leave the baseurl feed empty if your site is &quot;github-username.github.io&quot;, but if your site is &quot;github-username/static-site-name&quot; add &quot;/static-site-name&quot; to the baseurl &lt;br /&gt;
+       but if you have followed this series from the begining please leave baseurl empty...
+                &lt;/div&gt;
+          &lt;/div&gt;
+&lt;p&gt;
+Now its time to use the Git commands we explained before now &lt;br /&gt;
+in the &lt;b&gt;spck editor&lt;/b&gt; &lt;br /&gt; &lt;br /&gt;
+Click on the last fork icon at the bottom of the editor
+&lt;/p&gt;
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-fork.png&quot; alt=&quot;fork icon in spck editor&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Click on the last fork icon to your right
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+Once you have click on the fork icon, you should see something that looks like the one below 
+ &lt;/p&gt;
+
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-commit.png&quot; alt=&quot;Spck editor commit&quot; /&gt;
+
+  &lt;figcaption&gt;
+    Click on the commit all
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+the next steps are easy
+ &lt;/p&gt;
+ &lt;ol&gt;
+&lt;li&gt;
+Click on Commit All
+&lt;/li&gt;
+&lt;li&gt;
+Enter commit Message
+&lt;/li&gt;
+&lt;p&gt;
+You can enter anything in your commit message, but that dosen't mean you should just write a bunch of anything you think of, a commit message should breifly explain the changes you made to your project.
+&lt;/p&gt;
+ &lt;/ol&gt;
+ &lt;p&gt;
+Remember from our defination of commit, it just save the changes to your local computer, in our case your mobile phone, that is the changes wont reflect on the web just yet, Now that is where &lt;b&gt;GIT PUSH&lt;/b&gt; comes in the picture... Push as the name implies pushes your saved commit to your remote repo (the one hosted on github) so that people can view it on the web. 
+ &lt;/p&gt;
+ &lt;p&gt;
+As you might have noticed, editing, uploading and commiting to your cloned project dosen't require any data Connection. But when pushing your changes, you need a data connection, So go ahead and switch on your data connection and follow the below steps
+ &lt;/p&gt;
+ &lt;ol&gt;
+To push your changes follow this steps: &lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;
+Click on the last fork icon again
+&lt;/li&gt;
+&lt;li&gt;
+Click on push
+&lt;/li&gt;
+&lt;li&gt;
+Click Ok
+&lt;/li&gt;
+ &lt;/ol&gt;
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-pshing.png&quot; alt=&quot;Spck editor Git push on mobile&quot; /&gt;
+
+  &lt;figcaption&gt;
+   Wait for it to push your changes
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+ &lt;p&gt;
+Boom and there you go, your websites should be live with your changes on the web in a minute... &lt;br /&gt;
+Go ahead and preview your website
+ &lt;/p&gt;
+
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/preview-mobile.png&quot; alt=&quot;Mobile Preview of your free website&quot; /&gt;
+
+  &lt;figcaption&gt;
+    On mobile phone your site looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+ &lt;p&gt;
+ &lt;/p&gt;
+ &lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog-2/preview-web.png&quot; alt=&quot;Web Preview of your free website&quot; /&gt;
+
+  &lt;figcaption&gt;
+    On a pc your site looks like this
+  &lt;/figcaption&gt;
+ &lt;/figure&gt;
+
+ &lt;p&gt;
+Well thats the end of this part of the series... Next stop is &lt;b&gt;Blogging&lt;/b&gt;, Thanks for reading...
+ &lt;/p&gt;
+
+ &lt;h6&gt;
+Previous parts of this series
+ &lt;/h6&gt;
+ &lt;p&gt;
+[Create a blog on your mobile phone part 1](/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html)
+ &lt;/p&gt;
+&lt;/h6&gt;&lt;/h6&gt;&lt;/h6&gt;&lt;/h6&gt;&lt;/b&gt;&lt;/p&gt;</content><author><name>Spruce</name></author><category term="Mobile" /><category term="Blog" /><category term="Design" /><summary type="html">Hello dear reader and welcome to the second part of this web series on how to create a website or blog right from your mobile phone. Quick Recap Like i said this is the second part of this series, incase you missed the first part you can always go back and read it here: [Create a blog on your mobile phone part 1](/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html). Talking about readind the other article, You should really read that article up as this one is just building on what we learned in the orther article We learn't a few and very essentials things though: concept of mobile blogging how to create a free website/blog how to clone your website/blog to your mobile phone and quit a all lot of other things Don't just take my word for it, you should read it up yourself. Requirements Before you continue on this tutorial you should have at least a basic knowledge of the things listed below HTML How the web works (refer to part 1) Yep thats all you will be needing for this part of the series...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://iamspruce.github.io/img/posts/mobile-blog-2/preview-web.png" /><media:content medium="image" url="https://iamspruce.github.io/img/posts/mobile-blog-2/preview-web.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Create A Blog On Your Mobile Phone With Jekyll On Github</title><link href="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html" rel="alternate" type="text/html" title="Create A Blog On Your Mobile Phone With Jekyll On Github" /><published>2020-12-20T00:00:00+00:00</published><updated>2020-12-20T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github</id><content type="html" xml:base="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html">&lt;p class=&quot;p-article__lead&quot;&gt;
 Welcome to the series &lt;b&gt;&quot;How to create a blog on your mobile phone with Jekyll on Github&quot;&lt;/b&gt;
 &lt;/p&gt;
 
@@ -84,7 +433,7 @@ Now Click below link (Open in a different tab) &lt;br /&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
-  &lt;img src=&quot;/assets/img/posts/mobile-blog/jekyll-theme.png&quot; alt=&quot;Jekyyl now starter theme&quot; /&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/jekyll-theme.png&quot; alt=&quot;Jekyll now starter theme&quot; /&gt;
 
   &lt;figcaption&gt;
     You should see a page that looks like this
@@ -95,7 +444,7 @@ Now Click below link (Open in a different tab) &lt;br /&gt;
   click on the &lt;b&gt;Forks icon&lt;/b&gt; 
  &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
-  &lt;img src=&quot;/assets/img/posts/mobile-blog/click-forks.png&quot; alt=&quot;Jekyyl now fork icon&quot; /&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/click-forks.png&quot; alt=&quot;Jekyll now fork icon&quot; /&gt;
 
   &lt;figcaption&gt;
     Click on the forks icon
@@ -105,7 +454,7 @@ Now Click below link (Open in a different tab) &lt;br /&gt;
 The page would reload and you would see a desktop view of the page, just look at the right side of the page at the header (top of the webpage) and click on &lt;b&gt;fork&lt;/b&gt;
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
-  &lt;img src=&quot;/assets/img/posts/mobile-blog/fork-theme.png&quot; alt=&quot;Jekyyl now starter theme&quot; /&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/fork-theme.png&quot; alt=&quot;Jekyll now starter theme&quot; /&gt;
 
   &lt;figcaption&gt;
     Click the fork icon there
@@ -117,7 +466,7 @@ After doing that the next page you are going to see would ask you to change your
 Now change the name of the website to: &quot;github-username.github.io&quot;
  &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
-  &lt;img src=&quot;/assets/img/posts/mobile-blog/rename-theme.png&quot; alt=&quot;Jekyyl now starter theme&quot; /&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/rename-theme.png&quot; alt=&quot;Jekyll now starter theme&quot; /&gt;
 
   &lt;figcaption&gt;
    Old one looks like this
@@ -125,7 +474,7 @@ Now change the name of the website to: &quot;github-username.github.io&quot;
  &lt;/figure&gt;
 
 &lt;figure class=&quot;p-article__img&quot;&gt;
-  &lt;img src=&quot;/assets/img/posts/mobile-blog/rename-theme-me.png&quot; alt=&quot;rename Jekyyl now starter theme&quot; /&gt;
+  &lt;img src=&quot;/assets/img/posts/mobile-blog/rename-theme-me.png&quot; alt=&quot;rename Jekyll now starter theme&quot; /&gt;
 
   &lt;figcaption&gt;
    Change it to something like this &quot;with your own github username&quot;
@@ -216,7 +565,7 @@ email: for email (The one used in opening your github account) &lt;br /&gt;
 Then just Click on &quot;OK&quot;
  &lt;/p&gt;
 &lt;p&gt;
-Now its time to clone your website to your mobike phone &lt;br /&gt;
+Now its time to clone your website to your mobile phone &lt;br /&gt;
 Click on the Fork icon again &lt;br /&gt;
 Just enter your Url like this &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
@@ -267,7 +616,14 @@ Though not really much now, Before the end of this series you will learn how to 
 &lt;/p&gt;
 &lt;p&gt;
   Next step is Customizing your new website, and introducing you to &lt;b&gt;GIT&lt;/b&gt; on your mobile phone... Thanks for reading.
- &lt;/p&gt;</content><author><name>Spruce</name></author><category term="Mobile" /><category term="Blog" /><category term="Design" /><summary type="html">Welcome to the series &quot;How to create a blog on your mobile phone with Jekyll on Github&quot;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://iamspruce.github.io/img/posts/mobile-blog/spck-editor.png" /><media:content medium="image" url="https://iamspruce.github.io/img/posts/mobile-blog/spck-editor.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to my personal blog and online journal</title><link href="https://iamspruce.github.io/Welcome-to-my-personal-blog.html" rel="alternate" type="text/html" title="Welcome to my personal blog and online journal" /><published>2020-11-18T00:00:00+00:00</published><updated>2020-11-18T00:00:00+00:00</updated><id>https://iamspruce.github.io/Welcome-to-my-personal-blog</id><content type="html" xml:base="https://iamspruce.github.io/Welcome-to-my-personal-blog.html">&lt;p class=&quot;p-article__lead&quot;&gt;
+ &lt;/p&gt;
+
+&lt;h6&gt;
+Next part of this series
+&lt;/h6&gt;
+&lt;p&gt;
+[Create a blog on your mobile phone part 2](/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html)
+&lt;/p&gt;</content><author><name>Spruce</name></author><category term="Mobile" /><category term="Blog" /><category term="Design" /><summary type="html">Welcome to the series &quot;How to create a blog on your mobile phone with Jekyll on Github&quot;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://iamspruce.github.io/img/posts/mobile-blog/spck-editor.png" /><media:content medium="image" url="https://iamspruce.github.io/img/posts/mobile-blog/spck-editor.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to my personal blog and online journal</title><link href="https://iamspruce.github.io/blog/Welcome-to-my-personal-blog.html" rel="alternate" type="text/html" title="Welcome to my personal blog and online journal" /><published>2020-11-18T00:00:00+00:00</published><updated>2020-11-18T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/Welcome-to-my-personal-blog</id><content type="html" xml:base="https://iamspruce.github.io/blog/Welcome-to-my-personal-blog.html">&lt;p class=&quot;p-article__lead&quot;&gt;
 Hey there welcome to my personal blog where i write about my learning process as a supposed web designer.
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
