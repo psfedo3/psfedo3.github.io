@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-21T21:17:19+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Create A Blog On Your Mobile Phone Part 2</title><link href="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html" rel="alternate" type="text/html" title="Create A Blog On Your Mobile Phone Part 2" /><published>2020-12-21T00:00:00+00:00</published><updated>2020-12-21T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2</id><content type="html" xml:base="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html">&lt;p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-21T21:42:05+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Create A Blog On Your Mobile Phone Part 2</title><link href="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html" rel="alternate" type="text/html" title="Create A Blog On Your Mobile Phone Part 2" /><published>2020-12-21T00:00:00+00:00</published><updated>2020-12-21T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2</id><content type="html" xml:base="https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html">&lt;p&gt;
 Hello dear reader and welcome to the second part of this web series on how to create a website or blog right from your mobile phone.  
 &lt;/p&gt;
 &lt;h1&gt;
@@ -249,7 +249,7 @@ url: sprucestatic.github.io #in my case
 &lt;div class=&quot;info info--note&quot;&gt;
    &lt;div class=&quot;info__content&quot;&gt;
        &lt;strong&gt;Note:&lt;/strong&gt; Leave the baseurl feed empty if your site is &quot;github-username.github.io&quot;, but if your site is &quot;github-username/static-site-name&quot; add &quot;/static-site-name&quot; to the baseurl &lt;br /&gt;
-       but if you have followed this series from the begining please leave baseurl empty...
+       but if you have followed this series from the beginning please leave baseurl empty...
                 &lt;/div&gt;
           &lt;/div&gt;
 &lt;p&gt;
@@ -286,14 +286,14 @@ Click on Commit All
 Enter commit Message
 &lt;/li&gt;
 &lt;p&gt;
-You can enter anything in your commit message, but that dosen't mean you should just write a bunch of anything you think of, a commit message should breifly explain the changes you made to your project.
+You can enter anything in your commit message, but that dosen't mean you should just write a bunch of anything you think of, a commit message should briefly explain the changes you made to your project.
 &lt;/p&gt;
  &lt;/ol&gt;
 &lt;p&gt;
 Remember from our defination of commit, it just save the changes to your local computer, in our case your mobile phone, that is the changes wont reflect on the web just yet, Now that is where &lt;b&gt;GIT PUSH&lt;/b&gt; comes in the picture... Push as the name implies pushes your saved commit to your remote repo (the one hosted on github) so that people can view it on the web. 
  &lt;/p&gt;
 &lt;p&gt;
-As you might have noticed, editing, uploading and commiting to your cloned project dosen't require any data Connection. But when pushing your changes, you need a data connection, So go ahead and switch on your data connection and follow the below steps
+As you might have noticed, editing, uploading and committing to your cloned project dosen't require any data Connection. But when pushing your changes, you need a data connection, So go ahead and switch on your data connection and follow the below steps
  &lt;/p&gt;
 &lt;ol&gt;
 To push your changes follow this steps: &lt;br /&gt;&lt;br /&gt;
@@ -515,7 +515,7 @@ Welcome to the series &lt;b&gt;&quot;How to create a blog on your mobile phone w
 Yep i said it... You can create a free blog from your mobile phone, so get ready to start your journey as a blogger...  
 &lt;/p&gt;
 &lt;p&gt;
-Alot of people do ask:
+a lot of people do ask:
 &lt;ol class=&quot;p-article__items&quot;&gt;
 &lt;li&gt;
 How can i create a website with my phone?

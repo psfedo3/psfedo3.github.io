@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Dec 2020 21:17:19 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 21:17:19 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2020 21:42:05 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 21:42:05 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -440,7 +440,7 @@ url: sprucestatic.github.io #in my case
 &lt;div class=&quot;info info--note&quot;&gt;
    &lt;div class=&quot;info__content&quot;&gt;
        &lt;strong&gt;Note:&lt;/strong&gt; Leave the baseurl feed empty if your site is &quot;github-username.github.io&quot;, but if your site is &quot;github-username/static-site-name&quot; add &quot;/static-site-name&quot; to the baseurl &lt;br /&gt;
-       but if you have followed this series from the begining please leave baseurl empty...
+       but if you have followed this series from the beginning please leave baseurl empty...
                 &lt;/div&gt;
           &lt;/div&gt;
 &lt;p&gt;
@@ -477,14 +477,14 @@ Click on Commit All
 Enter commit Message
 &lt;/li&gt;
 &lt;p&gt;
-You can enter anything in your commit message, but that dosen't mean you should just write a bunch of anything you think of, a commit message should breifly explain the changes you made to your project.
+You can enter anything in your commit message, but that dosen't mean you should just write a bunch of anything you think of, a commit message should briefly explain the changes you made to your project.
 &lt;/p&gt;
  &lt;/ol&gt;
 &lt;p&gt;
 Remember from our defination of commit, it just save the changes to your local computer, in our case your mobile phone, that is the changes wont reflect on the web just yet, Now that is where &lt;b&gt;GIT PUSH&lt;/b&gt; comes in the picture... Push as the name implies pushes your saved commit to your remote repo (the one hosted on github) so that people can view it on the web. 
  &lt;/p&gt;
 &lt;p&gt;
-As you might have noticed, editing, uploading and commiting to your cloned project dosen't require any data Connection. But when pushing your changes, you need a data connection, So go ahead and switch on your data connection and follow the below steps
+As you might have noticed, editing, uploading and committing to your cloned project dosen't require any data Connection. But when pushing your changes, you need a data connection, So go ahead and switch on your data connection and follow the below steps
  &lt;/p&gt;
 &lt;ol&gt;
 To push your changes follow this steps: &lt;br /&gt;&lt;br /&gt;
@@ -562,7 +562,7 @@ Welcome to the series &lt;b&gt;&quot;How to create a blog on your mobile phone w
 Yep i said it... You can create a free blog from your mobile phone, so get ready to start your journey as a blogger...  
 &lt;/p&gt;
 &lt;p&gt;
-Alot of people do ask:
+a lot of people do ask:
 &lt;ol class=&quot;p-article__items&quot;&gt;
 &lt;li&gt;
 How can i create a website with my phone?
