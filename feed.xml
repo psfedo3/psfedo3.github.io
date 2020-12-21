@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Dec 2020 08:30:12 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 08:30:12 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2020 08:34:58 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 08:34:58 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -19,7 +19,7 @@ Quick Recap
 &lt;/h1&gt;
 &lt;p&gt;
 Like i said this is the second part of this series, incase you missed the first part you can always go back and read it here: &lt;br /&gt; &lt;br /&gt;
-&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;. &lt;br /&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.htnl&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;. &lt;br /&gt;
 Talking about readind the other article, You should really read that article up as this one is just building on what we learned in the orther article &lt;br /&gt;
 &lt;ol&gt;
 We learn't a few and very essentials things though:
@@ -148,7 +148,7 @@ I guess we are done talking...
 Too much talk and explanations (I really hope you get the idea), now lets stop talking and start showing how things work
 &lt;/p&gt;
 &lt;p&gt;
-Go ahead and lunch your spck editor, &lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md&quot;&gt;[The one you downloaded on the previous post]&lt;/a&gt;
+Go ahead and lunch your spck editor, &lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.htnl&quot;&gt;[The one you downloaded on the previous post]&lt;/a&gt;
 &lt;/p&gt;
 &lt;figure class=&quot;p-article__img&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/mobile-blog-2/project-preview.png&quot; alt=&quot;Jekyll project on spck editor&quot; /&gt;
@@ -358,7 +358,7 @@ Well thats the end of this part of the series... Next stop is &lt;b&gt;Blogging&
 Previous parts of this series
  &lt;/h6&gt;
  &lt;p&gt;
-&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.htnl&quot;&gt;Create a blog on your mobile phone part 1&lt;/a&gt;
  &lt;/p&gt;
 &lt;/h6&gt;&lt;/h6&gt;
 </description>
@@ -652,7 +652,7 @@ Though not really much now, Before the end of this series you will learn how to 
 Next part of this series
 &lt;/h6&gt;
 &lt;p&gt;
-&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.md&quot;&gt;Create a blog on your mobile phone part 2&lt;/a&gt;
+&lt;a href=&quot;/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.html&quot;&gt;Create a blog on your mobile phone part 2&lt;/a&gt;
 &lt;/p&gt;
 
 </description>
