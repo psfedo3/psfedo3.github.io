@@ -101,7 +101,7 @@ Ehn things i blog about are just a view minimal things:
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="dns-prefetch" href="https://webmention.io"><link rel="preconnect" href="https://webmention.io"><link rel="preconnect" href="ws://webmention.io:8080">
+    <link rel="dns-prefetch" href="https://webmention.io"><link rel="preconnect" href="https://webmention.io"><link rel="preconnect" href="ws://webmention.io:8080"><link rel="pingback" href="https://webmention.io/spruce.com.ng/xmlrpc"><link rel="webmention" href="https://webmention.io/spruce.com.ng/webmention">
   </head>
 
   <body id="top">
@@ -270,22 +270,22 @@ and some DESIGN TIPS
     <p class="webmentions__not-found">No bookmarks were found.</p>
   {% endif %}
 </div></template><template style="display:none" id="webmention-likes"><div class="webmentions webmentions--likes">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__author p-author h-card">
-            <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
-              <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-            </a>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No likes were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-links"><div class="webmentions webmentions--links">
+    {% if webmentions.size > 0 %}
+      <ol class="webmentions__list">
+        {% for webmention in webmentions %}
+          <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
+            <div class="webmention__author p-author h-card">
+              <a class="u-url" href="{{ webmention.author.url }}">
+                <img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}" loading="lazy">
+              </a>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p class="webmentions__not-found">No likes were found.</p>
+    {% endif %}
+  </div></template><template style="display:none" id="webmention-links"><div class="webmentions webmentions--links">
   {% if webmentions.size > 0 %}
     <ol class="webmentions__list">
       {% for webmention in webmentions %}
@@ -358,22 +358,22 @@ and some DESIGN TIPS
     <p class="webmentions__not-found">No replies were found.</p>
   {% endif %}
 </div></template><template style="display:none" id="webmention-reposts"><div class="webmentions webmentions--reposts">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__author p-author h-card">
-            <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
-              <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-            </a>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No reposts were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-rsvps"><div class="webmentions webmentions--rsvps">
+    {% if webmentions.size > 0 %}
+      <ol class="webmentions__list">
+        {% for webmention in webmentions %}
+          <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
+            <div class="webmention__author p-author h-card">
+              <a class="u-url" href="{{ webmention.author.url }}">
+                <img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}" loading="lazy">
+              </a>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p class="webmentions__not-found">No reposts were found.</p>
+    {% endif %}
+  </div></template><template style="display:none" id="webmention-rsvps"><div class="webmentions webmentions--rsvps">
   {% if webmentions.size > 0 %}
     <ol class="webmentions__list">
       {% for webmention in webmentions %}
@@ -405,9 +405,9 @@ and some DESIGN TIPS
             ">
             {% if webmention.author %}
               <div class="webmention__author p-author h-card">
-                <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
+                <a class="u-url" href="{{ webmention.author.url }}">
                   {% if webmention.author.photo %}
-                    <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
+                    <img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}" loading="lazy">
                   {% endif %}
                   <b class="p-name">{{ webmention.author.name }}</b>
                 </a>
@@ -415,11 +415,30 @@ and some DESIGN TIPS
             {% endif %}
 
             <div class="webmention__content p-content">
-              {% if webmention.content %}
-                {{ webmention.content }}
+              {% if webmention.title %}
+                {% if webmention.uri %}
+                  <a class="webmention__source u-url" href="{{ webmention.uri }}">{{ webmention.title }}</a>
+                {% else %}
+                  {{ webmention.title }}
+                {% endif %}
               {% else %}
-                {{ webmention.title }}
+                {{ webmention.content }}
               {% endif %}
+              {% comment %}
+              {% capture webmention_title %}{% if webmention.title == '<p>false</p>' %}{{ webmention.raw.data.name }}{% else %}{{ webmention.title }}{% endif %}{% endcapture %}
+              {% capture webmention_title_link %}{% if webmention.url %}<a class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention_title }}</a>{% endif %}{% endcapture %}
+              {% if webmention.type == 'post' %}
+                {{ webmention_title_link }}
+              {% elsif webmention.type == 'link' and webmention.source != 'twitter' %}
+                {{ webmention_title_link }}
+              {% else %}
+                {% if webmention.content %}
+                  {{ webmention.content }}
+                {% else %}
+                  {{ webmention_title }}
+                {% endif %}
+              {% endif %}
+              {% endcomment %}
             </div>
             
             <div class="webmention__meta">
@@ -427,10 +446,12 @@ and some DESIGN TIPS
                 <time class="webmention__pubdate dt-published"
                       datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
               {% endif %}
-              {% if webmention.pubdate and webmention.url %}|{% endif %}
-              {% if webmention.url %}
-                <a class="webmention__source u-url" href="{{ webmention.url }}" rel="nofollow">Permalink</a>
-              {% endif %}
+              {% unless webmention.title %}
+                {% if webmention.pubdate and webmention.uri %}|{% endif %}
+                {% if webmention.uri %}
+                  <a class="webmention__source u-url" href="{{ webmention.uri }}">Permalink</a>
+                {% endif %}
+              {% endunless %}
             </div>
           </article>
         </li>
