@@ -1288,68 +1288,69 @@ h6:target {
 }
 
 /* article code */
-pre[class^="language-"] {
-  padding: 40px 0;
-  font-family: "Monaco","Consolas","Menlo",monospace;
-  color: white;
-  font-size: 16px;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  text-align: center;
-}
-
-@media (min-width: 800px) {
-  pre[class^="language-"] {
-    font-size: 19px;
-  }
-}
-pre[class^="language-"] code {
-  max-width: 1640px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-  background-color: #222;
-  padding: 40px;
-}
-
-@media (min-width: 800px) {
-  pre[class^="language-"] code {
-    min-width: 700px;
-  }
-}
-pre[class^="language-"] .lineno {
-  display: none;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #c5c8c6;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
+code[class*=language-],
+pre[class*=language-] {
+  font-family: "Fira Code",Menlo,Monaco,Consolas,"Andale Mono","Courier New",monospace;
+  font-size: 1em;
+  line-height: 1.85;
   direction: ltr;
   text-align: left;
-  white-space: pre;
   word-spacing: normal;
-  word-break: normal;
-  line-height: 1.5;
-  overflow: scroll;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  white-space: pre;
+  background: #1d1f21;
+  color: #f9f8f5;
 }
 
-pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
+pre[class*=language-] {
+  display: block;
+  font-size: 1rem;
+  padding: 2rem 1.5rem;
+  overflow-x: auto;
 }
 
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em;
+pre[class*=language-] {
+  margin: 2rem calc(50% - 50vw);
+}
+
+pre[class*=language-] {
+  border-radius: 0.5rem;
+}
+
+pre[class*=language-] > code {
+  width: 100%;
+  max-width: 41rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media (min-width: 940px) {
+  pre[class*=language-] {
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (min-width: 1040px) {
+  pre[class*=language-] {
+    margin-left: -180px;
+    margin-right: -180px;
+    border-radius: 0.5rem;
+  }
+}
+:not(pre) > code {
+  display: inline-block;
+  font-family: "Fira Code",Menlo,Monaco,Consolas,"Andale Mono","Courier New",monospace;
+  background-color: var(--color-bg-offset);
+  border: 1px solid var(--color-border);
+  border-radius: .25rem;
+  padding: 2px 4px;
+  margin: 0 2px;
+  font-size: 75%;
 }
 
 .page__header,
