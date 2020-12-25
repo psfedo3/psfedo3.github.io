@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-25T20:46:49+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Css flexbox and some use cases</title><link href="https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html" rel="alternate" type="text/html" title="Css flexbox and some use cases" /><published>2020-12-24T00:00:00+00:00</published><updated>2020-12-24T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases</id><content type="html" xml:base="https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html">&lt;p class=&quot;lead&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://iamspruce.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://iamspruce.github.io/" rel="alternate" type="text/html" /><updated>2020-12-25T20:47:55+00:00</updated><id>https://iamspruce.github.io/atom.xml</id><title type="html">Spruce Blog</title><subtitle>Web developer and designer from Nigeria</subtitle><entry><title type="html">Css flexbox and some use cases</title><link href="https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html" rel="alternate" type="text/html" title="Css flexbox and some use cases" /><published>2020-12-24T00:00:00+00:00</published><updated>2020-12-24T00:00:00+00:00</updated><id>https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases</id><content type="html" xml:base="https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html">&lt;p class=&quot;lead&quot;&gt;
 In this quick article, we are going to learn what and how to use css flexbox with some use cases of flexbox 
 &lt;/p&gt;
 &lt;h1&gt;
@@ -130,7 +130,7 @@ take a look at the responsive website header below
 flexbox responsive header
 &lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ie.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -203,7 +203,7 @@ you just need to add the flex-grow: 1; to the card content and it will always gr
 flex grow
 &lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ie.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
 
