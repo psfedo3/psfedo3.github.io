@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Dec 2020 20:29:36 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Dec 2020 20:29:36 +0000</lastBuildDate>
+    <pubDate>Fri, 25 Dec 2020 20:46:49 +0000</pubDate>
+    <lastBuildDate>Fri, 25 Dec 2020 20:46:49 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -137,13 +137,13 @@ take a look at the responsive website header below
 &lt;/p&gt;
 &lt;div class=&quot;codepen&quot;&gt;
 
-&lt;p data-height=&quot;370&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;ExgbxeP&quot; data-default-tab=&quot;result&quot; data-user=&quot;Spruce_khalifa&quot; class=&quot;codepen&quot;&gt;
+&lt;p data-height=&quot;370&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ExgbxeP&quot; data-default-tab=&quot;result&quot; data-user=&quot;Spruce_khalifa&quot; class=&quot;codepen&quot;&gt;
     See the pen 
     &lt;a href=&quot;https://codepen.io/Spruce_khalifa/pen/ExgbxeP/&quot;&gt;
 flexbox responsive header
 &lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ie.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ie.js&quot;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -210,13 +210,13 @@ you just need to add the flex-grow: 1; to the card content and it will always gr
 &lt;/p&gt;
 &lt;div class=&quot;codepen&quot;&gt;
 
-&lt;p data-height=&quot;370&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;GRjOgZX&quot; data-default-tab=&quot;result&quot; data-user=&quot;Spruce_khalifa&quot; class=&quot;codepen&quot;&gt;
+&lt;p data-height=&quot;370&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;GRjOgZX&quot; data-default-tab=&quot;result&quot; data-user=&quot;Spruce_khalifa&quot; class=&quot;codepen&quot;&gt;
     See the pen 
     &lt;a href=&quot;https://codepen.io/Spruce_khalifa/pen/GRjOgZX/&quot;&gt;
 flex grow
 &lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ie.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ie.js&quot;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
 
