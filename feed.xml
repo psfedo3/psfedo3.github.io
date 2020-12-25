@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Dec 2020 20:10:42 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Dec 2020 20:10:42 +0000</lastBuildDate>
+    <pubDate>Fri, 25 Dec 2020 20:16:54 +0000</pubDate>
+    <lastBuildDate>Fri, 25 Dec 2020 20:16:54 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -79,10 +79,11 @@ Flex items
 &lt;/h3&gt;
 &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
+
 &amp;lt;!-- html code --&amp;gt;
-&lt;ul class=&quot;flex-container&quot;&gt;
+&amp;lt;ul class=&quot;flex-container&quot;&amp;gt;
 hello i am a flex item too
-&amp;lt;li class=&quot;flex-item&quot;&amp;lt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;gt;
 Item 1
 &amp;lt;/li&amp;gt;
 &amp;lt;li class=&quot;flex-item&quot;&amp;gt;
@@ -92,8 +93,8 @@ Item 2
 Item 3
 &amp;lt;/li&amp;gt;
 &amp;lt;/ul&amp;gt;
-&amp;lt;/code&amp;gt;
-&amp;lt;/pre&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
 &lt;p&gt;
 How many flex items do we have from the above code? Well you might say THREE, but its actually FOUR. Plain text that are not wrapped in any html tag are also regarded as flex items
 &lt;/p&gt;
@@ -104,11 +105,11 @@ How many flex items do we have from the above code? Well you might say THREE, bu
 Plain texts are flex items too
  &lt;/figcaption&gt;
  &lt;/figure&gt;
- &lt;p&gt;
+&lt;p&gt;
 From the preview(when display: flex; is added to the flex-container) above you see that Four items are laid out side by side, that means anything placed in a flex-container as a direct child is a flex item...
  &lt;/p&gt;
 
- &lt;pre class=&quot;language-html&quot;&gt;
+&lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
 &amp;lt;!-- html code --&amp;gt;
 &amp;lt;ul class=&quot;flex-container&quot;&amp;gt;
@@ -263,7 +264,7 @@ yep, flexbox can be used to flip elements around
  &lt;/figcaption&gt;
  &lt;/figure&gt;
 &lt;p&gt;&lt;/p&gt;
- &lt;h6&gt;
+&lt;h6&gt;
 Center An Element
 &lt;/h6&gt;
 &lt;p&gt;
@@ -311,10 +312,10 @@ yep, flexbox can be used to center an element
  &lt;/figcaption&gt;
  &lt;/figure&gt;
 
- &lt;h5&gt;
+&lt;h5&gt;
 Browser Support
  &lt;/h5&gt;
- &lt;p&gt;
+&lt;p&gt;
 If you want to support older browsers, you should check the browser support level from caniuse.com
  &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -345,7 +346,6 @@ Complete guide to css flexbox
 &lt;p&gt;
 again thanks for reading...
 &lt;/p&gt;
-&lt;/ul&gt;&lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
         <link>https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html</link>
