@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Dec 2020 19:41:00 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Dec 2020 19:41:00 +0000</lastBuildDate>
+    <pubDate>Fri, 25 Dec 2020 20:10:42 +0000</pubDate>
+    <lastBuildDate>Fri, 25 Dec 2020 20:10:42 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -52,17 +52,17 @@ Floats and vertical-align css properties do not have any effect on &lt;b&gt;flex
 &lt;/p&gt;
 &lt;pre class=&quot;language-css&quot;&gt;
 &lt;code class=&quot;language-css&quot;&gt;
-&lt;!-- html code --&gt;
-&lt;ul class=&quot;flex-container&quot;&gt;
-&lt;li class=&quot;flex-item&quot;&gt;
+&amp;lt;!-- html code --&amp;gt;
+&amp;lt;ul class=&quot;flex-container&quot;&amp;gt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;lt;
 Item 1
-&lt;/li&gt;
-&lt;li class=&quot;flex-item&quot;&gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;gt;
 Item 2
-&lt;/li&gt;
-&lt;/ul&gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
 
-&lt;!-- css codes --&gt;
+&amp;lt;!-- css codes --&amp;gt;
 .flex-container {
   display: flex;
   
@@ -79,21 +79,21 @@ Flex items
 &lt;/h3&gt;
 &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
-&lt;!-- html code --&gt;
+&amp;lt;!-- html code --&amp;gt;
 &lt;ul class=&quot;flex-container&quot;&gt;
 hello i am a flex item too
-&lt;li class=&quot;flex-item&quot;&gt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;lt;
 Item 1
-&lt;/li&gt;
-&lt;li class=&quot;flex-item&quot;&gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;gt;
 Item 2
-&lt;/li&gt;
-&lt;li class=&quot;flex-item&quot;&gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;gt;
 Item 3
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/code&gt;
-&lt;/pre&gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;
 &lt;p&gt;
 How many flex items do we have from the above code? Well you might say THREE, but its actually FOUR. Plain text that are not wrapped in any html tag are also regarded as flex items
 &lt;/p&gt;
@@ -104,18 +104,18 @@ How many flex items do we have from the above code? Well you might say THREE, bu
 Plain texts are flex items too
  &lt;/figcaption&gt;
  &lt;/figure&gt;
-&lt;p&gt;
+ &lt;p&gt;
 From the preview(when display: flex; is added to the flex-container) above you see that Four items are laid out side by side, that means anything placed in a flex-container as a direct child is a flex item...
  &lt;/p&gt;
 
-&lt;pre class=&quot;language-html&quot;&gt;
+ &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
-&lt;!-- html code --&gt;
-&lt;ul class=&quot;flex-container&quot;&gt;
+&amp;lt;!-- html code --&amp;gt;
+&amp;lt;ul class=&quot;flex-container&quot;&amp;gt;
 &lt;!-- anything placed here as a direct child is a flex item --&gt;
-&lt;/ul&gt;
+&amp;lt;/ul&amp;gt;
 
-&lt;!-- css codes --&gt;
+&amp;lt;!-- css codes --&amp;gt;
 .flex-container {
   display: flex;
   
@@ -136,12 +136,11 @@ take a look at the responsive website header below
 &lt;/p&gt;
 &lt;div class=&quot;codepen&quot;&gt;
 
-
-&lt;p data-height=&quot;370&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;ExgbxeP&quot; data-default-tab=&quot;result&quot; data-user=&quot;&quot; class=&quot;codepen&quot;&gt;
+&lt;p data-height=&quot;370&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;ExgbxeP&quot; data-default-tab=&quot;result&quot; data-user=&quot;Spruce_khalifa&quot; class=&quot;codepen&quot;&gt;
     See the pen 
-    &lt;a href=&quot;https://codepen.io//pen/ExgbxeP/&quot;&gt;
-
-&lt;/a&gt;, by @ on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
+    &lt;a href=&quot;https://codepen.io/Spruce_khalifa/pen/ExgbxeP/&quot;&gt;
+flexbox responsive header
+&lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -153,20 +152,20 @@ Lets say you are creating a card component...
 &lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
-&lt;!-- html code --&gt;
-&lt;article class=&quot;flex-container&quot;&gt;
-&lt;header&gt;
-&lt;!-- card header --&gt;
-&lt;/header&gt;
-&lt;p&gt;
-&lt;!-- article content goes in here --&gt;
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;h2&gt;
-&lt;!-- card footer items goes here --&gt;
-&lt;/h2&gt;
-&lt;/footer&gt;
-&lt;/article&gt;
+&amp;lt;!-- html code --&amp;gt;
+&amp;lt;article class=&quot;flex-container&quot;&amp;gt;
+&amp;lt;header&amp;gt;
+&amp;lt;!-- card header --&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;!-- article content goes in here --&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;footer&amp;gt;
+&amp;lt;h2&amp;gt;
+&amp;lt;!-- card footer items goes here --&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;/footer&amp;gt;
+&amp;lt;/article&amp;gt;
 &lt;/code&gt;
 &lt;/pre&gt;
 &lt;p&gt;
@@ -174,20 +173,20 @@ Lets say you are creating a card component...
 &lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
-&lt;!-- html code --&gt;
-&lt;article&gt;
-&lt;header&gt;
-&lt;!-- card header --&gt;
-&lt;/header&gt;
-&lt;p&gt;
-&lt;!-- article content goes in here --&gt;
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;h2&gt;
-&lt;!-- card footer items goes here --&gt;
-&lt;/h2&gt;
-&lt;/footer&gt;
-&lt;/article&gt;
+&amp;lt;!-- html code --&amp;gt;
+&amp;lt;article&amp;gt;
+&amp;lt;header&amp;gt;
+&amp;lt;!-- card header --&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;!-- article content goes in here --&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;footer&amp;gt;
+&amp;lt;h2&amp;gt;
+&amp;lt;!-- card footer items goes here --&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;/footer&amp;gt;
+&amp;lt;/article&amp;gt;
 
 &lt;!-- css codes --&gt;
 article {
@@ -208,12 +207,11 @@ you just need to add the flex-grow: 1; to the card content and it will always gr
 &lt;/p&gt;
 &lt;div class=&quot;codepen&quot;&gt;
 
-
-&lt;p data-height=&quot;370&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;GRjOgZX&quot; data-default-tab=&quot;result&quot; data-user=&quot;&quot; class=&quot;codepen&quot;&gt;
+&lt;p data-height=&quot;370&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;GRjOgZX&quot; data-default-tab=&quot;result&quot; data-user=&quot;Spruce_khalifa&quot; class=&quot;codepen&quot;&gt;
     See the pen 
-    &lt;a href=&quot;https://codepen.io//pen/GRjOgZX/&quot;&gt;
-
-&lt;/a&gt;, by @ on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
+    &lt;a href=&quot;https://codepen.io/Spruce_khalifa/pen/GRjOgZX/&quot;&gt;
+flex grow
+&lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 
@@ -226,22 +224,22 @@ Say you want to flip a component, like the Card component we created ealier, you
 
 &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
-&lt;!-- html code --&gt;
-&lt;article&gt;
-&lt;header&gt;
-&lt;!-- card header --&gt;
-&lt;/header&gt;
-&lt;p&gt;
-&lt;!-- article content goes in here --&gt;
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;h2&gt;
-&lt;!-- card footer items goes here --&gt;
-&lt;/h2&gt;
-&lt;/footer&gt;
-&lt;/article&gt;
+&amp;lt;!-- html code --&amp;gt;
+&amp;lt;article&amp;gt;
+&amp;lt;header&amp;gt;
+&amp;lt;!-- card header --&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;!-- article content goes in here --&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;footer&amp;gt;
+&amp;lt;h2&amp;gt;
+&amp;lt;!-- card footer items goes here --&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;/footer&amp;gt;
+&amp;lt;/article&amp;gt;
 
-&lt;!-- css codes --&gt;
+&amp;lt;!-- css codes --&amp;gt;
 
 // styles for the component
  footer {
@@ -265,7 +263,7 @@ yep, flexbox can be used to flip elements around
  &lt;/figcaption&gt;
  &lt;/figure&gt;
 &lt;p&gt;&lt;/p&gt;
-&lt;h6&gt;
+ &lt;h6&gt;
 Center An Element
 &lt;/h6&gt;
 &lt;p&gt;
@@ -273,23 +271,23 @@ One of the cool things about css flexbox is that you can center an element with 
 &lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;
 &lt;code class=&quot;language-html&quot;&gt;
-&lt;!-- html code --&gt;
-&lt;div class=&quot;c-card&quot;&gt;
-&lt;article&gt;
-&lt;header&gt;
-&lt;!-- card header --&gt;
-&lt;/header&gt;
-&lt;p&gt;
-&lt;!-- article content goes in here --&gt;
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;h2&gt;
-&lt;!-- card footer items goes here --&gt;
-&lt;/h2&gt;
-&lt;/footer&gt;
-&lt;/article&gt;
-&lt;/div&gt;
-&lt;!-- css codes --&gt;
+&amp;lt;!-- html code --&amp;gt;
+&amp;lt;div class=&quot;c-card&quot;&amp;gt;
+&amp;lt;article&amp;gt;
+&amp;lt;header&amp;gt;
+&amp;lt;!-- card header --&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;!-- article content goes in here --&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;footer&amp;gt;
+&amp;lt;h2&amp;gt;
+&amp;lt;!-- card footer items goes here --&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;/footer&amp;gt;
+&amp;lt;/article&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;!-- css codes --&amp;gt;
 
 // styles for the component
  .c-card {
@@ -313,10 +311,10 @@ yep, flexbox can be used to center an element
  &lt;/figcaption&gt;
  &lt;/figure&gt;
 
-&lt;h5&gt;
+ &lt;h5&gt;
 Browser Support
  &lt;/h5&gt;
-&lt;p&gt;
+ &lt;p&gt;
 If you want to support older browsers, you should check the browser support level from caniuse.com
  &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -347,6 +345,7 @@ Complete guide to css flexbox
 &lt;p&gt;
 again thanks for reading...
 &lt;/p&gt;
+&lt;/ul&gt;&lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
         <link>https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html</link>

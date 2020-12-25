@@ -1318,10 +1318,6 @@ pre[class*=language-] {
   margin: 2rem calc(50% - 50vw);
 }
 
-pre[class*=language-] {
-  border-radius: 0.5rem;
-}
-
 pre[class*=language-] > code {
   width: 100%;
   max-width: 41rem;
