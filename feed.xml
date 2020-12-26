@@ -5,9 +5,329 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Dec 2020 20:58:41 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Dec 2020 20:58:41 +0000</lastBuildDate>
+    <pubDate>Sat, 26 Dec 2020 18:41:49 +0000</pubDate>
+    <lastBuildDate>Sat, 26 Dec 2020 18:41:49 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Top 5 Css Methodologies In 2021</title>
+        <description>&lt;p&gt;Css is very difficult to manage when you are dealing with a large system, this is because Everything in css is &lt;b&gt;Global&lt;/b&gt;&lt;/p&gt;
+
+&lt;pre class=&quot;language-css&quot;&gt;
+  &lt;code class=&quot;language-css&quot;&gt;
+
+    &amp;lt;button class=&quot;button button-action&quot;&amp;gt;
+    Load More
+  &amp;lt;/button&amp;gt;
+
+  &amp;lt;!-- css --&amp;gt;
+
+  .button {
+    background: blue;
+  }
+  .button-action {
+    background: pink;
+  }
+
+  // then maybe after 3 months on line 1299...
+  // another developer wants a call to action button
+  // and he declares another class with button-action with background color red
+
+  .button-action {
+    background: red;
+  }
+
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;
+  you might be wondering what will be the background color of the button, well like i said earlier everything in css is Global, what will happen is that all three background properties will move to the top of the &lt;b&gt;Scope&lt;/b&gt; like this...
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+background: blue;
+&lt;/li&gt;
+&lt;li&gt;
+background: pink;
+&lt;/li&gt;
+&lt;li&gt;
+background: red;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Then the browser will go through the code and apply all of them. Yeah all of them, and then decide to use the last one
+&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;
+  &lt;code class=&quot;language-css&quot;&gt;
+ 
+ // the browser will read the code like this from top to bottom
+
+  &amp;lt;!-- css --&amp;gt;
+
+   &lt;span style=&quot;color: yellow;&quot;&gt;background: blue&lt;/span&gt;; // oh here is a background with color of blue, use this.
+
+   &lt;span style=&quot;color: yellow;&quot;&gt;background: pink&lt;/span&gt;; // wait, don't use that, here is another background with color pink, definately use this.
+
+   &lt;span style=&quot;color: yellow;&quot;&gt;background: red;&lt;/span&gt; // what's wrong with this developer, here is another background with color red, jeez, is there another one?. nope, then use this.
+
+    &amp;lt;!-- Html --&amp;gt;
+
+    &amp;lt;button class=&quot;button button-action&quot;&amp;gt;
+    Load More
+  &amp;gt;/button&amp;gt;
+
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;figure class=&quot;p-article__img&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/red-button.png&quot; alt=&quot;Css red background&quot; /&gt;
+ 
+ &lt;figcaption&gt;
+Browser will use the red background
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;p&gt;
+The problem of managing css is what every developer must face one way or the other, not to mention (one of the hardest thing in css) naming classes, along the line you are going to run out of class names, that's where css methodologies comes in play(sticking to a particular naming convention)... 
+&lt;/p&gt;
+
+&lt;h1&gt;
+What are css methodologies?
+&lt;/h1&gt;
+&lt;p&gt;
+css methodologies are systems that are formaly documented down that help us to auhor/write css as isolated modules, rather than just some long indivisible code.
+&lt;/p&gt;
+
+&lt;h2&gt;
+Top 5 Css Methodologies in 2021
+&lt;/h2&gt;
+&lt;h4&gt;
+&lt;a href=&quot;https://acss.io&quot;&gt;1. Atomic Css&lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;
+Atomic Css is a collection of single purpose styling units that fits well with components in templated framewoks...
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h6&gt;
+Benefits of using Atomic Css
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+Moves specifity out of the way
+&lt;/li&gt;
+&lt;li&gt;
+Improves performance
+&lt;/li&gt;
+&lt;li&gt;
+Allows to share content and assets easily
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h6&gt;
+Further reading 
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://acss.io/frequently-asked-questions.html&quot;&gt;Atomic css frequently asked questions&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://acss.io/quick-start.html&quot;&gt;Atomic Css Quick Start&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a href=&quot;https://getbem.com&quot;&gt;2. BEM&lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;
+BEM stands for - &lt;b&gt;BLOCKS, ELEMENTS and MODIFIERS&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Block:&lt;/b&gt;&lt;br /&gt;
+This are standalone entity that is meaningful on its own &lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Element:&lt;/b&gt;&lt;br /&gt;
+A part of a block that has no standalone meaning (it must be used within a block)  &lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Modifier:&lt;/b&gt;&lt;br /&gt;
+A flag on a block or element, basically we use this to change the appearance or state of an element.
+&lt;/p&gt;
+&lt;h6&gt;
+Benefits of using BEM
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+Modularity
+&lt;/li&gt;
+&lt;li&gt;
+Reusability
+&lt;/li&gt;
+&lt;li&gt;
+Structure
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h6&gt;
+Further reading 
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://getbem.com/introduction/&quot;&gt;Intro to BEM&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.integralist.co.uk/posts/bem.html&quot;&gt;BEM&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://getbem.com/naming/&quot;&gt;BEM naming convention&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a href=&quot;https://getbem.com&quot;&gt;3. ITCSS&lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;
+ITCSS - stands for &lt;b&gt;INVERTED TRIANGLE CSS&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This is a methodolgy for structuring your css files in the best and stress free way as possible.
+&lt;/p&gt;
+&lt;h6&gt;
+Benefits of using ITCSS
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+Less thinking on naming things
+&lt;/li&gt;
+&lt;li&gt;
+Reusability
+&lt;/li&gt;
+&lt;li&gt;
+Flexibility
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h6&gt;
+Further reading 
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://xfive.co/blog/itcss-scalable-maintainable-css-architecture&quot;&gt;ITCSS: Scalable and Maintainable Css Architecture&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://hongkiat.com/blog/inverted-triangle-css-web-development/&quot;&gt;Intro to ITCSS for web developers&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a href=&quot;https://smacss.com&quot;&gt;4. SMACSS&lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;
+SMACSS stands for - &lt;b&gt;SCALABLE and MODULAR ARCHITECTURE for CSS&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;h6&gt;
+Benefits of using SMACSS
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+Scalable
+&lt;/li&gt;
+&lt;li&gt;
+Ease of Reading
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h6&gt;
+Further reading 
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://smacss.com&quot;&gt;Smacss guide&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a href=&quot;https://oocss.org&quot;&gt;5. OOCSS&lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;
+OOCSS stands for - &lt;b&gt;OBJECT ORIENTED CSS&lt;/b&gt;
+&lt;/p&gt;
+&lt;h6&gt;
+Two main principles of OOCSS
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+Separating Structure From Skin
+&lt;/li&gt;
+&lt;li&gt;
+Separating Container And Content
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;h6&gt;
+Benefits of using OOCSS
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+Maintainable stylesheets
+&lt;/li&gt;
+&lt;li&gt;
+Faster websites
+&lt;/li&gt;
+&lt;li&gt;
+Easier to modify common styles
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h6&gt;
+Further reading 
+&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://oocss.org&quot;&gt;Object oriented Css&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss&quot;&gt;Intro to object oriented css on smashingmagazine&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;p&gt;
+This list is based on the survey from &lt;a href=&quot;https://2020.stateofcss.com/en-US/technologies/methodologies/&quot;&gt;The state of css 2020&lt;/a&gt;, and it is intended to show you the css methodologies that would probably be used in 2021 
+&lt;/p&gt;
+
+&lt;p&gt;
+Another css methodology that is currently on a fast rise is the &lt;a href=&quot;https://piccalil.li/blog/cube-css/&quot;&gt;Cube Css&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;info info--note&quot;&gt;
+   &lt;div class=&quot;info__content&quot;&gt;
+       &lt;strong&gt;Note:&lt;/strong&gt; There is no best css methodology, the one you decide to use depends on you and the type of your project...
+                &lt;/div&gt;
+          &lt;/div&gt;
+
+&lt;p&gt;
+Thanks for reading
+&lt;/p&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+        <link>https://iamspruce.github.io/blog/top-5-css-methodologies-in-2021.html</link>
+        <guid isPermaLink="true">https://iamspruce.github.io/blog/top-5-css-methodologies-in-2021.html</guid>
+        
+        <category>css</category>
+        
+        <category>methodologies</category>
+        
+        
+      </item>
     
       <item>
         <title>Css flexbox and some use cases</title>
@@ -54,7 +374,7 @@ Floats and vertical-align css properties do not have any effect on &lt;b&gt;flex
 &lt;code class=&quot;language-css&quot;&gt;
 &amp;lt;!-- html code --&amp;gt;
 &amp;lt;ul class=&quot;flex-container&quot;&amp;gt;
-&amp;lt;li class=&quot;flex-item&quot;&amp;lt;
+&amp;lt;li class=&quot;flex-item&quot;&amp;gt;
 Item 1
 &amp;lt;/li&amp;gt;
 &amp;lt;li class=&quot;flex-item&quot;&amp;gt;
@@ -143,7 +463,6 @@ take a look at the responsive website header below
 flexbox responsive header
 &lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -216,7 +535,6 @@ you just need to add the flex-grow: 1; to the card content and it will always gr
 flex grow
 &lt;/a&gt;, by @Spruce_khalifa on &lt;a href=&quot;https://codepen.io&quot;&gt;Codepen&lt;/a&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
 
@@ -351,7 +669,7 @@ Complete guide to css flexbox
 again thanks for reading...
 &lt;/p&gt;
 </description>
-        <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
         <link>https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html</link>
         <guid isPermaLink="true">https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html</guid>
         

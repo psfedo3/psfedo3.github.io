@@ -5,14 +5,21 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/facebook.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 25 Dec 2020 20:58:41 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Dec 2020 20:58:41 +0000</lastBuildDate>
+    <pubDate>Sat, 26 Dec 2020 18:41:49 +0000</pubDate>
+    <lastBuildDate>Sat, 26 Dec 2020 18:41:49 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
     
       <item>
+        <title>Top 5 Css Methodologies In 2021</title>
+        <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+        <link>https://iamspruce.github.io/blog/top-5-css-methodologies-in-2021.html</link>
+        <guid isPermaLink="true">https://iamspruce.github.io/blog/top-5-css-methodologies-in-2021.html</guid>
+      </item>
+    
+      <item>
         <title>Css flexbox and some use cases</title>
-        <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
         <link>https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html</link>
         <guid isPermaLink="true">https://iamspruce.github.io/blog/css-flexbox-and-some-use-cases.html</guid>
       </item>
@@ -36,13 +43,6 @@
         <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
         <link>https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html</link>
         <guid isPermaLink="true">https://iamspruce.github.io/blog/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.html</guid>
-      </item>
-    
-      <item>
-        <title>Welcome to my personal blog and online journal</title>
-        <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-        <link>https://iamspruce.github.io/blog/Welcome-to-my-personal-blog.html</link>
-        <guid isPermaLink="true">https://iamspruce.github.io/blog/Welcome-to-my-personal-blog.html</guid>
       </item>
     
   </channel>
