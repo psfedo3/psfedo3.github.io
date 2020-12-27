@@ -5,8 +5,8 @@
     <description>Web developer and designer from Nigeria</description>
     <link>https://iamspruce.github.io/</link>
     <atom:link href="https://iamspruce.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Dec 2020 05:18:54 +0000</pubDate>
-    <lastBuildDate>Sun, 27 Dec 2020 05:18:54 +0000</lastBuildDate>
+    <pubDate>Sun, 27 Dec 2020 11:37:56 +0000</pubDate>
+    <lastBuildDate>Sun, 27 Dec 2020 11:37:56 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -433,7 +433,7 @@ From the preview(when display: flex; is added to the flex-container) above you s
 &lt;code class=&quot;language-html&quot;&gt;
 &amp;lt;!-- html code --&amp;gt;
 &amp;lt;ul class=&quot;flex-container&quot;&amp;gt;
-&lt;!-- anything placed here as a direct child is a flex item --&gt;
+&amp;lt;!-- anything placed here as a direct child is a flex item --&amp;gt;
 &amp;lt;/ul&amp;gt;
 
 &amp;lt;!-- css codes --&amp;gt;
