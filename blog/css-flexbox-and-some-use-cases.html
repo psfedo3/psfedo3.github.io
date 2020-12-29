@@ -72,6 +72,7 @@
         
     <link rel="me" href="https://twitter.com/sprucekhalifa">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="manifest" href="/manifest.json">
       <link rel="alternate" type="application/rss+xml" title=" - Web developer and designer from Nigeria" href="/feed.xml" />
     <link type="application/atom+xml" rel="alternate" href="https://iamspruce.github.io/atom.xml" title="Spruce Blog" />
         <script data-ad-client="ca-pub-9573781560829975" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -660,4 +661,11 @@ again thanks for reading...
 
   </body>
   <script src="/assets/headerJs.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
 </html>
