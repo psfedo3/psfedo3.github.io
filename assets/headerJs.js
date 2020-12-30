@@ -17,13 +17,3 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-
-
-// Serving offline pages
-
- 
-		// Initialize the service worker
-		if (navigator && navigator.serviceWorker) {
-			navigator.serviceWorker.register('/service-worker.js');
-		}
-	 
