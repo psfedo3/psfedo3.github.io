@@ -21,7 +21,7 @@ navToggle.addEventListener("click", function () {
 
 // Serving offline pages
 
-<script>
+
 		if (navigator && navigator.serviceWorker) {
 			caches.open('pages').then(function (cache) {
 				cache.keys().then(function (keys) {
@@ -35,4 +35,4 @@ navToggle.addEventListener("click", function () {
 				});
 			});
 		}
-	</script>
+	
