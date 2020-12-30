@@ -17,3 +17,22 @@ navToggle.addEventListener("click", function () {
   }
 });
 
+
+
+// Serving offline pages
+
+<script>
+		if (navigator && navigator.serviceWorker) {
+			caches.open('pages').then(function (cache) {
+				cache.keys().then(function (keys) {
+					var offline = document.querySelector('[data-offline]');
+					offline.innerHTML =
+						'<ul>' +
+							keys.map(function(key) {
+								return '<li><a href="' + key.url + '">' + key.url + '</a></li>';
+							}).join('') +
+						'</ul>';
+				});
+			});
+		}
+	</script>
