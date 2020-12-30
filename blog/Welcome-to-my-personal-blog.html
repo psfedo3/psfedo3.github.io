@@ -367,5 +367,10 @@ and some DESIGN TIPS
 
   </body>
   <script src="/assets/headerJs.js"></script>
-  
+  <script>
+		// Initialize the service worker
+		if (navigator && navigator.serviceWorker) {
+			navigator.serviceWorker.register('service-worker.js');
+		}
+	</script> 
 </html>
