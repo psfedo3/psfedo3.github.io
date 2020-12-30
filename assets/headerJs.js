@@ -21,6 +21,12 @@ navToggle.addEventListener("click", function () {
 
 // Serving offline pages
 
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+
 
 		if (navigator && navigator.serviceWorker) {
 			caches.open('pages').then(function (cache) {
