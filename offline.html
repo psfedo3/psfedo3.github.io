@@ -151,6 +151,21 @@
             <img src="/assets/img/undraw_fast_car_p4cu.svg" alt="Car taking you back to online site" width="200px" height="200px">
         </div>
         </section>
+ <script>
+		if (navigator && navigator.serviceWorker) {
+			caches.open('pages').then(function (cache) {
+				cache.keys().then(function (keys) {
+					var offline = document.querySelector('[data-offline]');
+					offline.innerHTML =
+						'<ul>' +
+							keys.map(function(key) {
+								return '<li><a href="' + key.url + '">' + key.url + '</a></li>';
+							}).join('') +
+						'</ul>';
+				});
+			});
+		}
+	</script> 
 
     </main>
 
