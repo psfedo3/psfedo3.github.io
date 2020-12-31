@@ -132,7 +132,7 @@
     <main id="main" role="main">
       <body id="top" class="articles-page">
     <section class="section section--tight">
-        <div class=" text--center">
+        <div class="text--center">
             <h1>
                 Hey! You are Offline
             </h1>
@@ -141,15 +141,17 @@
             </p>
             <a href="/" class="btn btn--medium btn--blue">Go to Homepage</a>
         </div>
+        <p></p>
          
          <p>
        While waiting for your data to turn back on, you can read your previous articles offline...
          </p>
+         <h4>
+             Visit Your Offline Pages
+         </h4>
          <div data-offline></div>
 <p></p>
-        <div class="offline-car">
-            <img src="/assets/img/undraw_fast_car_p4cu.svg" alt="Car taking you back to online site" width="200px" height="200px">
-        </div>
+        
         </section>
  <script>
 		if (navigator && navigator.serviceWorker) {
@@ -159,12 +161,12 @@
 					offline.innerHTML =
 						'<ul>' +
 							keys.map(function(key) {
-								return '<li><a href="' + key.url + '">' + key.url + '</a></li>';
+								return '<p><li><a href="' + key.url + '">' + key.url + '</a></li></p>';
 							}).join('') +
 						'</ul>';
 				});
 			});
-		}
+        }
 	</script> 
 
     </main>

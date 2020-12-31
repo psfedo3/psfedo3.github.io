@@ -1471,30 +1471,3 @@ pre[class*=language-] > code {
     margin-right: auto;
   }
 }
-.offline-car {
-  width: 100vw;
-}
-.offline-car img {
-  width: 250px;
-  height: 250px;
-  animation: bobble 3s ease;
-  animation-iteration-count: infinite;
-}
-
-@media (min-width: 768px) {
-  .offline-car img {
-    width: 350px;
-    height: 350px;
-  }
-}
-@keyframes bobble {
-  0% {
-    transform: translateX(100vw);
-  }
-  60% {
-    transform: translateX(60vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
-}
